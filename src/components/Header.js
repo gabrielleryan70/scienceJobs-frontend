@@ -3,11 +3,11 @@ import React, { useState, useEffect, useRef } from 'react'
 
 const Header = () => {
 
-    <header className="bg-blue-500 p-4 flex justify-between items-center">
-        {/* Logo */}
+    <header className="w-full bg-blue-500 p-4 flex justify-between items-center">
+    
         <div className="text-white font-bold text-xl">Logo</div>
 
-        {/* Navigation Buttons */}
+   
         <nav className="space-x-4">
             <a href="#" className="text-white hover:underline">Job Search</a>
             <a href="#" className="text-white hover:underline">Find Employers</a>

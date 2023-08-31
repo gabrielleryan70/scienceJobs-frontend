@@ -71,7 +71,7 @@ const SingleQA = () => {
 
                 }
               }
-            >Email</button>
+            >Email22222222222222</button>
             <input type="text" placeholder='name2' className="input input-xs bg-gray-200  FullName" name="FullName" id="FullName" /><input className="input input-xs bg-gray-200 " type="text" placeholder='email2' name="username" /><button className='btn btn-primary btn-xs'>Email</button>
           </div>
           <div className='font-black flex flex-wrap gap-2  items-end w-full h-full'>
