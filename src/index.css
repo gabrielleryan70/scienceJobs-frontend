@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: Arial Narrow;
+}
+.rotateme {
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    top: -100vw;
+    height: 100vw;
+    width: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+#root {
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    /* account for borders */
+    width: 100vw;
+}
+.dark {
+    @apply bg-gray-800 text-red-600
+}
+
+label{
+    font-size: 1rem;
+}
