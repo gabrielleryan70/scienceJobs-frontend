@@ -6,6 +6,7 @@ const Layout = () => {
   const darkMode = useSelector((state) => state.posts.darkMode)
   return (
     <div className={`h-full ${darkMode}`}>
+     
       <Header />
       <Outlet />
     </div>

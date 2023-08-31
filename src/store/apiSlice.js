@@ -3,7 +3,7 @@ const api_key = '591aed213451ce2076d82d9d5f4c8594';
 export const apiSlice = createApi({
  
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://employer-api.onrender.com/',//'https://employer-api.onrender.com/',//'http://localhost:3500/',
+    baseUrl: 'https://api.academicjobs.com/',//'https://employer-api.onrender.com/',//'http://localhost:3500/',
     credentials: 'same-origin',
     mode: "cors",
     prepareHeaders: (headers) => {
@@ -26,8 +26,8 @@ export const apiSlice = createApi({
       providesTags: ['employers'],
     }),
     getSingleQA: builder.query({
-      query: (id) => ({
-        url: `employer/${id}`,
+      query: () => ({
+        url: `employer/3739`,
         mode: 'cors',
       }),
       transformResponse: (responseData) => {

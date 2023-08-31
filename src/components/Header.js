@@ -2,13 +2,13 @@ import React, { useState, useEffect, useRef } from 'react'
 
 
 const Header = () => {
-
-    <header className="w-full bg-blue-500 p-4 flex justify-between items-center">
+    return (
+    <div className="w-full bg-blue-500 p-4 flex justify-start items-center">
     
-        <div className="text-white font-bold text-xl">Logo</div>
+        <div className="text-white font-bold text-xl w-[300px]">Logo</div>
 
    
-        <nav className="space-x-4">
+            <nav className="space-x-4 flex justify-around items-center">
             <a href="#" className="text-white hover:underline">Job Search</a>
             <a href="#" className="text-white hover:underline">Find Employers</a>
             <a href="#" className="text-white hover:underline">Career Advice</a>
@@ -16,7 +16,8 @@ const Header = () => {
             <a href="#" className="text-white hover:underline">Sign In</a>
             <a href="#" className="text-white hover:underline">My Account</a>
         </nav>
-    </header>
+        </div>
+    )
   
 }
 export default Header
