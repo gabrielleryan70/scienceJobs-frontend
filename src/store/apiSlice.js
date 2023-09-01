@@ -3,7 +3,11 @@ const api_key = '591aed213451ce2076d82d9d5f4c8594';
 export const apiSlice = createApi({
  
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3500/', //'https://api.academicjobs.com/',//'http://localhost:3500/',
+    baseUrl:
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:3500'
+        : 'https://api.academicjobs.com/',
+
     credentials: 'same-origin',
     mode: "cors",
     prepareHeaders: (headers) => {
