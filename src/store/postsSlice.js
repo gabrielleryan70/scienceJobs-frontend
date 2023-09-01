@@ -1,18 +1,20 @@
 import { createSlice, nanoid, createAsyncThunk } from '@reduxjs/toolkit'
 
 const initialState = {
-  ttsSpeed: 1,
+  job: { description:''},
   status: 'dangerTest',
   id: 13498,
   darkMode: 'light',
   searchText: '',
-  filter: 'SELECT questions.priority, questions.id,questions.watchYN, questions.delete1,  questions.sayYN, questions.question,questions.createdAt, questions.updatedAt, newYN , priority FROM questions WHERE questions.delete1=0 and (questions.archiveYN=0)  and (questions.archiveYN=0) AND questions.newYN=1  ORDER BY questions.id;',
-  // filter: 'SELECT questions.priority, questions.id,questions.watchYN, questions.delete1,  questions.sayYN, questions.question,questions.createdAt, questions.updatedAt, newYN , priority FROM questions WHERE (questions.id>=${wZi} and ((questions.delete1)=0)  and (questions.archiveYN=0)  and (questions.archiveYN=0) AND questions.newYN =1 ) ORDER BY questions.id DESC;',
-}
+  searchJobCriteria: { employer_id: 3739 },
+  }
 const postsSlice = createSlice({
   name: 'status',
   initialState,
   reducers: {
+    setSearchJobCriteria(state, action) {
+      state.searchJobCriteria = action.payload
+    },
     setStatus(state, action) {
       state.status = action.payload
     },
@@ -24,6 +26,9 @@ const postsSlice = createSlice({
     },
     setFilter(state, action) {
       state.filter = action.payload
+    },
+    setJob(state, action) {
+      state.job = action.payload
     },
     setTtsSpeed(state, action) {
       state.ttsSpeed = action.payload
@@ -40,7 +45,8 @@ const postsSlice = createSlice({
 })
 
 export const {
-  setTtsSpeed,
+  setSearchJobCriteria,
+  setJob,
   setStatus,
   setId,
   setStatusId,

@@ -5,7 +5,7 @@ import {
     Route,
     Navigate,
 } from "react-router-dom";
-import Home from "./views/home/Home"
+import Home from "./views/Home"
 import Layout from './components/Layout'
 const AppRouter = () => {
     return (

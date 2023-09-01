@@ -3,7 +3,7 @@ const api_key = '591aed213451ce2076d82d9d5f4c8594';
 export const apiSlice = createApi({
  
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://api.academicjobs.com/',//'https://employer-api.onrender.com/',//'http://localhost:3500/',
+    baseUrl: 'http://localhost:3500/', //'https://api.academicjobs.com/',//'http://localhost:3500/',
     credentials: 'same-origin',
     mode: "cors",
     prepareHeaders: (headers) => {
@@ -15,6 +15,20 @@ export const apiSlice = createApi({
   }),
   tagTypes: ['employers', 'employer','job','jobs'],
   endpoints: (builder) => ({
+    getJobs: builder.query({
+      query: (jobCriteria) => ({
+        url: `job/`,
+        method: 'POST',
+        body:  jobCriteria ,
+        mode: 'cors',
+      }),
+      transformResponse: (responseData) => {
+        console.log(responseData)
+        return responseData.data.jobs
+      },
+      providesTags: ['jobs'],
+      invalidatesTags: ['jobs'],
+    }),
     getEmployers: builder.query({
       query: () =>
       `employer`,
@@ -36,11 +50,24 @@ export const apiSlice = createApi({
       },
       providesTags: ['employer'],
     }),
+    getJobsByEmployer: builder.query({
+      query: (id) => ({
+        url: `job/${id}`,
+        mode: 'cors',
+      }),
+      transformResponse: (responseData) => {
+        console.log(responseData)
+        return responseData.data.jobs
+      },
+      providesTags: ['jobs'],
+    }),
   }),
 })
 export const {
   useGetSingleQAQuery,
   useGetEmployersQuery,
+  useGetJobsByEmployerQuery,
+  useGetJobsQuery,
 } = apiSlice
 
 
