@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import JobDetail from './JobDetail'
 import SingleQA from './SingleQA'
-import ReactPlayer from 'react-player/lazy'
+// import ReactPlayer from 'react-player/lazy'
 const Home = () => {
   return (
     <div className='w-full h-full'>
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-[59%]">
-          <ReactPlayer
+          {/* <ReactPlayer
             url='https://player.vimeo.com/video/827136257?h=de24582070&badge=0&autoplay=1&loop=1&autopause=0&background=1&muted=1&poster=https://f000.backblazeb2.com/file/academicjobs1/homeVideoPic.png&player_id=0&app_id=58479'
             playing // This prop enables autoplay
             loop
@@ -34,7 +34,7 @@ const Home = () => {
             controls // You can include controls if needed
             width="100%"
             height="100%"
-          />
+          /> */}
         </div>
       </div>
 
