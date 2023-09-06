@@ -11,10 +11,10 @@ const Home = () => {
         <img
           src="https://academicjobs.s3.amazonaws.com/img/_misc/ScienceJobsLogo.png"
           alt="Google Logo"
-          className="w-[30rem] "
+          className="w-[20rem] mb-[1rem] "
         />
         <div className='w-full flex justify-center'>
-          <div className=' flex flex-col  items-end w-3/4'>
+          <div className=' flex flex-col  items-end w-full'>
           <div className="w-full flex mt-5 border rounded-lg p-2 shadow-md ">
             <input
               type="text"
