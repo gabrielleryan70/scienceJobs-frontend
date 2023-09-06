@@ -25,7 +25,7 @@ const Home = () => {
               Search In Your Country
             </button>
           </div>
-          <h2>Or Search Globally</h2>
+          <h2 className='underline text-blue-500'>Or Search Globally</h2>
         </div>
         </div>
       </div>
