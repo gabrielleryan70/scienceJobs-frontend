@@ -1,10 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import JobDetail from './JobDetail'
 import SingleQA from './SingleQA'
 // import ReactPlayer from 'react-player/lazy'
+const countryMappings = {
+  australia: 'australia',
+  asia: 'asia',
+  africa: 'africa',
+  'new zealand': 'newzealand',
+  canada: 'canada',
+  europe: 'europe',
+  india: 'india',
+  global: 'global',
+  'united states': 'usa',
+  'united kingdom': 'uk'
+};
 const Home = () => {
+  const navigate = useNavigate()
   return (
     <div className='w-full h-full'>
       <div className="flex justify-between  h-[600px]">
@@ -19,9 +33,33 @@ const Home = () => {
               Search for academic jobs, college careers, and faculty positions online. Jobs in higher ed, research, and science.
             </p>
             <div className="button-list flex">
-              <div id="redirect" className="button fRVdno">
+              <button id="redirect" className="button fRVdno"
+                onClick={() => {
+                  const fetchLocation1 = async () => {
+                    try {
+                      const response = await fetch("https://api.geoapify.com/v1/ipinfo?apiKey=ea0e191c22a94bf39e0e58ffbe2d6b66");
+                      const result = await response.json();
+                      return result.country.name
+
+                    } catch (error) {
+                      return ""
+                    }
+                  }
+                  fetchLocation1()
+                    .then(country => {
+                      //ar newUrl = `https://academicjobs.com/`
+                      sessionStorage.setItem("location", countryMappings[country.toLowerCase()]);
+                      navigate(`/${countryMappings[country.toLowerCase()]}`)
+                      //window.location.href = newUrl;
+                    })
+                    .catch(error => {
+                      console.log('Error:', error);
+                    });
+
+              }}
+              >
                 Go to your country's Site
-              </div>
+              </button>
             </div>
           </div>
         </div>

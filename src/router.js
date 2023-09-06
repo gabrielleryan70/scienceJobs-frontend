@@ -6,6 +6,7 @@ import {
     Navigate,
 } from "react-router-dom";
 import Home from "./views/Home"
+import Australia from "./views/Australia"
 import Layout from './components/Layout'
 const AppRouter = () => {
     return (
@@ -18,6 +19,7 @@ const AppRouter = () => {
               element={<Navigate to='/home' replace />}
             />
             <Route exact path='/home' element={<Home />} />
+            <Route exact path='/australia' element={<Australia />} />
           </Route>
         </Routes>
       </BrowserRouter>
