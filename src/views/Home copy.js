@@ -11,7 +11,7 @@ const Home = () => {
   const keyWordRef = useRef("")
   const dispatch = useDispatch()
   const handleFormSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
     const a = {}
     if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
     if (sessionStorage.getItem("location")) {
@@ -45,40 +45,41 @@ const Home = () => {
   };
   return (
     <>
-      <div className="bg-white min-h-screen flex flex-col items-center  justify-center ">
-        <div className='h-[40vh] flex flex-col items-end justify-end'>
-          <img
-            src="https://academicjobs.s3.amazonaws.com/img/_misc/ScienceJobsLogo.png"
-            alt="Google Logo"
-            className="w-[20rem] mb-[1rem] "
-          />
-        </div>
-        <div className='w-full h-[60vh] flex flex-col items-top '>
-          <form className=' flex flex-col  items-end w-full' onSubmit={handleFormSubmit}>
-            <div className="w-full flex mt-5 border rounded-lg p-2 shadow-md ">
-              <input
-                type="text"
-                className="flex-grow px-4 py-2 focus:outline-none"
-                placeholder="Jobs Search"
-                ref={keyWordRef}
-              />
-              <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-                type="submit"
-              >
-                Search In Your Country
-              </button>
-            </div>
-            <h2 className='underline text-blue-500'
-              onClick={() => {
-                const a = {}
-                if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
-                dispatch(setSearchJobCriteria(a))
-                navigate(`/searchJobResult`)
-              }}
-            >Or Search Globally</h2>
-          </form >
-        </div>
+      <div className="bg-white min-h-screen flex flex-col items-center justify-center relative">
+        <img
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/ScienceJobsLogo.png"
+          alt="Google Logo"
+          className="w-[30rem] mb-[1rem] absolute top-0"
+          style={{ marginTop: '20vh' }}
+        />
+        <form className=' flex flex-col items-end w-full' onSubmit={handleFormSubmit}>
+          <div className="w-full flex mt-5 border rounded-lg p-2 shadow-md ">
+            <input
+              type="text"
+              className="flex-grow px-4 py-2 focus:outline-none"
+              placeholder="Jobs Search"
+              ref={keyWordRef}
+            />
+            <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+              type="submit"
+            >
+              Search In Your Country
+            </button>
+          </div>
+          <h2 className='underline text-blue-500'
+            onClick={() => {
+              const a = {}
+              if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
+              dispatch(setSearchJobCriteria(a))
+              navigate(`/searchJobResult`)
+            }}
+          >Or Search Globally</h2>
+        </form >
+
+     
       </div>
+
+
       <div className="bg-white flex flex-col px-[10rem] ">
         <h2 className="text-xl text-blue-500 font-extrabold">REGION HOME PAGES</h2>
         <div className="grid grid-cols-4 gap-4 py-5 text-left">
