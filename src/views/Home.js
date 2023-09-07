@@ -53,7 +53,7 @@ const Home = () => {
             className="w-[20rem] mb-[1rem] "
           />
         </div>
-        <div className='w-full h-[60vh] flex flex-col items-top '>
+        <div className='w-3/5 h-[60vh] flex flex-col items-top '>
           <form className=' flex flex-col  items-end w-full' onSubmit={handleFormSubmit}>
             <div className="w-full flex mt-5 border rounded-lg p-2 shadow-md ">
               <input
@@ -62,13 +62,13 @@ const Home = () => {
                 placeholder="Jobs Search"
                 ref={keyWordRef}
               />
-              <button className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600"
+              <button className="px-4 py-2 bg-[#ff9345] text-white rounded-md hover:bg-orange-600"
                 type="submit"
               >
                 Search In Your Country
               </button>
             </div>
-            <h2 className='underline text-orange-500'
+            <h2 className='underline text-[#ff9345]'
               onClick={() => {
                 const a = {}
                 if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
@@ -80,40 +80,40 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-white flex flex-col px-[10rem] ">
-        <h2 className="text-xl text-orange-500 font-extrabold">REGION HOME PAGES</h2>
+        <h2 className="text-xl text-[#ff9345] font-extrabold">REGION HOME PAGES</h2>
         <div className="grid grid-cols-4 gap-4 py-5 text-left">
-          <a href="https://academicjobs.com/usa/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold  ">
+          <a href="https://academicjobs.com/usa/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold  ">
             United States
           </a>
-          <a href="https://academicjobs.com/australia/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/australia/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             Australia
           </a>
-          <a href="https://academicjobs.com/uk/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/uk/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             United Kingdom
           </a>
-          <a href="https://academicjobs.com/canada/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/canada/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             Canada
           </a>
-          <a href="https://academicjobs.com/newzealand/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">New Zealand
+          <a href="https://academicjobs.com/newzealand/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">New Zealand
           </a>
-          <a href="https://academicjobs.com/europe/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/europe/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             Europe
           </a>
-          <a href="https://academicjobs.com/india/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/india/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             India
           </a>
-          <a href="https://academicjobs.com/asia/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/asia/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             Asia
           </a>
-          <a href="https://academicjobs.com/africa/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">Africa
+          <a href="https://academicjobs.com/africa/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">Africa
           </a>
-          <a href="https://academicjobs.com/middleeast/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/middleeast/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             Middle East
           </a>
-          <a href="https://academicjobs.com/southamerica/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/southamerica/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             South America
           </a>
-          <a href="https://academicjobs.com/jobs/other-jobs/" className="text-orange-500 hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/other-jobs/" className="text-[#ff9345] hover:text-orange-600 text-lg font-semibold ">
             Other
           </a>
         </div>

@@ -11,7 +11,7 @@ const Header = () => {
             <div className=' flex justify-between gap-10'>
                 <a href="#" className="text-gray-900 hover:underline">Sign In</a>
                 <a href="#" className="text-gray-900 hover:underline">My Account</a>
-                <a href="#" className="text-orange-600 hover:underline font-bold">Recruiters</a>
+                <a href="#" className="text-[#ff9345] hover:underline font-bold">Recruiters</a>
             </div>
         </div>
     )
