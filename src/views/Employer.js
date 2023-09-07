@@ -5,18 +5,7 @@ import { Link } from 'react-router-dom'
 import JobDetail from './JobDetail'
 import SingleQA from './SingleQA'
 // import ReactPlayer from 'react-player/lazy'
-const countryMappings = {
-  australia: 'australia',
-  asia: 'asia',
-  africa: 'africa',
-  'new zealand': 'newzealand',
-  canada: 'canada',
-  europe: 'europe',
-  india: 'india',
-  global: 'global',
-  'united states': 'usa',
-  'united kingdom': 'uk'
-};
+import { countryMappings } from "../utils/data";
 const Employer = () => {
   const navigate = useNavigate()
   return (
