@@ -35,6 +35,6 @@ const JobList = () => {
     });
    // dispatch(setJob(data[0]))
   }
-  return <div className='overflow-y'>{content}</div>
+  return content
 }
 export default JobList

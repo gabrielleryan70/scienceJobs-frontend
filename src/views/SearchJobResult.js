@@ -15,17 +15,12 @@ const SearchJobResult = () => {
   const keyWordRef = useRef("")
   const locationRef = useRef("")
   let content
-
-
-    content = (
-      <div className='flex w-full flex-col font-bold text-xl'>
-             <div className='flex justify-between'>
-          <JobList />
-          <JobDetail />
-        </div>
-      </div>
-    )
-  
+  content = (
+    <div className='flex  w-full  justify-between'>
+      <div className='overflow-y w-[40%]'><JobList /></div>
+      <div className=' w-[60%]'><JobDetail /></div>
+    </div>
+  )
   return <div className='overflow-y w-full'>{content}</div>
 }
 export default SearchJobResult

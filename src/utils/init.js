@@ -5,6 +5,7 @@ localStorage.setItem('status', 'dangerTest')
 // if (localStorage.getItem('status') == null) {
 //   localStorage.setItem('status', 'newTest')
 // }
+//alert(process.env.NODE_ENV)
 if (!(localStorage.getItem('priority') >= 0)) {
   localStorage.setItem('priority', 9)
 }
