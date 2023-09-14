@@ -20,47 +20,50 @@ const Header = () => {
                         <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">选项 3</a></li>
                     </ul>
                 </div> */}
-                <div class="group inline-block relative">
+                <div className="dropdown dropdown-hover">
                     <a class="text-[#f4a10c] hover:underline font-bold" href="https://academicjobs.com"><object style={{ height: '20px' }} data="https://academicjobs.s3.amazonaws.com/icon/countryFlag/global.svg" type="image/svg+xml"><p>Global</p></object></a>
-                    <ul class="hidden absolute mt-2 bg-white border border-gray-300 p-2 space-y-2 group-hover:bloc">
-                        <li class="navbar__item ">
-                            <a id="a-global" class="navbar__link" href="https://academicjobs.com"><span>Global</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/africa"><span>Africa</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/asia"><span>Asia</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/australia"><span>Australia</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/canada"><span>Canada</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/europe"><span>Europe</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/india"><span>India</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/middleeast"><span>Middle East</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/newzealand"><span>New Zealand</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/southamerica"><span>South America</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/uk"><span>United Kingdom</span></a>
-                        </li>
-                        <li class="navbar__item ">
-                            <a class="navbar__link" href="https://academicjobs.com/usa"><span>USA</span></a>
-                        </li>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                      
+                            <li class="navbar__item ">
+                                <a id="a-global" class="navbar__link" href="https://academicjobs.com"><span>Global</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/africa"><span>Africa</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/asia"><span>Asia</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/australia"><span>Australia</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/canada"><span>Canada</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/europe"><span>Europe</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/india"><span>India</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/middleeast"><span>Middle East</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/newzealand"><span>New Zealand</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/southamerica"><span>South America</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/uk"><span>United Kingdom</span></a>
+                            </li>
+                            <li class="navbar__item ">
+                                <a class="navbar__link" href="https://academicjobs.com/usa"><span>USA</span></a>
+                            </li>
+                    
                     </ul>
                 </div>
+             
                 <a href="https://academicjobs.com/recruitment" className="text-[#f4a10c] hover:underline font-bold">Recruiters</a>
             </div>
         </div>
