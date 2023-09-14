@@ -43,6 +43,17 @@ export const apiSlice = createApi({
       },
       providesTags: ['employers'],
     }),
+    getEmployer: builder.query({
+      query: (id) => ({
+        url: `employer/${id}`,
+        mode: 'cors',
+      }),
+      transformResponse: (responseData) => {
+        console.log(responseData)
+        return responseData.data
+      },
+      providesTags: ['employer'],
+    }),
     getSingleQA: builder.query({
       query: () => ({
         url: `employer/3739`,
@@ -72,6 +83,7 @@ export const {
   useGetEmployersQuery,
   useGetJobsByEmployerQuery,
   useGetJobsQuery,
+  useGetEmployerQuery,
 } = apiSlice
 
 

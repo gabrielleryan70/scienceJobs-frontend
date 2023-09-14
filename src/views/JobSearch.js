@@ -45,13 +45,13 @@ const JobSearch = () => {
           <div className="flex items-center space-x-4">
             <input
               type="text"
-              className="w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500"
+              className="w-[41%] px-4 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500"
               placeholder="Keyword"
               ref={keyWordRef}
             />
             <input
               type="text"
-              className="w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500"
+              className="w-[41%] px-4 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500"
               placeholder="Location"
               ref={locationRef}
             />
