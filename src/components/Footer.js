@@ -7,7 +7,7 @@ const Footer = () => {
                 <ul>
                     <li className='text-[#f4a10c]'>Navigation</li>
                     <li><a class="footer-nav__link" href="$site_url/">Home</a></li>
-                    <li><a class="footer-nav__link" href="https://academicjobs.com/contact-us/">Contact Us</a></li>
+                    <li><Link to="/contactForm">Contact Us</Link></li>
                     <li><a class="footer-nav__link" href="https://academicjobs.com/about-academic-jobs/">About AJ</a></li>
                     <li><a href="https://academicjobs.com/university-partners">Our Partners</a></li>
                     <li><a href="https://academicjobs.com/sitemap">Site Map</a></li>
@@ -19,9 +19,8 @@ const Footer = () => {
                     <li className='text-[#f4a10c]'>Recruiters</li>
                     <li><a href="https://academicjobs.com/login/">Sign in</a></li>
                     <li><a class="footer-nav__link" href="https://academicjobs.com/post-a-job/">Post a Job</a></li>
-                    <li><Link to="/termsConditions">Terms & Conditions</Link></li>                    
+                    <li><Link to="/termsConditions">Terms & Conditions</Link></li>
                     <li><Link to="/diversayStatement">Diversity Statement</Link></li>
-                   
                 </ul>
             </div>
             <div>

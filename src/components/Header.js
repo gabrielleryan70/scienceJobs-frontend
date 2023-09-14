@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className=" w-full  flex justify-between items-center ">
@@ -8,8 +9,8 @@ const Header = () => {
                         className='w-20'
                         src="https://academicjobs.s3.amazonaws.com/icon/ACjobsIcon-min.png" alt="" />
                 </a>
-
-                <a href="https://academicjobs.com/jobs/" className="text-gray-900 hover:underline">Job Search</a>
+                <Link to="/jobSearch" className="text-gray-900 hover:underline">Job Search</Link>
+                {/* <a href="https://academicjobs.com/jobs/" className="text-gray-900 hover:underline">Job Search</a> */}
                 <a href="https://academicjobs.com/find-employers/" className="text-gray-900 hover:underline">Find Employers</a>
                 <a href="https://academicjobs.com/career-advice/" className="text-gray-900 hover:underline">Career Advice</a>
             </div>

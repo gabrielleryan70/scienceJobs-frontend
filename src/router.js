@@ -8,6 +8,7 @@ import {
 import Home from "./views/Home"
 import TermsConditions from "./views/TermsConditions"
 import JobSearch from "./views/JobSearch"
+import ContactForm from "./views/ContactForm"
 import DiversayStatement from "./views/DiversayStatement"
 
 import Australia from "./views/Australia"
@@ -26,6 +27,7 @@ const AppRouter = () => {
           <Route path='/termsConditions' element={<TermsConditions />} />
           <Route path='/jobSearch' element={<JobSearch />} />
           <Route path='/diversayStatement' element={<DiversayStatement />} />
+          <Route path='/contactForm' element={<ContactForm />} />
           
           <Route exact path='/australia' element={<Australia />} />
         </Route>
