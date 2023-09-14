@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div class="bg-white text-black font-open-sans grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -19,6 +20,7 @@ const Footer = () => {
                     <li><a href="https://academicjobs.com/login/">Sign in</a></li>
                     <li><a class="footer-nav__link" href="https://academicjobs.com/post-a-job/">Post a Job</a></li>
                     <li><a href="$site_url/terms-of-use/">Terms & Conditions</a></li>
+                    <Link to="/termsConditions">Terms & Conditions</Link>
                     <li><a href="/diversity-statement/">Diversity Statement</a></li>
                 </ul>
             </div>

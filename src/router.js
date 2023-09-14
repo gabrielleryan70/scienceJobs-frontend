@@ -6,7 +6,7 @@ import {
     Navigate,
 } from "react-router-dom";
 import Home from "./views/Home"
-
+import TermsConditions from "./views/TermsConditions"
 import SearchJobResult from "./views/SearchJobResult"
 import Australia from "./views/Australia"
 import Layout from './components/Layout'
@@ -21,7 +21,9 @@ const AppRouter = () => {
               element={<Navigate to='/home' replace />}
             />
             <Route exact path='/home' element={<Home />} />
+            <Route path='/termsConditions' element={<TermsConditions />} />
             <Route path='/searchJobResult' element={<SearchJobResult />} />
+
             <Route exact path='/australia' element={<Australia />} />
           </Route>
         </Routes>
