@@ -1,25 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react'
 const Header = () => {
     return (
-        <div className="  w-full  flex justify-between items-center ">
+        <div className=" w-full  flex justify-between items-center ">
             <div className=" flex justify-between items-center gap-10">
-                <img
-                    className='w-20'
-                    src="https://academicjobs.s3.amazonaws.com/icon/ACjobsIcon-min.png" alt="" />
+                <a href="https://sciencejobs.com.au/" className="">
+                    <img
+                        className='w-20'
+                        src="https://academicjobs.s3.amazonaws.com/icon/ACjobsIcon-min.png" alt="" />
+                </a>
+
                 <a href="https://academicjobs.com/jobs/" className="text-gray-900 hover:underline">Job Search</a>
                 <a href="https://academicjobs.com/find-employers/" className="text-gray-900 hover:underline">Find Employers</a>
                 <a href="https://academicjobs.com/career-advice/" className="text-gray-900 hover:underline">Career Advice</a>
             </div>
             <div className=' flex justify-between gap-10'>
-                {/* <a href="#" className="text-[#f4a10c] hover:underline font-bold">Global</a> */}
-                {/* <div className="group inline-block relative">
-                    <a href="#" className="text-[#f4a10c] hover:underline font-bold">Global</a>
-                    <ul className="hidden absolute mt-2 bg-white border border-gray-300 p-2 space-y-2 group-hover:block">
-                        <li><a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">选项 1</a></li>
-                        <li><a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">选项 2</a></li>
-                        <li><a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">选项 3</a></li>
-                    </ul>
-                </div> */}
                 <div className="dropdown dropdown-hover">
                     <a className="text-[#f4a10c] hover:underline font-bold" href="https://academicjobs.com"><object style={{ height: '20px' }} data="https://academicjobs.s3.amazonaws.com/icon/countryFlag/global.svg" type="image/svg+xml"><p>Global</p></object></a>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">

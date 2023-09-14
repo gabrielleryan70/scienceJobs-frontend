@@ -129,239 +129,239 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="cate-group section23 bg-gray-700">
+      <div className="cate-group section23 ">
         <div className="widget__text-block">
           <div className="faculty-container grid grid-cols-4 gap-10 px-2 py-2">
             <div className="column">
               <ul className="myUL">
-                <li><a href="https://academicjobs.com/categories/administration-support/" className="text-orange-500">Administration & Support</a></li>
+                <li><a href="https://academicjobs.com/categories/administration-support/" className='text-[#f4a10c]'>Administration & Support</a></li>
                 <ul className="innerUL">
-                  <li><a href="https://academicjobs.com/categories/human-resources/" className="text-white">Human Resources</a></li>
-                  <li><a href="https://academicjobs.com/categories/administration-support/" className="text-white">Admin Other Specialities</a></li>
+                  <li><a href="https://academicjobs.com/categories/human-resources/" >Human Resources</a></li>
+                  <li><a href="https://academicjobs.com/categories/administration-support/" >Admin Other Specialities</a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/agriculture/" class="text-orange-500">Agriculture </a></li>
+                <li><a href="https://academicjobs.com/categories/agriculture/" className='text-[#f4a10c]'>Agriculture </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/agriculture/agricultural-economics-agribusiness/" class="text-white">Agricultural Economics and Agribusiness</a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/agriculture-extension/" class="text-white">Agricultural Extension </a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/animal-science/" class="text-white">Animal Science</a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/entomology/" class="text-white">Entomology </a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/environmental-science-ecology-forestry/" class="text-white">Environmental Science, Ecology, and Forestry </a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/agriculture-food-science/" class="text-white">Food Science </a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/horticulture-landscape-architecture/" class="text-white">Horticulture and Landscape Architecture </a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/agriculture-plant-soil-science/" class="text-white">Plant and Soil Science </a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/veterinary-science/" class="text-white">Veterinary Medicine </a></li>
-                  <li><a href="https://academicjobs.com/categories/agriculture/" class="text-white">Other Agriculture Specialities</a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/agricultural-economics-agribusiness/" className=''>Agricultural Economics and Agribusiness</a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/agriculture-extension/" className=''>Agricultural Extension </a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/animal-science/" className=''>Animal Science</a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/entomology/" className=''>Entomology </a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/environmental-science-ecology-forestry/" className=''>Environmental Science, Ecology, and Forestry </a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/agriculture-food-science/" className=''>Food Science </a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/horticulture-landscape-architecture/" className=''>Horticulture and Landscape Architecture </a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/agriculture-plant-soil-science/" className=''>Plant and Soil Science </a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/veterinary-science/" className=''>Veterinary Medicine </a></li>
+                  <li><a href="https://academicjobs.com/categories/agriculture/" className=''>Other Agriculture Specialities</a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/business/" class="text-orange-500">Business </a></li>
+                <li><a href="https://academicjobs.com/categories/business/" className='text-[#f4a10c]'>Business </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/business/accounting/" class="text-white">Business Accounting </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/administration/" class="text-white">Business Administration </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/law/" class="text-white">Business Law </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/entrepreneurship/" class="text-white">Entrepreneurship </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/finance/" class="text-white">Finance </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/hotel-restaurant-management/" class="text-white">Hotel and Restaurant Management </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/human-resources/" class="text-white">Business Human Resources </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/information-systems-technology/" class="text-white">Information Systems and Technology </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/international-business/" class="text-white">International Business </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/business-management/" class="text-white">Business Management </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/marketing-sales/" class="text-white">Marketing and Sales </a></li>
-                  <li><a href="https://academicjobs.com/categories/business/business-other-specialty/" class="text-white">Other Business Specialities </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/accounting/" className=''>Business Accounting </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/administration/" className=''>Business Administration </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/law/" className=''>Business Law </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/entrepreneurship/" className=''>Entrepreneurship </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/finance/" className=''>Finance </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/hotel-restaurant-management/" className=''>Hotel and Restaurant Management </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/human-resources/" className=''>Business Human Resources </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/information-systems-technology/" className=''>Information Systems and Technology </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/international-business/" className=''>International Business </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/business-management/" className=''>Business Management </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/marketing-sales/" className=''>Marketing and Sales </a></li>
+                  <li><a href="https://academicjobs.com/categories/business/business-other-specialty/" className=''>Other Business Specialities </a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/communications/" class="text-orange-500">Communications </a></li>
+                <li><a href="https://academicjobs.com/categories/communications/" className='text-[#f4a10c]'>Communications </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/communications/broadcast-journalism/" class="text-white">Broadcast Journalism </a></li>
-                  <li><a href="https://academicjobs.com/categories/communications/journalism/" class="text-white">Journalism </a></li>
-                  <li><a href="https://academicjobs.com/categories/communications/media-communication-studies/" class="text-white">Media and Communication Studies </a></li>
-                  <li><a href="https://academicjobs.com/categories/communications/public-relations-advertising/" class="text-white">Public Relations and Advertising </a></li>
-                  <li><a href="https://academicjobs.com/categories/communications/faculty-communications-radio-tv-film/" class="text-white">Radio, Television, and Film </a></li>
-                  <li><a href="https://academicjobs.com/categories/communications/speech-public-speaking/" class="text-white">Speech and Public Speaking </a></li>
-                  <li><a href="https://academicjobs.com/categories/communications/communications-other-specialty/" class="text-white">Other Communications Specialities </a></li>
-                </ul>
-              </ul>
-            </div>
-            <div class="column">
-              <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/faculty-executive/" class="text-orange-500">Executive Jobs </a></li>
-                <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/executive-president-chancellor/" class="text-white">President & Chancellor </a></li>
-                  <li><a href="https://academicjobs.com/categories/faculty-executive/" class="text-white">Executive In Faculty</a></li>
-                </ul>
-              </ul>
-              <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/engineering/" class="text-orange-500">Engineering </a></li>
-                <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/engineering/aerospace/" class="text-white">Aerospace Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/engineering-agricultural/" class="text-white">Agricultural Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/biological-engineering/" class="text-white">Biological Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/chemical-engineering/" class="text-white">Chemical Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/civil-environmental-engineering/" class="text-white">Civil and Environmental Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/computer-engineering/" class="text-white">Computer Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/electrical-engineering/" class="text-white">Electrical Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/industrial-manufacturing-engineering/" class="text-white">Industrial and Manufacturing Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/mechanical-engineering/" class="text-white">Mechanical Engineering </a></li>
-                  <li><a href="https://academicjobs.com/categories/engineering/engineering-other-specialty/" class="text-white">Other Engineering Specialities</a></li>
-                </ul>
-              </ul>
-              <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/education/" class="text-orange-500">Education </a></li>
-                <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/education/adult-distance-education/" class="text-white">Adult and Distance Education </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/counselor-education/" class="text-white">Counselor Education </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/curriculum-instruction/" class="text-white">Curriculum and Instruction </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/admin-leadership-education/" class="text-white">Educational Administration and Leadership </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/educational-psychology/" class="text-white">Educational Psychology </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/higher-education/" class="text-white">Higher Education </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/education-instructional-technology-design/" class="text-white">Instructional Technology and Design </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/reading-literacy/" class="text-white">Reading and Literacy </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/school-psychology/" class="text-white">School Psychology </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/special-education/" class="text-white">Special Education </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/teacher-education/" class="text-white">Teacher Education </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/teacher-education-early-childhood/" class="text-white">Teacher Education - Early Childhood </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/teacher-education-elementary/" class="text-white">Teacher Education - Elementary </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/teacher-education-middle/" class="text-white">Teacher Education - Middle School </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/teacher-education-secondary/" class="text-white">Teacher Education - Secondary Education </a></li>
-                  <li><a href="https://academicjobs.com/categories/education/education-other-specialty/" class="text-white">Other Education Specialities</a></li>
-                </ul>
-              </ul>
-              <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/fine-applied-arts/" class="text-orange-500">Fine and Applied Arts </a></li>
-                <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/architecture/" class="text-white">Architecture </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/art/" class="text-white">Art </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/art-history/" class="text-white">Art History </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/dance/" class="text-white">Dance </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/digital-arts/" class="text-white">Digital Arts </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/fashion-textile-design/" class="text-white">Fashion and Textile Design </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/graphic-design/" class="text-white">Graphic Design </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/industrial-design/" class="text-white">Industrial Design </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/interior-design/" class="text-white">Interior Design </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/music/" class="text-white">Music </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/photography/" class="text-white">Photography </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/theatre/" class="text-white">Theatre </a></li>
-                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/fine-applied-arts-other-specialities/" class="text-white">Other Fine and Applied Arts Specialities </a></li>
+                  <li><a href="https://academicjobs.com/categories/communications/broadcast-journalism/" className=''>Broadcast Journalism </a></li>
+                  <li><a href="https://academicjobs.com/categories/communications/journalism/" className=''>Journalism </a></li>
+                  <li><a href="https://academicjobs.com/categories/communications/media-communication-studies/" className=''>Media and Communication Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/communications/public-relations-advertising/" className=''>Public Relations and Advertising </a></li>
+                  <li><a href="https://academicjobs.com/categories/communications/faculty-communications-radio-tv-film/" className=''>Radio, Television, and Film </a></li>
+                  <li><a href="https://academicjobs.com/categories/communications/speech-public-speaking/" className=''>Speech and Public Speaking </a></li>
+                  <li><a href="https://academicjobs.com/categories/communications/communications-other-specialty/" className=''>Other Communications Specialities </a></li>
                 </ul>
               </ul>
             </div>
             <div class="column">
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/health-sciences/" class="text-orange-500">Health Sciences </a></li>
+                <li><a href="https://academicjobs.com/categories/faculty-executive/" className='text-[#f4a10c]'>Executive Jobs </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/health-sciences/athletic-training/" class="text-white">Athletic Training </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/communication-sciences-disorders/" class="text-white">Communication Sciences and Disorders </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/health-education-promotion/" class="text-white">Health Education and Promotion </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/health-information-technology/" class="text-white">Health Information Technology </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/healthcare-administration/" class="text-white">Healthcare Administration </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/kinesiology-exercise-science-phys-ed/" class="text-white">Kinesiology, Exercise Science, and Phys Ed </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/nursing/" class="text-white">Nursing </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/nutrition-dietetics/" class="text-white">Nutrition and Dietetics </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/occupational-therapy/" class="text-white">Occupational Therapy </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/physical-therapy/" class="text-white">Physical Therapy </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/public-environmental-health/" class="text-white">Public and Environmental Health </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/recreation-leisure-studies/" class="text-white">Recreation and Leisure Studies </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/sport-management/" class="text-white">Sport Management </a></li>
-                  <li><a href="https://academicjobs.com/categories/health-sciences/health-sciences-other-specialities/" class="text-white">Other Health Sciences Specialities</a></li>
+                  <li><a href="https://academicjobs.com/categories/executive-president-chancellor/" className=''>President & Chancellor </a></li>
+                  <li><a href="https://academicjobs.com/categories/faculty-executive/" className=''>Executive In Faculty</a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/law-legal-studies/" class="text-orange-500">Law and Legal Studies </a></li>
+                <li><a href="https://academicjobs.com/categories/engineering/" className='text-[#f4a10c]'>Engineering </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/law-legal-studies/" class="text-white">Law and Legal Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/aerospace/" className=''>Aerospace Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/engineering-agricultural/" className=''>Agricultural Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/biological-engineering/" className=''>Biological Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/chemical-engineering/" className=''>Chemical Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/civil-environmental-engineering/" className=''>Civil and Environmental Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/computer-engineering/" className=''>Computer Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/electrical-engineering/" className=''>Electrical Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/industrial-manufacturing-engineering/" className=''>Industrial and Manufacturing Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/mechanical-engineering/" className=''>Mechanical Engineering </a></li>
+                  <li><a href="https://academicjobs.com/categories/engineering/engineering-other-specialty/" className=''>Other Engineering Specialities</a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/liberal-arts/" class="text-orange-500">Liberal Arts </a></li>
+                <li><a href="https://academicjobs.com/categories/education/" className='text-[#f4a10c]'>Education </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/american-studies/" class="text-white">American Studies </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/anthropology/" class="text-white">Anthropology </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/criminal-justice/" class="text-white">Criminal Justice </a></li>
-                  <li><a href="https://academicjobs.com/categories/jobs/economics" class="text-white">Economics </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/english-literature/" class="text-white">English and Literature </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/english-as-second-language/" class="text-white">English as a Second Language </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/ethnic-multicultural-studies/" class="text-white">Ethnic and Multicultural Studies </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/foreign-languages-literatures/" class="text-white">Foreign Languages and Literatures </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/history/" class="text-white">History </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/human-development-family-studies/" class="text-white">Human Development and Family Studies </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/humanities/" class="text-white">Humanities </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/linguistics/" class="text-white">Linguistics </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/philosophy/" class="text-white">Philosophy </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/political-science/" class="text-white">Political Science </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/psychology/" class="text-white">Psychology </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/public-administration-policy/" class="text-white">Public Administration and Policy </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/religious-studies-theology/" class="text-white">Religious Studies and Theology </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/security-studies/" class="text-white">Security Studies </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/sign-language/" class="text-white">Sign Language </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/social-work/" class="text-white">Social Work </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/sociology/" class="text-white">Sociology </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/urban-studies-planning/" class="text-white">Urban Studies and Planning </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/women-s-gender-studies/" class="text-white">Women's and Gender Studies </a></li>
-                  <li><a href="https://academicjobs.com/categories/liberal-arts/liberal-arts-other-specialities/" class="text-white">Other Liberal Arts Specialities</a></li>
+                  <li><a href="https://academicjobs.com/categories/education/adult-distance-education/" className=''>Adult and Distance Education </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/counselor-education/" className=''>Counselor Education </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/curriculum-instruction/" className=''>Curriculum and Instruction </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/admin-leadership-education/" className=''>Educational Administration and Leadership </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/educational-psychology/" className=''>Educational Psychology </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/higher-education/" className=''>Higher Education </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/education-instructional-technology-design/" className=''>Instructional Technology and Design </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/reading-literacy/" className=''>Reading and Literacy </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/school-psychology/" className=''>School Psychology </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/special-education/" className=''>Special Education </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/teacher-education/" className=''>Teacher Education </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/teacher-education-early-childhood/" className=''>Teacher Education - Early Childhood </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/teacher-education-elementary/" className=''>Teacher Education - Elementary </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/teacher-education-middle/" className=''>Teacher Education - Middle School </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/teacher-education-secondary/" className=''>Teacher Education - Secondary Education </a></li>
+                  <li><a href="https://academicjobs.com/categories/education/education-other-specialty/" className=''>Other Education Specialities</a></li>
+                </ul>
+              </ul>
+              <ul class="myUL">
+                <li><a href="https://academicjobs.com/categories/fine-applied-arts/" className='text-[#f4a10c]'>Fine and Applied Arts </a></li>
+                <ul class="innerUL">
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/architecture/" className=''>Architecture </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/art/" className=''>Art </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/art-history/" className=''>Art History </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/dance/" className=''>Dance </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/digital-arts/" className=''>Digital Arts </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/fashion-textile-design/" className=''>Fashion and Textile Design </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/graphic-design/" className=''>Graphic Design </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/industrial-design/" className=''>Industrial Design </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/interior-design/" className=''>Interior Design </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/music/" className=''>Music </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/photography/" className=''>Photography </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/theatre/" className=''>Theatre </a></li>
+                  <li><a href="https://academicjobs.com/categories/fine-applied-arts/fine-applied-arts-other-specialities/" className=''>Other Fine and Applied Arts Specialities </a></li>
+                </ul>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="myUL">
+                <li><a href="https://academicjobs.com/categories/health-sciences/" className='text-[#f4a10c]'>Health Sciences </a></li>
+                <ul class="innerUL">
+                  <li><a href="https://academicjobs.com/categories/health-sciences/athletic-training/" className=''>Athletic Training </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/communication-sciences-disorders/" className=''>Communication Sciences and Disorders </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/health-education-promotion/" className=''>Health Education and Promotion </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/health-information-technology/" className=''>Health Information Technology </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/healthcare-administration/" className=''>Healthcare Administration </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/kinesiology-exercise-science-phys-ed/" className=''>Kinesiology, Exercise Science, and Phys Ed </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/nursing/" className=''>Nursing </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/nutrition-dietetics/" className=''>Nutrition and Dietetics </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/occupational-therapy/" className=''>Occupational Therapy </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/physical-therapy/" className=''>Physical Therapy </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/public-environmental-health/" className=''>Public and Environmental Health </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/recreation-leisure-studies/" className=''>Recreation and Leisure Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/sport-management/" className=''>Sport Management </a></li>
+                  <li><a href="https://academicjobs.com/categories/health-sciences/health-sciences-other-specialities/" className=''>Other Health Sciences Specialities</a></li>
+                </ul>
+              </ul>
+              <ul class="myUL">
+                <li><a href="https://academicjobs.com/categories/law-legal-studies/" className='text-[#f4a10c]'>Law and Legal Studies </a></li>
+                <ul class="innerUL">
+                  <li><a href="https://academicjobs.com/categories/law-legal-studies/" className=''>Law and Legal Studies </a></li>
+                </ul>
+              </ul>
+              <ul class="myUL">
+                <li><a href="https://academicjobs.com/categories/liberal-arts/" className='text-[#f4a10c]'>Liberal Arts </a></li>
+                <ul class="innerUL">
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/american-studies/" className=''>American Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/anthropology/" className=''>Anthropology </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/criminal-justice/" className=''>Criminal Justice </a></li>
+                  <li><a href="https://academicjobs.com/categories/jobs/economics" className=''>Economics </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/english-literature/" className=''>English and Literature </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/english-as-second-language/" className=''>English as a Second Language </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/ethnic-multicultural-studies/" className=''>Ethnic and Multicultural Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/foreign-languages-literatures/" className=''>Foreign Languages and Literatures </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/history/" className=''>History </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/human-development-family-studies/" className=''>Human Development and Family Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/humanities/" className=''>Humanities </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/linguistics/" className=''>Linguistics </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/philosophy/" className=''>Philosophy </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/political-science/" className=''>Political Science </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/psychology/" className=''>Psychology </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/public-administration-policy/" className=''>Public Administration and Policy </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/religious-studies-theology/" className=''>Religious Studies and Theology </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/security-studies/" className=''>Security Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/sign-language/" className=''>Sign Language </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/social-work/" className=''>Social Work </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/sociology/" className=''>Sociology </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/urban-studies-planning/" className=''>Urban Studies and Planning </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/women-s-gender-studies/" className=''>Women's and Gender Studies </a></li>
+                  <li><a href="https://academicjobs.com/categories/liberal-arts/liberal-arts-other-specialities/" className=''>Other Liberal Arts Specialities</a></li>
                 </ul>
               </ul>
             </div>
 
             <div class="column">
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/industry/" class="text-orange-500">Industry Jobs </a></li>
+                <li><a href="https://academicjobs.com/categories/industry/" className='text-[#f4a10c]'>Industry Jobs </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/industry/" class="text-white">Industry</a></li>
+                  <li><a href="https://academicjobs.com/categories/industry/" className=''>Industry</a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/medicine/" class="text-orange-500">Medicine </a></li>
+                <li><a href="https://academicjobs.com/categories/medicine/" className='text-[#f4a10c]'>Medicine </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/medicine/chiropractic/" class="text-white">Chiropractic </a></li>
-                  <li><a href="https://academicjobs.com/categories/medicine/dentistry/" class="text-white">Dentistry </a></li>
-                  <li><a href="https://academicjobs.com/categories/medicine/medical-research/" class="text-white">Medical Research </a></li>
-                  <li><a href="https://academicjobs.com/categories/medicine/pharmacy-pharmacology/" class="text-white">Pharmacy and Pharmacology </a></li>
-                  <li><a href="https://academicjobs.com/categories/medicine/physician-assistant/" class="text-white">Physician Assistants </a></li>
-                  <li><a href="https://academicjobs.com/categories/medicine/physicians/" class="text-white">Physicians </a></li>
-                  <li><a href="https://academicjobs.com/categories/medicine/medicine-other-specialities/" class="text-white">Other Medicine Specialities</a></li>
+                  <li><a href="https://academicjobs.com/categories/medicine/chiropractic/" className=''>Chiropractic </a></li>
+                  <li><a href="https://academicjobs.com/categories/medicine/dentistry/" className=''>Dentistry </a></li>
+                  <li><a href="https://academicjobs.com/categories/medicine/medical-research/" className=''>Medical Research </a></li>
+                  <li><a href="https://academicjobs.com/categories/medicine/pharmacy-pharmacology/" className=''>Pharmacy and Pharmacology </a></li>
+                  <li><a href="https://academicjobs.com/categories/medicine/physician-assistant/" className=''>Physician Assistants </a></li>
+                  <li><a href="https://academicjobs.com/categories/medicine/physicians/" className=''>Physicians </a></li>
+                  <li><a href="https://academicjobs.com/categories/medicine/medicine-other-specialities/" className=''>Other Medicine Specialities</a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/science/" class="text-orange-500">Science </a></li>
+                <li><a href="https://academicjobs.com/categories/science/" className='text-[#f4a10c]'>Science </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/science/astronomy-astrophysics/" class="text-white">Astronomy and Astrophysics </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/biochemistry-molecular-biology/" class="text-white">Biochemistry and Molecular Biology </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/biology/" class="text-white">Biology </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/chemistry/" class="text-white">Chemistry </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/computer-science/" class="text-white">Computer Science </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/geography/" class="text-white">Geography </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/geology-earth-sciences-oceanography/" class="text-white">Geology, Earth Sciences, and Oceanography </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/library-information-science/" class="text-white">Library and Information Science </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/mathematics/" class="text-white">Mathematics </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/physics/" class="text-white">Physics </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/statistics/" class="text-white">Statistics </a></li>
-                  <li><a href="https://academicjobs.com/categories/science/science-other-speciality/" class="text-white">Other Science Specialities </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/astronomy-astrophysics/" className=''>Astronomy and Astrophysics </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/biochemistry-molecular-biology/" className=''>Biochemistry and Molecular Biology </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/biology/" className=''>Biology </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/chemistry/" className=''>Chemistry </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/computer-science/" className=''>Computer Science </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/geography/" className=''>Geography </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/geology-earth-sciences-oceanography/" className=''>Geology, Earth Sciences, and Oceanography </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/library-information-science/" className=''>Library and Information Science </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/mathematics/" className=''>Mathematics </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/physics/" className=''>Physics </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/statistics/" className=''>Statistics </a></li>
+                  <li><a href="https://academicjobs.com/categories/science/science-other-speciality/" className=''>Other Science Specialities </a></li>
                 </ul>
               </ul>
               <ul class="myUL">
-                <li><a href="https://academicjobs.com/categories/technical-career/" class="text-orange-500">Technical and Career </a></li>
+                <li><a href="https://academicjobs.com/categories/technical-career/" className='text-[#f4a10c]'>Technical and Career </a></li>
                 <ul class="innerUL">
-                  <li><a href="https://academicjobs.com/categories/technical-career/automotive-technology/" class="text-white">Automotive Technology </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/aviation/" class="text-white">Aviation </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/construction-building-trades/" class="text-white">Construction and Building Trades </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/cosmetology/" class="text-white">Cosmetology </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/culinary-arts/" class="text-white">Culinary Arts </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/dental-hygienists-assistants/" class="text-white">Dental Hygienists and Assistants </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/diagnostic-imaging-radiography/" class="text-white">Diagnostic Imaging and Radiography </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/electronics/" class="text-white">Electronics </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/fire-science/" class="text-white">Fire Science </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/massage-therapy/" class="text-white">Massage Therapy </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/medical-assistants/" class="text-white">Medical Assistants </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/medical-billing-coding/" class="text-white">Medical Billing and Coding </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/paramedics-emts/" class="text-white">Paramedics and EMTs </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/respiratory-care/" class="text-white">Respiratory Care </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/surgical-technology/" class="text-white">Surgical Technology </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/telecommunications/" class="text-white">Telecommunications </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/tourism/" class="text-white">Tourism </a></li>
-                  <li><a href="https://academicjobs.com/categories/technical-career/" class="text-white">Other Technical and Career Faculty </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/automotive-technology/" className=''>Automotive Technology </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/aviation/" className=''>Aviation </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/construction-building-trades/" className=''>Construction and Building Trades </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/cosmetology/" className=''>Cosmetology </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/culinary-arts/" className=''>Culinary Arts </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/dental-hygienists-assistants/" className=''>Dental Hygienists and Assistants </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/diagnostic-imaging-radiography/" className=''>Diagnostic Imaging and Radiography </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/electronics/" className=''>Electronics </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/fire-science/" className=''>Fire Science </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/massage-therapy/" className=''>Massage Therapy </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/medical-assistants/" className=''>Medical Assistants </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/medical-billing-coding/" className=''>Medical Billing and Coding </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/paramedics-emts/" className=''>Paramedics and EMTs </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/respiratory-care/" className=''>Respiratory Care </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/surgical-technology/" className=''>Surgical Technology </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/telecommunications/" className=''>Telecommunications </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/tourism/" className=''>Tourism </a></li>
+                  <li><a href="https://academicjobs.com/categories/technical-career/" className=''>Other Technical and Career Faculty </a></li>
                 </ul>
               </ul>
             </div>
