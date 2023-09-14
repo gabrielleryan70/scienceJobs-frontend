@@ -22,17 +22,8 @@ body {
     height: 100vh;
     /* overflow: hidden; */
 }
-::-webkit-scrollbar {
-    display: none;
-}
-.columns {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100vh;
-    /* account for borders */
-    width: 100vw;
-}
+
+
 .dark {
     @apply bg-gray-800 text-red-600
 }

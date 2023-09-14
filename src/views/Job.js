@@ -20,15 +20,18 @@ const Job = ({job}) => {
     content = <p>Loading...</p>
   } else if (isSuccess) {
     console.log(data)
-    const { logo, company_name, website, custom_fields, location } = data
+    console.log(job)
+    const { logo, company_name, website, custom_fields } = data
+    const { title, location, activation_date } = job
+
     content = (
       <article className="media bg-white border border-gray-300 p-4 mb-4 rounded-lg shadow-lg" data-id="59972">
         <div className="flex items-center mb-4">
           <div className="w-20 h-20 mr-4">
-            <img src={logo} alt="Catholic Education Services – Diocese of Cairns" className="w-full h-full object-cover" />
+            <img src={logo} alt="Catholic Education Services – Diocese of Cairns" className="w-full h-full object-contain" />
           </div>
           <div className="flex-1">
-            <a href="https://teachingjobs.com.au/job/59972/teacher-design-industrial-technologies-mount-st-bernard-college-herberton/" className="block text-blue-500 text-lg font-bold leading-tight hover:underline">Teacher - Design &amp; Industrial Technologies - Mount St Bernard College, Herberton</a>
+            <a href="https://teachingjobs.com.au/job/59972/teacher-design-industrial-technologies-mount-st-bernard-college-herberton/" className="block text-blue-500 text-lg font-bold leading-tight hover:underline">{title}</a>
             <div className="hidden-xs mt-2">
               <span className="inline-block bg-yellow-500 text-white px-2 py-1 text-xs font-bold rounded-full mr-2">Featured</span>
             </div>
@@ -37,10 +40,10 @@ const Job = ({job}) => {
 
         <div className="flex justify-between items-center">
           <div className="text-sm text-gray-600">
-            <div className="mb-1">Catholic Education Services – Diocese of Cairns</div>
-            <div className="text-gray-700">Mount St Bernard College - Herberton, QLD | Far North Queensland Tableland Region</div>
+            <div className="mb-1">{company_name}</div>
+            <div className="text-gray-700">{location}</div>
           </div>
-          <div className="text-gray-700 text-sm">11 Sep, 2023</div>
+          <div className="text-gray-700 text-sm">{activation_date}</div>
         </div>
       </article>
 

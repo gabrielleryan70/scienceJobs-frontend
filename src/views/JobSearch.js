@@ -29,8 +29,8 @@ const JobSearch = () => {
     if (data.length > 0) {
       console.log(data)
       content = (
-        <div className='flex  w-full  justify-between'>
-          <div className='overflow-y w-[40%]' ><JobList data={data} /></div>
+        <div className='flex  w-full h-screen  justify-between'>
+          <div className='overflow-y-auto w-[40%] h-screen' ><JobList data={data} /></div>
           <div className=' w-[60%]'><JobDetail /></div>
         </div>
       )
