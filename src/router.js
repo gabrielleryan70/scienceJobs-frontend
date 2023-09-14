@@ -1,33 +1,36 @@
 import React from "react"
 import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Navigate,
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
 } from "react-router-dom";
 import Home from "./views/Home"
 import TermsConditions from "./views/TermsConditions"
-import SearchJobResult from "./views/SearchJobResult"
+import JobSearch from "./views/JobSearch"
+import DiversayStatement from "./views/DiversayStatement"
+
 import Australia from "./views/Australia"
 import Layout from './components/Layout'
 const AppRouter = () => {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route
-              exact
-              path='/'
-              element={<Navigate to='/home' replace />}
-            />
-            <Route exact path='/home' element={<Home />} />
-            <Route path='/termsConditions' element={<TermsConditions />} />
-            <Route path='/searchJobResult' element={<SearchJobResult />} />
-
-            <Route exact path='/australia' element={<Australia />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route
+            exact
+            path='/'
+            element={<Navigate to='/home' replace />}
+          />
+          <Route exact path='/home' element={<Home />} />
+          <Route path='/termsConditions' element={<TermsConditions />} />
+          <Route path='/jobSearch' element={<JobSearch />} />
+          <Route path='/diversayStatement' element={<DiversayStatement />} />
+          
+          <Route exact path='/australia' element={<Australia />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 export default AppRouter

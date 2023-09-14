@@ -11,14 +11,14 @@ const Home = () => {
   const keyWordRef = useRef("")
   const dispatch = useDispatch()
   const handleFormSubmit = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     const a = {}
     if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
     if (sessionStorage.getItem("location")) {
       a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
       console.log(a)
       dispatch(setSearchJobCriteria(a))
-      navigate(`/searchJobResult`)
+      navigate(`/JobSearch`)
     } else {
       const fetchLocation1 = async () => {
         try {
@@ -36,7 +36,7 @@ const Home = () => {
           a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
           console.log(a)
           dispatch(setSearchJobCriteria(a))
-          navigate(`/searchJobResult`)
+          navigate(`/JobSearch`)
         })
         .catch(error => {
           console.log('Error:', error);
@@ -71,7 +71,7 @@ const Home = () => {
                 const a = {}
                 if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
                 dispatch(setSearchJobCriteria(a))
-                navigate(`/searchJobResult`)
+                navigate(`/JobSearch`)
               }}
             >Or Search Globally</h2>
           </form >

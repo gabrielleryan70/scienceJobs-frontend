@@ -19,9 +19,9 @@ const Footer = () => {
                     <li className='text-[#f4a10c]'>Recruiters</li>
                     <li><a href="https://academicjobs.com/login/">Sign in</a></li>
                     <li><a class="footer-nav__link" href="https://academicjobs.com/post-a-job/">Post a Job</a></li>
-                    <li><a href="$site_url/terms-of-use/">Terms & Conditions</a></li>
-                    <Link to="/termsConditions">Terms & Conditions</Link>
-                    <li><a href="/diversity-statement/">Diversity Statement</a></li>
+                    <li><Link to="/termsConditions">Terms & Conditions</Link></li>                    
+                    <li><Link to="/diversayStatement">Diversity Statement</Link></li>
+                   
                 </ul>
             </div>
             <div>

@@ -10,10 +10,10 @@ import {
   useGetJobsQuery,
 } from '../store/apiSlice'
 import {
-  useGetSearchJobResultQuery,
+  useGetJobSearchQuery,
 } from '../store/apiSlice'
 import { setSearchJobCriteria } from '../store/postsSlice';
-const SearchJobResult = () => {
+const JobSearch = () => {
   const dispatch = useDispatch()
   const keyWordRef = useRef("")
   const locationRef = useRef("")
@@ -22,7 +22,6 @@ const SearchJobResult = () => {
     isLoading,
     isSuccess,
   } = useGetJobsQuery(useSelector((state) => state.posts.searchJobCriteria))
-
   let content
   if (isLoading) {
     content = <p>Loading...</p>
@@ -38,7 +37,6 @@ const SearchJobResult = () => {
     } else {
       content = <p>Found No Job, Pls use other keyword.</p>
     }
-
   }
   return <div className='overflow-y w-full'>
     <div className="bg-gray-100 py-10">
@@ -73,9 +71,7 @@ const SearchJobResult = () => {
         </div>
       </div>
     </div>
-    
     {content}
-  
   </div>
 }
-export default SearchJobResult
+export default JobSearch
