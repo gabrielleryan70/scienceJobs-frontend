@@ -20,8 +20,8 @@ const Header = () => {
             <div className=' flex justify-between gap-10'>
                 <div className="dropdown dropdown-hover">
                     <a className="text-[#f4a10c] hover:underline font-bold" href="https://academicjobs.com">
-                        <object style={{ height: '20px' }} data="https://academicjobs.s3.amazonaws.com/icon/countryFlag/global.svg" type="image/svg+xml">
-                            <p>Global</p>
+                        <object style={{ height: '20px' }} data={`https://academicjobs.s3.amazonaws.com/icon/countryFlag/${region}.svg`} type="image/svg+xml">
+                            <p>{region}</p>
                         </object>
                     </a>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">

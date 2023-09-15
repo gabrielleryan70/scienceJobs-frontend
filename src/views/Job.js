@@ -30,7 +30,7 @@ const Job = ({ job }) => {
        dispatch(setEmployer(data));
     }
     const { logo, company_name, website, custom_fields } = data
-    const { title, location, activation_date } = job
+    const { title, location, activation_date, how_to_apply } = job
 
     content = (
       <article className="media bg-white border border-gray-300 p-4 mb-4 rounded-lg shadow-lg" data-id="59972"
@@ -44,7 +44,7 @@ const Job = ({ job }) => {
             <img src={logo} alt="Catholic Education Services – Diocese of Cairns" className="w-full h-full object-contain" />
           </div>
           <div className="flex-1">
-            <a href="https://teachingjobs.com.au/job/59972/teacher-design-industrial-technologies-mount-st-bernard-college-herberton/" className="block text-blue-500 text-lg font-bold leading-tight hover:underline">{title}</a>
+            <a href={how_to_apply} className="block text-blue-500 text-lg font-bold leading-tight hover:underline">{title}</a>
             <div className="hidden-xs mt-2">
               <span className="inline-block bg-yellow-500 text-white px-2 py-1 text-xs font-bold rounded-full mr-2">Featured</span>
             </div>
