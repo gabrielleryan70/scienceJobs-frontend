@@ -34,7 +34,7 @@ const JobSearch = () => {
       content = (
         <div className='flex  w-full h-screen  justify-between'>
           <div className='overflow-y-auto w-[40%] h-screen' ><JobList data={data} /></div>
-          <div className=' w-[60%]'><JobDetail /></div>
+          <div className=' overflow-y-auto w-[60%] h-screen'><JobDetail /></div>
         </div>
       )
     } else {
