@@ -23,6 +23,14 @@ const JobList = ({ data }) => {
     );
   });
 
-  return content
+  return <div className='overflow-y w-full'>
+
+    {content}
+    < button type="button" className="load-more bg-white py-2 px-4 border border-gray-300 rounded-md text-black hover:bg-gray-100">
+      Load more
+    </button >
+  </div>
+
+
 }
 export default JobList
