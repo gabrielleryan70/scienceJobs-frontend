@@ -1,6 +1,7 @@
 import { createSlice, nanoid, createAsyncThunk } from '@reduxjs/toolkit'
 
 const initialState = {
+  employer: {},
   job: { description:''},
   status: 'dangerTest',
   id: 13498,
@@ -30,6 +31,9 @@ const postsSlice = createSlice({
     setJob(state, action) {
       state.job = action.payload
     },
+    setEmployer(state, action) {
+      state.employer = action.payload
+    },
     setTtsSpeed(state, action) {
       state.ttsSpeed = action.payload
     },
@@ -45,6 +49,7 @@ const postsSlice = createSlice({
 })
 
 export const {
+  setEmployer,
   setSearchJobCriteria,
   setJob,
   setStatus,

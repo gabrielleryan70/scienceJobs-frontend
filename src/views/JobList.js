@@ -6,11 +6,7 @@ import Job from './Job'
 const JobList = ({ data }) => {
   console.log('JobList')
   const dispatch = useDispatch()
-
  
-  useEffect(() => {
-    if(data)   dispatch(setJob(data[0]));
-  }, [data, dispatch]);
   let content
   console.log(data)
   content = data.map((job, index) => {

@@ -19,7 +19,7 @@ const JobList = ({ data }) => {
     return (
       <div
         className={`font-bold ${index % 2 === 0 ? 'bg-gray-200' : 'bg-white'}`}
-        onClick={() => dispatch(setJob(job))}
+        //onClick={() => dispatch(setJob(job))}
         key={id}
       >
         <Job job={job } />

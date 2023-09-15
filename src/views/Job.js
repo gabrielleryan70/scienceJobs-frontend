@@ -2,10 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import { setJob, setId, setEmployer } from '../store/postsSlice'
 import {
   useGetEmployerQuery,
 } from '../store/apiSlice'
-const Job = ({job}) => {
+const Job = ({ job }) => {
+  const dispatch = useDispatch()
   const { employer_id, title } = job
   console.log(employer_id)
   const {
@@ -14,6 +16,10 @@ const Job = ({job}) => {
     isSuccess,
   } = useGetEmployerQuery(employer_id)
 
+
+  useEffect(() => {
+    if (data) dispatch(setEmployer(data));
+  }, [data, dispatch]);
   let content 
 
   if (isLoading) {
@@ -25,7 +31,12 @@ const Job = ({job}) => {
     const { title, location, activation_date } = job
 
     content = (
-      <article className="media bg-white border border-gray-300 p-4 mb-4 rounded-lg shadow-lg" data-id="59972">
+      <article className="media bg-white border border-gray-300 p-4 mb-4 rounded-lg shadow-lg" data-id="59972"
+        onClick={() => {
+          dispatch(setEmployer(data))
+          dispatch(setJob(job))
+        }}
+      >
         <div className="flex items-center mb-4">
           <div className="w-20 h-20 mr-4">
             <img src={logo} alt="Catholic Education Services – Diocese of Cairns" className="w-full h-full object-contain" />
