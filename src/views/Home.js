@@ -91,41 +91,41 @@ const Home = () => {
           <p class="font-semibold"></p>
         </div>
       </div>
-      <div className="bg-white flex flex-col px-[10rem] ">
+      <div className="bg-white flex flex-col  ">
         <h2 className="text-xl text-[#f4a10c] font-extrabold">REGION HOME PAGES</h2>
-        <div className="grid grid-cols-4 gap-20 py-10 text-left">
-          <a href="https://academicjobs.com/usa/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold  ">
+        <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4">
+          <a href="https://academicjobs.com/usa/" className="\    ">
             United States
           </a>
-          <a href="https://academicjobs.com/australia/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/australia/" className="\   ">
             Australia
           </a>
-          <a href="https://academicjobs.com/uk/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/uk/" className="\   ">
             United Kingdom
           </a>
-          <a href="https://academicjobs.com/canada/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/canada/" className="\   ">
             Canada
           </a>
-          <a href="https://academicjobs.com/newzealand/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">New Zealand
+          <a href="https://academicjobs.com/newzealand/" className="\   ">New Zealand
           </a>
-          <a href="https://academicjobs.com/europe/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/europe/" className="\   ">
             Europe
           </a>
-          <a href="https://academicjobs.com/india/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/india/" className="\   ">
             India
           </a>
-          <a href="https://academicjobs.com/asia/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/asia/" className="\   ">
             Asia
           </a>
-          <a href="https://academicjobs.com/africa/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">Africa
+          <a href="https://academicjobs.com/africa/" className="\   ">Africa
           </a>
-          <a href="https://academicjobs.com/middleeast/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/middleeast/" className="\   ">
             Middle East
           </a>
-          <a href="https://academicjobs.com/southamerica/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/southamerica/" className="\   ">
             South America
           </a>
-          <a href="https://academicjobs.com/jobs/other-jobs/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/other-jobs/" className="\   ">
             Other
           </a>
         </div>
@@ -133,41 +133,41 @@ const Home = () => {
 
 
 
-      <div className="bg-white flex flex-col px-[10rem] ">
-        <h2 className="text-xl text-[#f4a10c] font-extrabold">JOB CATEGORY TYPES</h2>
-        <div className="grid grid-cols-4 gap-20 py-10 text-left">
-          <a href="https://academicjobs.com/jobs/lecturer-jobs/" className=" hover:text-orange-600 text-lg font-semibold  ">
+      <div className="bg-white flex flex-col  ">
+        <h2 className="text-xl text-[#f4a10c] font-extrabold mt-10">JOB CATEGORY TYPES</h2>
+        <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4">
+          <a href="https://academicjobs.com/jobs/lecturer-jobs/" className="    ">
             Lecturer
           </a>
-          <a href="https://academicjobs.com/jobs/professor-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/professor-jobs/" className="   ">
             Professor
           </a>
-          <a href="https://academicjobs.com/jobs/researcher-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/researcher-jobs/" className="   ">
             Researcher
           </a>
-          <a href="https://academicjobs.com/jobs/lab-technician-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/lab-technician-jobs/" className="   ">
             Lab Technician
           </a>
-          <a href="https://academicjobs.com/jobs/assistant-professor-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">Assistant Professor
+          <a href="https://academicjobs.com/jobs/assistant-professor-jobs/" className="   ">Assistant Professor
           </a>
-          <a href="https://academicjobs.com/jobs/associate-professor-jobs/" className="] hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/associate-professor-jobs/" className="]   ">
             Associate Professor
           </a>
-          <a href="https://academicjobs.com/jobs/postdoctoral-researcher-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/postdoctoral-researcher-jobs/" className="   ">
             Postdoctoral Researcher
           </a>
-          <a href="https://academicjobs.com/jobs/postdoctoral-fellow-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/postdoctoral-fellow-jobs/" className="   ">
             Postdoctoral Fellow
           </a>
-          <a href="https://academicjobs.com/jobs/visiting-global-academic-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">Visiting Global Academic
+          <a href="https://academicjobs.com/jobs/visiting-global-academic-jobs/" className="   ">Visiting Global Academic
           </a>
-          <a href="https://academicjobs.com/jobs/visiting-scholar-Fellow-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">Visiting Scholar or Fellow
+          <a href="https://academicjobs.com/jobs/visiting-scholar-Fellow-jobs/" className="   ">Visiting Scholar or Fellow
           </a>
 
-          <a href="https://academicjobs.com/jobs/tutor-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/tutor-jobs/" className="   ">
             Tutor
           </a>
-          <a href="https://academicjobs.com/jobs/other-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
+          <a href="https://academicjobs.com/jobs/other-jobs/" className="   ">
             Other
           </a>
 
@@ -176,7 +176,7 @@ const Home = () => {
 
       <div className="cate-group section23 ">
         <div className="widget__text-block">
-          <div className="faculty-container grid grid-cols-4 gap-10 py-10">
+          <div className="faculty-container grid grid-cols-4 gap-4 py-10">
             <div className="column">
               <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/administration-support/" className='text-[#f4a10c]'>Administration & Support</a></li>
