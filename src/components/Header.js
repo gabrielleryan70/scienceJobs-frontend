@@ -14,7 +14,9 @@ const Header = () => {
                 </a>
                 <Link to="/jobSearch" className="text-gray-900 hover:underline">Job Search</Link>
                 {/* <a href="https://academicjobs.com/jobs/" className="text-gray-900 hover:underline">Job Search</a> */}
-                <a href="https://academicjobs.com/find-employers/" className="text-gray-900 hover:underline">Find Employers</a>
+                <Link to="/findEmployers" className="text-gray-900 hover:underline">Find Employers</Link>
+
+              
                 <a href="https://academicjobs.com/career-advice/" className="text-gray-900 hover:underline">Career Advice</a>
             </div>
             <div className=' flex justify-between gap-10'>

@@ -26,9 +26,9 @@ const Job = ({ job }) => {
   } else if (isSuccess) {
     console.log(data)
     console.log(job)
-    // if (employer_id == myId) {
-    //    dispatch(setEmployer(data));
-    // }
+    if (employer_id == myId) {
+       dispatch(setEmployer(data));
+    }
     const { logo, company_name, website, custom_fields } = data
     const { title, location, activation_date, how_to_apply } = job
 
