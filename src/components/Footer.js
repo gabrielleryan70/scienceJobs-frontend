@@ -37,7 +37,7 @@ const Footer = () => {
             <div>
                 <ul>
                     <li className='text-[#f4a10c]'>Socials</li>
-                    <li><a href="https://academicjobs.com/career-advice">Career Advice</a></li>
+                    {/* <li><a href="https://academicjobs.com/career-advice">Career Advice</a></li> */}
                     <li><a className="footer-nav__link" href="https://www.facebook.com/profile.php?id=100088232015128" target="_blank" rel="noopener">Facebook</a></li>
                     <li><a className="footer-nav__link" href="https://www.instagram.com/AcademicJobs22/" target="_blank" rel="noopener">Instagram</a></li>
                     <li><a className="footer-nav__link" href="https://twitter.com/AcademicJobs22" target="_blank" rel="noopener">Twitter</a></li>

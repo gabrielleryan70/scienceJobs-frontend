@@ -118,7 +118,7 @@ const JobSearch = () => {
         </div>
       )
     } else {
-      content = <p className='text-center text-2xl font-extrabold py-10'>Found No Job, Pls use other keyword.</p>
+      content = <p className='text-center text-2xl font-bold py-10'>Found No Job, Pls use other keyword.</p>
     }
   }
   const handleFormSubmit = (event) => {
@@ -149,7 +149,7 @@ const JobSearch = () => {
               defaultValue={searchJobCriteria.l}
             />
             <button
-              className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
+              className="bg-[#f4a10c] hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
               type="submit"
             >
               FIND JOBS

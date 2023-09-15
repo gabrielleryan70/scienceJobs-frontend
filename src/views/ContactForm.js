@@ -99,7 +99,7 @@ const ContactForm = () => {
                     <div className="text-right mt-6">
                         <button
                             type="submit"
-                            className="px-6 py-2 rounded-full bg-transparent border-2 border-orange-500 text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out"
+                            className="px-6 py-2 rounded-full bg-transparent border-2 border-orange-500 text-orange-500 font-semibold hover:bg-[#f4a10c] hover:text-white transition duration-300 ease-in-out"
                         >
                             Send
                         </button>

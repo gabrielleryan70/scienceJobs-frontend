@@ -77,7 +77,7 @@ const SingleQA = () => {
                   ref={locationRef}
                 />
                 <button
-                  className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
+                  className="bg-[#f4a10c] hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
                   onClick={() => {
                     const a = {}
                     if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()

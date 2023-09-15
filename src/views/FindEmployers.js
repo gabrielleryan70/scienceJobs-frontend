@@ -10,7 +10,7 @@ const FindEmployers = () => {
   return (
     <div className='w-full h-full'>
       <div className="region-container bg-white">
-        <h2 className="text-2xl font-bold py-6 px-28 bg-orange-500 text-black">UNITED STATES</h2>
+        <h2 className="text-2xl font-bold py-6 px-28 bg-[#f4a10c] text-black">UNITED STATES</h2>
         <div className="container1a grid grid-cols-4 gap-10 p-7">
           <ul>
             <Link to="https://academicjobs.com/jobs/california-jobs/">California</Link>

@@ -33,7 +33,7 @@ const JobDetail = () => {
             </div>
 
             <div className="flex items-center">
-              <a className="px-4 py-2 bg-orange-500 text-white font-bold rounded-full" href={how_to_apply} data-toggle="modal" data-target="#apply-modal" data-href={how_to_apply} data-title="Apply to Specialist Teacher at Townsville Catholic Education Office" rel="nofollow">
+              <a className="px-4 py-2 bg-[#f4a10c] text-white font-bold rounded-full" href={how_to_apply} data-toggle="modal" data-target="#apply-modal" data-href={how_to_apply} data-title="Apply to Specialist Teacher at Townsville Catholic Education Office" rel="nofollow">
                 Apply Now
               </a>
 

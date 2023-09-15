@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-
 import { setJob, setId, setEmployer } from '../store/postsSlice'
 import {
   useGetEmployerQuery,
@@ -16,14 +15,10 @@ const Job = ({ job }) => {
     isLoading,
     isSuccess,
   } = useGetEmployerQuery(employer_id)
-  const myId= useSelector((state) => state.posts.job.employer_id)
-
- 
-  let content 
-
+  const myId = useSelector((state) => state.posts.job.employer_id)
+  let content
   if (isLoading) {
     content = (
-
       <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
         <div class="flex items-center w-full space-x-2">
           <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
@@ -57,18 +52,15 @@ const Job = ({ job }) => {
         </div>
         <span class="sr-only">Loading...</span>
       </div>
-
-
     )
   } else if (isSuccess) {
     console.log(data)
     console.log(job)
     if (employer_id == myId) {
-       dispatch(setEmployer(data));
+      dispatch(setEmployer(data));
     }
     const { logo, company_name, website, custom_fields } = data
     const { title, location, activation_date, how_to_apply } = job
-
     content = (
       <article className="media bg-white border border-gray-300 p-4 mb-4 rounded-lg shadow-lg" data-id="59972"
         onClick={() => {
@@ -83,11 +75,10 @@ const Job = ({ job }) => {
           <div className="flex-1">
             <a href="#" className="block text-blue-500 text-lg font-bold leading-tight hover:underline">{title}</a>
             <div className="hidden-xs mt-2">
-              <span className="inline-block bg-yellow-500 text-white px-2 py-1 text-xs font-bold rounded-full mr-2">Featured</span>
+              <span className="inline-block bg-[#f4a10c] text-white px-2 py-1 text-xs font-bold rounded-full mr-2">Featured</span>
             </div>
           </div>
         </div>
-
         <div className="flex justify-between items-center">
           <div className="text-sm text-gray-600">
             <div className="mb-1">{company_name}</div>
@@ -96,7 +87,6 @@ const Job = ({ job }) => {
           <div className="text-gray-700 text-sm">{activation_date}</div>
         </div>
       </article>
-
     )
   }
   return <div className='overflow-y w-full'>{content}</div>

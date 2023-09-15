@@ -28,7 +28,7 @@ const AppRouter = () => {
           <Route exact path='/home' element={<Home />} />
           <Route path='/termsConditions' element={<TermsConditions />} />
           <Route path='/jobSearch' element={<JobSearch />} />
-          <Route path='/jobSearch1/:name' element={<JobSearch1 />} />
+          <Route path='/jobSearch1/:name?' element={<JobSearch1 />} />
           <Route path='/diversayStatement' element={<DiversayStatement />} />
           <Route path='/contactForm' element={<ContactForm />} />
           <Route path='/findEmployers' element={<FindEmployers />} />

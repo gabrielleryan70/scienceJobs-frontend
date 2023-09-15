@@ -93,7 +93,7 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-white flex flex-col  ">
-        <h2 className="text-xl text-[#f4a10c] font-extrabold">REGION HOME PAGES</h2>
+        <h2 className="text-xl text-[#f4a10c] font-bold">REGION HOME PAGES</h2>
         <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4">
           <a href="https://academicjobs.com/usa/" className="\    ">
             United States
@@ -135,7 +135,7 @@ const Home = () => {
 
 
       <div className="bg-white flex flex-col  ">
-        <h2 className="text-xl text-[#f4a10c] font-extrabold mt-10">JOB CATEGORY TYPES</h2>
+        <h2 className="text-xl text-[#f4a10c] font-bold mt-10">JOB CATEGORY TYPES</h2>
         <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4">
           <a href="https://academicjobs.com/jobs/lecturer-jobs/" className="    ">
             Lecturer

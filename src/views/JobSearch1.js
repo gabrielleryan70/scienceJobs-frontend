@@ -23,7 +23,7 @@ const JobSearch1 = () => {
     data,
     isLoading,
     isSuccess,
-  } = useGetJobsQuery({ q: name })
+  } = useGetJobsQuery({ q: name ||'job' })
   useEffect(() => {
     if (data) dispatch(setJob(data[0]));
   }, [data, dispatch]);
@@ -119,7 +119,7 @@ const JobSearch1 = () => {
         </div>
       )
     } else {
-      content = <p className='text-center text-2xl font-extrabold py-10'>Found No Job, Pls use other keyword.</p>
+      content = <p className='text-center text-2xl font-bold py-10'>Found No Job, Pls use other keyword.</p>
     }
   }
   const handleFormSubmit = (event) => {
@@ -149,7 +149,7 @@ const JobSearch1 = () => {
               ref={locationRef}
             />
             <button
-              className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
+              className="bg-[#f4a10c] hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
               type="submit"
             >
               FIND JOBS
