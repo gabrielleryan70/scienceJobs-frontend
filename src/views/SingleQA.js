@@ -22,7 +22,7 @@ const SingleQA = () => {
     isSuccess,
   } = useGetSingleQAQuery(id)
   if (isLoading) {
-    content = <p>Loading...</p>
+    content = <p> </p>
   } else if (isSuccess) {
     console.log(data)
     const { logo, company_name, website, custom_fields, location } = data
@@ -78,12 +78,12 @@ const SingleQA = () => {
                 />
                 <button
                   className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
-                  onClick={() => { 
+                  onClick={() => {
                     const a = {}
-                    if(keyWordRef.current.value.trim()) a.q=keyWordRef.current.value.trim()
+                    if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
                     if (locationRef.current.value.trim()) a.l = locationRef.current.value.trim()
-                 console.log(a)
-                   dispatch(setSearchJobCriteria(a))
+                    console.log(a)
+                    dispatch(setSearchJobCriteria(a))
                   }}
                 >
                   FIND JOBS

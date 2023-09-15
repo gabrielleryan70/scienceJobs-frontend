@@ -5,7 +5,7 @@ import 'react-quill/dist/quill.snow.css';
 import {
   useGetEmployerQuery,
 } from '../store/apiSlice'
-const Job = ({job}) => {
+const Job = ({ job }) => {
   const { employer_id, title } = job
   console.log(employer_id)
   const {
@@ -13,11 +13,9 @@ const Job = ({job}) => {
     isLoading,
     isSuccess,
   } = useGetEmployerQuery(employer_id)
-
-  let content 
-
+  let content
   if (isLoading) {
-    content = <p>Loading...</p>
+    content = <p> </p>
   } else if (isSuccess) {
     console.log(data)
     const { logo, company_name, website, custom_fields, location } = data

@@ -14,7 +14,7 @@ import {
 } from '../store/apiSlice'
 import { setJob, setSearchJobCriteria } from '../store/postsSlice';
 const JobSearch = () => {
-  const searchJobCriteria=useSelector((state) => state.posts.searchJobCriteria)
+  const searchJobCriteria = useSelector((state) => state.posts.searchJobCriteria)
   const dispatch = useDispatch()
   const keyWordRef = useRef("")
   const locationRef = useRef("")
@@ -28,7 +28,7 @@ const JobSearch = () => {
   }, [data, dispatch]);
   let content
   if (isLoading) {
-    content = <p>Loading...</p>
+    content = <p> </p>
   } else if (isSuccess) {
     if (data.length > 0) {
       console.log(data)
@@ -39,7 +39,7 @@ const JobSearch = () => {
         </div>
       )
     } else {
-      content = <p>Found No Job, Pls use other keyword.</p>
+      content = <p className='text-center text-2xl font-extrabold py-10'>Found No Job, Pls use other keyword.</p>
     }
   }
   const handleFormSubmit = (event) => {
