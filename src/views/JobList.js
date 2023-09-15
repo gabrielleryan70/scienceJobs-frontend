@@ -22,9 +22,9 @@ const JobList = ({ data }) => {
           </div>
         );
       })}
-      < button type="button" className="load-more bg-white py-2 px-4 border border-gray-300 rounded-md text-black hover:bg-gray-100">
+      {/* < button type="button" className="load-more bg-white py-2 px-4 border border-gray-300 rounded-md text-black hover:bg-gray-100">
         Load more
-      </button >
+      </button > */}
     </div>
   return  content 
 }
