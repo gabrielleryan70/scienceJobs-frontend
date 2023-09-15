@@ -14,6 +14,7 @@ import {
 } from '../store/apiSlice'
 import { setJob, setSearchJobCriteria } from '../store/postsSlice';
 const JobSearch = () => {
+  const searchJobCriteria=useSelector((state) => state.posts.searchJobCriteria)
   const dispatch = useDispatch()
   const keyWordRef = useRef("")
   const locationRef = useRef("")
@@ -21,7 +22,7 @@ const JobSearch = () => {
     data,
     isLoading,
     isSuccess,
-  } = useGetJobsQuery(useSelector((state) => state.posts.searchJobCriteria))
+  } = useGetJobsQuery(searchJobCriteria)
   useEffect(() => {
     if (data) dispatch(setJob(data[0]));
   }, [data, dispatch]);
@@ -59,12 +60,14 @@ const JobSearch = () => {
               className="w-[41%] px-4 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500"
               placeholder="Keyword"
               ref={keyWordRef}
+              defaultValue={searchJobCriteria.q}
             />
             <input
               type="text"
               className="w-[41%] px-4 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500"
               placeholder="Location"
               ref={locationRef}
+              defaultValue={searchJobCriteria.l}
             />
             <button
               className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"
