@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux'
+
 const Header = () => {
+    const region = useSelector((state) => state.posts.region)
     return (
         <div className=" w-full  flex justify-between items-center ">
             <div className=" flex justify-between items-center gap-10">
@@ -16,7 +19,11 @@ const Header = () => {
             </div>
             <div className=' flex justify-between gap-10'>
                 <div className="dropdown dropdown-hover">
-                    <a className="text-[#f4a10c] hover:underline font-bold" href="https://academicjobs.com"><object style={{ height: '20px' }} data="https://academicjobs.s3.amazonaws.com/icon/countryFlag/global.svg" type="image/svg+xml"><p>Global</p></object></a>
+                    <a className="text-[#f4a10c] hover:underline font-bold" href="https://academicjobs.com">
+                        <object style={{ height: '20px' }} data="https://academicjobs.s3.amazonaws.com/icon/countryFlag/global.svg" type="image/svg+xml">
+                            <p>Global</p>
+                        </object>
+                    </a>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                       
                             <li className="navbar__item ">

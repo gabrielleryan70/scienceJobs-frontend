@@ -7,7 +7,8 @@ const initialState = {
   id: 13498,
   darkMode: 'light',
   searchText: '',
-  searchJobCriteria: { employer_id: 3739 },
+  searchJobCriteria: {  },
+  region: 'Global'
   }
 const postsSlice = createSlice({
   name: 'status',
@@ -21,6 +22,9 @@ const postsSlice = createSlice({
     },
     setId(state, action) {
       state.id = action.payload
+    },
+    setRegion(state, action) {
+      state.region = action.payload
     },
     setSearchText(state, action) {
       state.searchText = action.payload
@@ -49,6 +53,7 @@ const postsSlice = createSlice({
 })
 
 export const {
+  setRegion,
   setEmployer,
   setSearchJobCriteria,
   setJob,

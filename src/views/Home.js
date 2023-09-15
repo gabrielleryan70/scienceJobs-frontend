@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import JobDetail from './JobDetail'
 import SingleQA from './SingleQA'
-import { setSearchJobCriteria } from '../store/postsSlice';
+import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
 const Home = () => {
   const navigate = useNavigate()
@@ -31,8 +31,8 @@ const Home = () => {
       }
       fetchLocation1()
         .then(country => {
-          //ar newUrl = `https://academicjobs.com/`
           sessionStorage.setItem("location", countryMappings[country.toLowerCase()]);
+          dispatch(setRegion(countryMappings[country.toLowerCase()]))
           a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
           console.log(a)
           dispatch(setSearchJobCriteria(a))
