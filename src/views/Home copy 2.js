@@ -80,20 +80,19 @@ const Home = () => {
         </div>
       </div>
       <div class="blurb text-center py-8">
-        <h1 class="text-[#f4a10c] font-bold text-2xl md:text-3xl lg:text-4xl">ALL YOUR BEST UNIVERSITY JOBS</h1>
+        <h1 class="text-black font-bold text-2xl md:text-3xl lg:text-4xl">ALL YOUR BEST UNIVERSITY JOBS</h1>
         <div class="newLine mb-4">
-          <p class="font-semibold"></p>
-          <p class="font-semibold"></p>
-
+          <p class="font-semibold">Find the best academic positions</p>
+          <p class="font-semibold">and administrative jobs in higher ed.</p>
         </div>
         <div class="newLine">
-          <p class="font-semibold">Find the best academic positions and administrative jobs in higher ed. Search for academic jobs, college careers and faculty positions online.</p>
-          <p class="font-semibold"></p>
+          <p class="font-semibold">Search for academic jobs, college careers</p>
+          <p class="font-semibold">and faculty positions online.</p>
         </div>
       </div>
       <div className="bg-white flex flex-col px-[10rem] ">
         <h2 className="text-xl text-[#f4a10c] font-extrabold">REGION HOME PAGES</h2>
-        <div className="grid grid-cols-4 gap-20 py-10 text-left">
+        <div className="grid grid-cols-4 gap-4 py-5 text-left">
           <a href="https://academicjobs.com/usa/" className="text-[#f4a10c] hover:text-orange-600 text-lg font-semibold  ">
             United States
           </a>
@@ -130,53 +129,9 @@ const Home = () => {
           </a>
         </div>
       </div>
-
-
-
-      <div className="bg-white flex flex-col px-[10rem] ">
-        <h2 className="text-xl text-[#f4a10c] font-extrabold">JOB CATEGORY TYPES</h2>
-        <div className="grid grid-cols-4 gap-20 py-10 text-left">
-          <a href="https://academicjobs.com/jobs/lecturer-jobs/" className=" hover:text-orange-600 text-lg font-semibold  ">
-            Lecturer
-          </a>
-          <a href="https://academicjobs.com/jobs/professor-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
-            Professor
-          </a>
-          <a href="https://academicjobs.com/jobs/researcher-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
-            Researcher
-          </a>
-          <a href="https://academicjobs.com/jobs/lab-technician-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
-            Lab Technician
-          </a>
-          <a href="https://academicjobs.com/jobs/assistant-professor-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">Assistant Professor
-          </a>
-          <a href="https://academicjobs.com/jobs/associate-professor-jobs/" className="] hover:text-orange-600 text-lg font-semibold ">
-            Associate Professor
-          </a>
-          <a href="https://academicjobs.com/jobs/postdoctoral-researcher-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
-            Postdoctoral Researcher
-          </a>
-          <a href="https://academicjobs.com/jobs/postdoctoral-fellow-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
-            Postdoctoral Fellow
-          </a>
-          <a href="https://academicjobs.com/jobs/visiting-global-academic-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">Visiting Global Academic
-          </a>
-          <a href="https://academicjobs.com/jobs/visiting-scholar-Fellow-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">Visiting Scholar or Fellow
-          </a>
-
-          <a href="https://academicjobs.com/jobs/tutor-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
-            Tutor
-          </a>
-          <a href="https://academicjobs.com/jobs/other-jobs/" className=" hover:text-orange-600 text-lg font-semibold ">
-            Other
-          </a>
-
-        </div>
-      </div>
-
       <div className="cate-group section23 ">
         <div className="widget__text-block">
-          <div className="faculty-container grid grid-cols-4 gap-10 py-10">
+          <div className="faculty-container grid grid-cols-4 gap-10 px-2 py-2">
             <div className="column">
               <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/administration-support/" className='text-[#f4a10c]'>Administration & Support</a></li>
