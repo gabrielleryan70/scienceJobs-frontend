@@ -26,6 +26,6 @@ const JobList = ({ data }) => {
         Load more
       </button >
     </div>
-  return { content }
+  return  content 
 }
 export default JobList
