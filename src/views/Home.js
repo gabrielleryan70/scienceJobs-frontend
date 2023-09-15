@@ -32,6 +32,7 @@ const Home = () => {
       fetchLocation1()
         .then(country => {
           sessionStorage.setItem("location", countryMappings[country.toLowerCase()]);
+          //alert(countryMappings[country.toLowerCase()])
           dispatch(setRegion(countryMappings[country.toLowerCase()]))
           a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
           console.log(a)
