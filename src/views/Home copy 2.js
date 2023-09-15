@@ -79,15 +79,15 @@ const Home = () => {
           </form >
         </div>
       </div>
-      <div class="blurb text-center py-8">
-        <h1 class="text-black font-bold text-2xl md:text-3xl lg:text-4xl">ALL YOUR BEST UNIVERSITY JOBS</h1>
-        <div class="newLine mb-4">
-          <p class="font-semibold">Find the best academic positions</p>
-          <p class="font-semibold">and administrative jobs in higher ed.</p>
+      <div className="blurb text-center py-8">
+        <h1 className="text-black font-bold text-2xl md:text-3xl lg:text-4xl">ALL YOUR BEST UNIVERSITY JOBS</h1>
+        <div className="newLine mb-4">
+          <p className="font-semibold">Find the best academic positions</p>
+          <p className="font-semibold">and administrative jobs in higher ed.</p>
         </div>
-        <div class="newLine">
-          <p class="font-semibold">Search for academic jobs, college careers</p>
-          <p class="font-semibold">and faculty positions online.</p>
+        <div className="newLine">
+          <p className="font-semibold">Search for academic jobs, college careers</p>
+          <p className="font-semibold">and faculty positions online.</p>
         </div>
       </div>
       <div className="bg-white flex flex-col px-[10rem] ">
@@ -140,9 +140,9 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/administration-support/" >Admin Other Specialities</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/agriculture/" className='text-[#f4a10c]'>Agriculture </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/agriculture/agricultural-economics-agribusiness/" className=''>Agricultural Economics and Agribusiness</a></li>
                   <li><a href="https://academicjobs.com/categories/agriculture/agriculture-extension/" className=''>Agricultural Extension </a></li>
                   <li><a href="https://academicjobs.com/categories/agriculture/animal-science/" className=''>Animal Science</a></li>
@@ -155,9 +155,9 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/agriculture/" className=''>Other Agriculture Specialities</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/business/" className='text-[#f4a10c]'>Business </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/business/accounting/" className=''>Business Accounting </a></li>
                   <li><a href="https://academicjobs.com/categories/business/administration/" className=''>Business Administration </a></li>
                   <li><a href="https://academicjobs.com/categories/business/law/" className=''>Business Law </a></li>
@@ -172,9 +172,9 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/business/business-other-specialty/" className=''>Other Business Specialities </a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/communications/" className='text-[#f4a10c]'>Communications </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/communications/broadcast-journalism/" className=''>Broadcast Journalism </a></li>
                   <li><a href="https://academicjobs.com/categories/communications/journalism/" className=''>Journalism </a></li>
                   <li><a href="https://academicjobs.com/categories/communications/media-communication-studies/" className=''>Media and Communication Studies </a></li>
@@ -185,17 +185,17 @@ const Home = () => {
                 </ul>
               </ul>
             </div>
-            <div class="column">
-              <ul class="myUL">
+            <div className="column">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/faculty-executive/" className='text-[#f4a10c]'>Executive Jobs </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/executive-president-chancellor/" className=''>President & Chancellor </a></li>
                   <li><a href="https://academicjobs.com/categories/faculty-executive/" className=''>Executive In Faculty</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/engineering/" className='text-[#f4a10c]'>Engineering </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/engineering/aerospace/" className=''>Aerospace Engineering </a></li>
                   <li><a href="https://academicjobs.com/categories/engineering/engineering-agricultural/" className=''>Agricultural Engineering </a></li>
                   <li><a href="https://academicjobs.com/categories/engineering/biological-engineering/" className=''>Biological Engineering </a></li>
@@ -208,9 +208,9 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/engineering/engineering-other-specialty/" className=''>Other Engineering Specialities</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/education/" className='text-[#f4a10c]'>Education </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/education/adult-distance-education/" className=''>Adult and Distance Education </a></li>
                   <li><a href="https://academicjobs.com/categories/education/counselor-education/" className=''>Counselor Education </a></li>
                   <li><a href="https://academicjobs.com/categories/education/curriculum-instruction/" className=''>Curriculum and Instruction </a></li>
@@ -229,9 +229,9 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/education/education-other-specialty/" className=''>Other Education Specialities</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/fine-applied-arts/" className='text-[#f4a10c]'>Fine and Applied Arts </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/fine-applied-arts/architecture/" className=''>Architecture </a></li>
                   <li><a href="https://academicjobs.com/categories/fine-applied-arts/art/" className=''>Art </a></li>
                   <li><a href="https://academicjobs.com/categories/fine-applied-arts/art-history/" className=''>Art History </a></li>
@@ -248,10 +248,10 @@ const Home = () => {
                 </ul>
               </ul>
             </div>
-            <div class="column">
-              <ul class="myUL">
+            <div className="column">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/health-sciences/" className='text-[#f4a10c]'>Health Sciences </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/health-sciences/athletic-training/" className=''>Athletic Training </a></li>
                   <li><a href="https://academicjobs.com/categories/health-sciences/communication-sciences-disorders/" className=''>Communication Sciences and Disorders </a></li>
                   <li><a href="https://academicjobs.com/categories/health-sciences/health-education-promotion/" className=''>Health Education and Promotion </a></li>
@@ -268,15 +268,15 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/health-sciences/health-sciences-other-specialities/" className=''>Other Health Sciences Specialities</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/law-legal-studies/" className='text-[#f4a10c]'>Law and Legal Studies </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/law-legal-studies/" className=''>Law and Legal Studies </a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/liberal-arts/" className='text-[#f4a10c]'>Liberal Arts </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/liberal-arts/american-studies/" className=''>American Studies </a></li>
                   <li><a href="https://academicjobs.com/categories/liberal-arts/anthropology/" className=''>Anthropology </a></li>
                   <li><a href="https://academicjobs.com/categories/liberal-arts/criminal-justice/" className=''>Criminal Justice </a></li>
@@ -305,16 +305,16 @@ const Home = () => {
               </ul>
             </div>
 
-            <div class="column">
-              <ul class="myUL">
+            <div className="column">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/industry/" className='text-[#f4a10c]'>Industry Jobs </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/industry/" className=''>Industry</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/medicine/" className='text-[#f4a10c]'>Medicine </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/medicine/chiropractic/" className=''>Chiropractic </a></li>
                   <li><a href="https://academicjobs.com/categories/medicine/dentistry/" className=''>Dentistry </a></li>
                   <li><a href="https://academicjobs.com/categories/medicine/medical-research/" className=''>Medical Research </a></li>
@@ -324,9 +324,9 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/medicine/medicine-other-specialities/" className=''>Other Medicine Specialities</a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/science/" className='text-[#f4a10c]'>Science </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/science/astronomy-astrophysics/" className=''>Astronomy and Astrophysics </a></li>
                   <li><a href="https://academicjobs.com/categories/science/biochemistry-molecular-biology/" className=''>Biochemistry and Molecular Biology </a></li>
                   <li><a href="https://academicjobs.com/categories/science/biology/" className=''>Biology </a></li>
@@ -341,9 +341,9 @@ const Home = () => {
                   <li><a href="https://academicjobs.com/categories/science/science-other-speciality/" className=''>Other Science Specialities </a></li>
                 </ul>
               </ul>
-              <ul class="myUL">
+              <ul className="myUL">
                 <li><a href="https://academicjobs.com/categories/technical-career/" className='text-[#f4a10c]'>Technical and Career </a></li>
-                <ul class="innerUL">
+                <ul className="innerUL">
                   <li><a href="https://academicjobs.com/categories/technical-career/automotive-technology/" className=''>Automotive Technology </a></li>
                   <li><a href="https://academicjobs.com/categories/technical-career/aviation/" className=''>Aviation </a></li>
                   <li><a href="https://academicjobs.com/categories/technical-career/construction-building-trades/" className=''>Construction and Building Trades </a></li>
