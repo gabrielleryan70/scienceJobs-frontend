@@ -15,10 +15,7 @@ import {
 import { useParams } from 'react-router-dom';
 import { setJob, setSearchJobCriteria } from '../store/postsSlice';
 const JobSearch1 = () => {
- 
-
-    let { name } = useParams();
- 
+  let { name } = useParams();
   const dispatch = useDispatch()
   const keyWordRef = useRef("")
   const locationRef = useRef("")
@@ -150,7 +147,6 @@ const JobSearch1 = () => {
               className="w-[41%] px-4 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500"
               placeholder="Location"
               ref={locationRef}
-            
             />
             <button
               className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md focus:ring-2 focus:ring-orange-300"

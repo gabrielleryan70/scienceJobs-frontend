@@ -81,7 +81,7 @@ const Job = ({ job }) => {
             <img src={logo} alt="Catholic Education Services – Diocese of Cairns" className="w-full h-full object-contain" />
           </div>
           <div className="flex-1">
-            <a href="" className="block text-blue-500 text-lg font-bold leading-tight hover:underline">{title}</a>
+            <a href="#" className="block text-blue-500 text-lg font-bold leading-tight hover:underline">{title}</a>
             <div className="hidden-xs mt-2">
               <span className="inline-block bg-yellow-500 text-white px-2 py-1 text-xs font-bold rounded-full mr-2">Featured</span>
             </div>
