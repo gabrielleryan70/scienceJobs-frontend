@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+
 import { setJob, setId, setEmployer } from '../store/postsSlice'
 import {
   useGetEmployerQuery,
@@ -15,18 +16,19 @@ const Job = ({ job }) => {
     isLoading,
     isSuccess,
   } = useGetEmployerQuery(employer_id)
+  const myId= useSelector((state) => state.posts.job.employer_id)
 
-
-  useEffect(() => {
-    if (data) dispatch(setEmployer(data));
-  }, [data, dispatch]);
+ 
   let content 
 
   if (isLoading) {
-    content = <p>Loading...</p>
+    content = <p></p>
   } else if (isSuccess) {
     console.log(data)
     console.log(job)
+    if (employer_id == myId) {
+       dispatch(setEmployer(data));
+    }
     const { logo, company_name, website, custom_fields } = data
     const { title, location, activation_date } = job
 

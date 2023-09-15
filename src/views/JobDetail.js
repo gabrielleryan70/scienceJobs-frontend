@@ -20,16 +20,16 @@ const JobDetail = () => {
       <div className=''>
         <div className="flex items-center p-4">
           <div className="w-1/4 pr-4">
-            <img className="w-full" src={logo} alt="Townsville Catholic Education Office" />
+            <img className="w-full" src={logo} alt={company_name} />
           </div>
 
           <div className="w-3/4">
             <h1 className="text-2xl font-bold mb-2">
-              Specialist Teacher
+              {title}
             </h1>
 
             <div className="mb-4">
-              <a className="text-blue-500" href="https://teachingjobs.com.au/company/35/townsville-catholic-education-office/">Townsville Catholic Education Office</a>
+              <a className="text-blue-500" href="https://teachingjobs.com.au/company/35/townsville-catholic-education-office/">{location}</a>
             </div>
 
             <div className="flex items-center">
