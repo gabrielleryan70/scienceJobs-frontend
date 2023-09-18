@@ -15,6 +15,7 @@ import {
 import { setJob, setSearchJobCriteria } from '../store/postsSlice';
 const JobSearch = () => {
   const searchJobCriteria = useSelector((state) => state.posts.searchJobCriteria)
+  console.log(searchJobCriteria)
   const dispatch = useDispatch()
   const keyWordRef = useRef("")
   const locationRef = useRef("")
@@ -109,8 +110,9 @@ const JobSearch = () => {
       </div>
     )
   } else if (isSuccess) {
+    console.log(data)
     if (data.length > 0) {
-      console.log(data)
+      
       content = (
         <div className='flex  w-full h-screen  justify-between'>
           <div className='overflow-y-auto w-[40%] h-screen' ><JobList data={data} /></div>

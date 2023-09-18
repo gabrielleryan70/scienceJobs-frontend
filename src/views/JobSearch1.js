@@ -110,8 +110,9 @@ const JobSearch1 = () => {
       </div>
     )
   } else if (isSuccess) {
+    console.log(data)
     if (data.length > 0) {
-      console.log(data)
+     
       content = (
         <div className='flex  w-full h-screen  justify-between'>
           <div className='overflow-y-auto w-[40%] h-screen' ><JobList data={data} /></div>

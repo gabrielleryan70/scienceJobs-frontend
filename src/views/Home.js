@@ -93,8 +93,8 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-white flex flex-col  ">
-        <h2 className="text-xl text-[#f4a10c] font-bold">REGION HOME PAGES</h2>
-        <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4">
+        <h2 className="text-xl text-[#f4a10c] font-bold">Academic Job Regions</h2>
+        <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4  py-2">
           <a href="https://academicjobs.com/usa/" className="\    ">
             United States
           </a>
@@ -135,8 +135,8 @@ const Home = () => {
 
 
       <div className="bg-white flex flex-col  ">
-        <h2 className="text-xl text-[#f4a10c] font-bold mt-10">JOB CATEGORY TYPES</h2>
-        <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4">
+        <h2 className="text-xl text-[#f4a10c] font-bold mt-10">Academic Positions / Roles</h2>
+        <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4  py-2">
           <a href="https://academicjobs.com/jobs/lecturer-jobs/" className="    ">
             Lecturer
           </a>
@@ -174,10 +174,10 @@ const Home = () => {
 
         </div>
       </div>
-
+      <h2 className="text-xl text-[#f4a10c] font-bold mt-10">Higher Ed Job Specialties</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
-          <div className="faculty-container grid grid-cols-4 gap-4 py-10">
+          <div className="faculty-container grid grid-cols-4 gap-4 py-2">
             <div className="column">
               <ul className="myUL">
                 <li><Link to="/jobSearch1/administration-support/" className='text-[#f4a10c]'>Administration & Support</Link></li>
