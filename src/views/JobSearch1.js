@@ -20,11 +20,11 @@ import { Helmet } from "react-helmet";
 
 const JobSearch1 = () => {
   const navigate = useNavigate()
-  let q="",l=""
+  let q = "", l = ""
   const { name } = useParams();
   const location = useLocation();
   console.log(location.state.l)
-  
+
   const keyWordRef = useRef('')
   const locationRef = useRef('')
   let searchTerm = '';
@@ -38,7 +38,7 @@ const JobSearch1 = () => {
   }
   useEffect(() => {
     keyWordRef.current.value = q
- 
+
     locationRef.current.value = l
 
   }, []);
@@ -49,7 +49,7 @@ const JobSearch1 = () => {
     data,
     isLoading,
     isSuccess,
-  } = useGetJobsQuery({ q: q ||'job',l })
+  } = useGetJobsQuery({ q: q || 'job', l })
   useEffect(() => {
     if (data) dispatch(setJob(data[0]));
   }, [data, dispatch]);
@@ -57,88 +57,88 @@ const JobSearch1 = () => {
   if (isLoading) {
     content = (
       <div className='flex  w-full h-screen  justify-between'>
-        <div role="status" class="w-[40%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
-          <div class="flex items-center justify-between">
+        <div role="status" className="w-[40%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
+          <div className="flex items-center justify-between">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <span class="sr-only">Loading...</span>
+          <span className="sr-only">Loading...</span>
         </div>
-        <div role="status" class="w-[60%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
-          <div class="flex items-center justify-between">
+        <div role="status" className="w-[60%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
+          <div className="flex items-center justify-between">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <div class="flex items-center justify-between pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div>
-              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
           </div>
-          <span class="sr-only">Loading...</span>
+          <span className="sr-only">Loading...</span>
         </div>
       </div>
     )
   } else if (isSuccess) {
     console.log(data)
     if (data.length > 0) {
-     
+
       content = (
         <div className='flex  w-full h-screen  justify-between'>
           <div className='overflow-y-auto w-[40%] h-screen' ><JobList data={data} /></div>
@@ -162,7 +162,7 @@ const JobSearch1 = () => {
   }
   return <div className='overflow-y w-full'>
     <Helmet>
-      <title>{name }</title>
+      <title>{name}</title>
       <meta name="description" content={name} />
       <meta name="keywords" content={name} />
     </Helmet>

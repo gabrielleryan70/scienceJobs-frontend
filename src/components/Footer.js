@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
-        <div className="mt-10" >
-            <hr class="w-ful h-2 mx-auto my-4 bg-[#f4a10c] border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+        <div className="mt-10 mb-10" >
+            <hr className="w-ful h-2 mx-auto my-4 bg-[#f4a10c] border-0 rounded md:my-10 dark:bg-gray-700"></hr>
             <div className="bg-white text-black font-open-sans grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="bg-white text-black font-open-sans">
                     <ul>
@@ -11,7 +11,7 @@ const Footer = () => {
                         <li><a className="footer-nav__link" href="$site_url/">Home</a></li>
                         <li><Link to="/contactForm">Contact Us</Link></li>
                         <li><Link to="/aboutAJ">About AJ</Link></li>
-                        
+
                         <li><a href="https://academicjobs.com/sitemap">Site Map</a></li>
                     </ul>
                 </div>
