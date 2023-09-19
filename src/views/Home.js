@@ -20,7 +20,7 @@ const Home = () => {
       console.log(a)
       //dispatch(setSearchJobCriteria(a))
       //navigate(`/JobSearch`)
-      navigate("/JobSearch1", { state: { q: keyWordRef.current.value.trim() , l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
+      navigate("/JobSearch", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
     } else {
       const fetchLocation1 = async () => {
         try {
@@ -40,7 +40,7 @@ const Home = () => {
           console.log(a)
           //dispatch(setSearchJobCriteria(a)) 
           //alert(countryMappings1[sessionStorage.getItem("location")].searchLocation)
-          navigate("/JobSearch1", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
+          navigate("/JobSearch", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
         })
         .catch(error => {
           console.log('Error:', error);
@@ -105,35 +105,35 @@ const Home = () => {
           <a href="https://academicjobs.com/usa/" className="\    ">
             United States
           </a>
-          <a href="https://academicjobs.com/australia/" className="\   ">
+          <a href="https://academicjobs.com/australia/" className="">
             Australia
           </a>
-          <a href="https://academicjobs.com/uk/" className="\   ">
+          <a href="https://academicjobs.com/uk/" className="">
             United Kingdom
           </a>
-          <a href="https://academicjobs.com/canada/" className="\   ">
+          <a href="https://academicjobs.com/canada/" className="">
             Canada
           </a>
-          <a href="https://academicjobs.com/newzealand/" className="\   ">New Zealand
+          <a href="https://academicjobs.com/newzealand/" className="">New Zealand
           </a>
-          <a href="https://academicjobs.com/europe/" className="\   ">
+          <a href="https://academicjobs.com/europe/" className="">
             Europe
           </a>
-          <a href="https://academicjobs.com/india/" className="\   ">
+          <a href="https://academicjobs.com/india/" className="">
             India
           </a>
-          <a href="https://academicjobs.com/asia/" className="\   ">
+          <a href="https://academicjobs.com/asia/" className="">
             Asia
           </a>
-          <a href="https://academicjobs.com/africa/" className="\   ">Africa
+          <a href="https://academicjobs.com/africa/" className="">Africa
           </a>
-          <a href="https://academicjobs.com/middleeast/" className="\   ">
+          <a href="https://academicjobs.com/middleeast/" className="">
             Middle East
           </a>
-          <a href="https://academicjobs.com/southamerica/" className="\   ">
+          <a href="https://academicjobs.com/southamerica/" className="">
             South America
           </a>
-          <a href="https://academicjobs.com/jobs/other-jobs/" className="\   ">
+          <a href="https://academicjobs.com/jobs/other-jobs/" className="">
             Other
           </a>
         </div>
@@ -141,39 +141,18 @@ const Home = () => {
       <div className="bg-white flex flex-col  ">
         <h2 className="text-xl text-[#f4a10c] font-bold mt-10">Academic Positions / Roles</h2>
         <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4  py-2">
-          <a href="https://academicjobs.com/jobs/lecturer-jobs/" className="    ">
-            Lecturer
-          </a>
-          <a href="https://academicjobs.com/jobs/professor-jobs/" className="   ">
-            Professor
-          </a>
-          <a href="https://academicjobs.com/jobs/researcher-jobs/" className="   ">
-            Researcher
-          </a>
-          <a href="https://academicjobs.com/jobs/lab-technician-jobs/" className="   ">
-            Lab Technician
-          </a>
-          <a href="https://academicjobs.com/jobs/assistant-professor-jobs/" className="   ">Assistant Professor
-          </a>
-          <a href="https://academicjobs.com/jobs/associate-professor-jobs/" className="]   ">
-            Associate Professor
-          </a>
-          <a href="https://academicjobs.com/jobs/postdoctoral-researcher-jobs/" className="   ">
-            Postdoctoral Researcher
-          </a>
-          <a href="https://academicjobs.com/jobs/postdoctoral-fellow-jobs/" className="   ">
-            Postdoctoral Fellow
-          </a>
-          <a href="https://academicjobs.com/jobs/visiting-global-academic-jobs/" className="   ">Visiting Global Academic
-          </a>
-          <a href="https://academicjobs.com/jobs/visiting-scholar-Fellow-jobs/" className="   ">Visiting Scholar or Fellow
-          </a>
-          <a href="https://academicjobs.com/jobs/tutor-jobs/" className="   ">
-            Tutor
-          </a>
-          <a href="https://academicjobs.com/jobs/other-jobs/" className="   ">
-            Other
-          </a>
+          <Link to="/JobSearch/Lecturer" className=''>Lecturer</Link>
+          <Link to="/JobSearch/Professor" className=''>Professor</Link>
+          <Link to="/JobSearch/Researcher" className=''>Researcher</Link>
+          <Link to="/JobSearch/LabTechnician" className=''>Lab Technician</Link>
+          <Link to="/JobSearch/AssistantProfessor" className=''>Assistant Professor</Link>
+          <Link to="/JobSearch/AssociateProfessor" className=''>Associate Professor</Link>
+          <Link to="/JobSearch/PostdoctoralResearcher" className=''>Postdoctoral Researcher</Link>
+          <Link to="/JobSearch/PostdoctoralFellow" className=''>Postdoctoral Fellow</Link>
+          <Link to="/JobSearch/VisitingGlobalAcademic" className=''>Visiting Global Academic</Link>
+          <Link to="/JobSearch/VisitingScholarOrFellow" className=''>Visiting Scholar or Fellow</Link>
+          <Link to="/JobSearch/Tutor" className=''>Tutor</Link>
+          <Link to="/JobSearch/Other" className=''>Other</Link>
         </div>
       </div>
       <h2 className="text-xl text-[#f4a10c] font-bold mt-10">Higher Ed Job Specialties</h2>
@@ -182,240 +161,240 @@ const Home = () => {
           <div className="faculty-container grid grid-cols-4 gap-4 py-2">
             <div className="column">
               <ul className="h-[100px]">
-                  <li className='mb-1 mt-4'><Link to="/jobSearch1/administration-support/" className='text-[#f4a10c] font-bold'>Administration & Support</Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/administration-support/" className='text-[#f4a10c] font-bold'>Administration & Support</Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/human-resources/" >Human Resources</Link></li>
-                  <li><Link to="/jobSearch1/administration-support/" >Admin Other Specialities</Link></li>
+                  <li><Link to="/JobSearch/human-resources/" >Human Resources</Link></li>
+                  <li><Link to="/JobSearch/administration-support/" >Admin Other Specialities</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Agriculture </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Agriculture </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/agricultural-economics-agribusiness/" className=''>Agricultural Economics and Agribusiness</Link></li>
-                  <li><Link to="/jobSearch1/agriculture-extension/" className=''>Agricultural Extension </Link></li>
-                  <li><Link to="/jobSearch1/animal-science/" className=''>Animal Science</Link></li>
-                  <li><Link to="/jobSearch1/entomology/" className=''>Entomology </Link></li>
-                  <li><Link to="/jobSearch1/environmental-science-ecology-forestry/" className=''>Environmental Science, Ecology, and Forestry </Link></li>
-                  <li><Link to="/jobSearch1/agriculture-food-science/" className=''>Food Science </Link></li>
-                  <li><Link to="/jobSearch1/horticulture-landscape-architecture/" className=''>Horticulture and Landscape Architecture </Link></li>
-                  <li><Link to="/jobSearch1/agriculture-plant-soil-science/" className=''>Plant and Soil Science </Link></li>
-                  <li><Link to="/jobSearch1/veterinary-science/" className=''>Veterinary Medicine </Link></li>
-                  <li><Link to="/jobSearch1/" className=''>Other Agriculture Specialities</Link></li>
+                  <li><Link to="/JobSearch/agricultural-economics-agribusiness/" className=''>Agricultural Economics and Agribusiness</Link></li>
+                  <li><Link to="/JobSearch/agriculture-extension/" className=''>Agricultural Extension </Link></li>
+                  <li><Link to="/JobSearch/animal-science/" className=''>Animal Science</Link></li>
+                  <li><Link to="/JobSearch/entomology/" className=''>Entomology </Link></li>
+                  <li><Link to="/JobSearch/environmental-science-ecology-forestry/" className=''>Environmental Science, Ecology, and Forestry </Link></li>
+                  <li><Link to="/JobSearch/agriculture-food-science/" className=''>Food Science </Link></li>
+                  <li><Link to="/JobSearch/horticulture-landscape-architecture/" className=''>Horticulture and Landscape Architecture </Link></li>
+                  <li><Link to="/JobSearch/agriculture-plant-soil-science/" className=''>Plant and Soil Science </Link></li>
+                  <li><Link to="/JobSearch/veterinary-science/" className=''>Veterinary Medicine </Link></li>
+                  <li><Link to="/JobSearch/" className=''>Other Agriculture Specialities</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Business </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Business </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/accounting/" className=''>Business Accounting </Link></li>
-                  <li><Link to="/jobSearch1/administration/" className=''>Business Administration </Link></li>
-                  <li><Link to="/jobSearch1/law/" className=''>Business Law </Link></li>
-                  <li><Link to="/jobSearch1/entrepreneurship/" className=''>Entrepreneurship </Link></li>
-                  <li><Link to="/jobSearch1/finance/" className=''>Finance </Link></li>
-                  <li><Link to="/jobSearch1/hotel-restaurant-management/" className=''>Hotel and Restaurant Management </Link></li>
-                  <li><Link to="/jobSearch1/human-resources/" className=''>Business Human Resources </Link></li>
-                  <li><Link to="/jobSearch1/information-systems-technology/" className=''>Information Systems and Technology </Link></li>
-                  <li><Link to="/jobSearch1/international-business/" className=''>International Business </Link></li>
-                  <li><Link to="/jobSearch1/business-management/" className=''>Business Management </Link></li>
-                  <li><Link to="/jobSearch1/marketing-sales/" className=''>Marketing and Sales </Link></li>
-                  <li><Link to="/jobSearch1/business-other-specialty/" className=''>Other Business Specialities </Link></li>
+                  <li><Link to="/JobSearch/accounting/" className=''>Business Accounting </Link></li>
+                  <li><Link to="/JobSearch/administration/" className=''>Business Administration </Link></li>
+                  <li><Link to="/JobSearch/law/" className=''>Business Law </Link></li>
+                  <li><Link to="/JobSearch/entrepreneurship/" className=''>Entrepreneurship </Link></li>
+                  <li><Link to="/JobSearch/finance/" className=''>Finance </Link></li>
+                  <li><Link to="/JobSearch/hotel-restaurant-management/" className=''>Hotel and Restaurant Management </Link></li>
+                  <li><Link to="/JobSearch/human-resources/" className=''>Business Human Resources </Link></li>
+                  <li><Link to="/JobSearch/information-systems-technology/" className=''>Information Systems and Technology </Link></li>
+                  <li><Link to="/JobSearch/international-business/" className=''>International Business </Link></li>
+                  <li><Link to="/JobSearch/business-management/" className=''>Business Management </Link></li>
+                  <li><Link to="/JobSearch/marketing-sales/" className=''>Marketing and Sales </Link></li>
+                  <li><Link to="/JobSearch/business-other-specialty/" className=''>Other Business Specialities </Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Fine and Applied Arts </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Fine and Applied Arts </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/architecture/" className=''>Architecture </Link></li>
-                  <li><Link to="/jobSearch1/art/" className=''>Art </Link></li>
-                  <li><Link to="/jobSearch1/art-history/" className=''>Art History </Link></li>
-                  <li><Link to="/jobSearch1/dance/" className=''>Dance </Link></li>
-                  <li><Link to="/jobSearch1/digital-arts/" className=''>Digital Arts </Link></li>
-                  <li><Link to="/jobSearch1/fashion-textile-design/" className=''>Fashion and Textile Design </Link></li>
-                  <li><Link to="/jobSearch1/graphic-design/" className=''>Graphic Design </Link></li>
-                  <li><Link to="/jobSearch1/industrial-design/" className=''>Industrial Design </Link></li>
-                  <li><Link to="/jobSearch1/interior-design/" className=''>Interior Design </Link></li>
-                  <li><Link to="/jobSearch1/music/" className=''>Music </Link></li>
-                  <li><Link to="/jobSearch1/photography/" className=''>Photography </Link></li>
-                  <li><Link to="/jobSearch1/theatre/" className=''>Theatre </Link></li>
-                  <li><Link to="/jobSearch1/fine-applied-arts-other-specialities/" className=''>Other Fine and Applied Arts Specialities </Link></li>
+                  <li><Link to="/JobSearch/architecture/" className=''>Architecture </Link></li>
+                  <li><Link to="/JobSearch/art/" className=''>Art </Link></li>
+                  <li><Link to="/JobSearch/art-history/" className=''>Art History </Link></li>
+                  <li><Link to="/JobSearch/dance/" className=''>Dance </Link></li>
+                  <li><Link to="/JobSearch/digital-arts/" className=''>Digital Arts </Link></li>
+                  <li><Link to="/JobSearch/fashion-textile-design/" className=''>Fashion and Textile Design </Link></li>
+                  <li><Link to="/JobSearch/graphic-design/" className=''>Graphic Design </Link></li>
+                  <li><Link to="/JobSearch/industrial-design/" className=''>Industrial Design </Link></li>
+                  <li><Link to="/JobSearch/interior-design/" className=''>Interior Design </Link></li>
+                  <li><Link to="/JobSearch/music/" className=''>Music </Link></li>
+                  <li><Link to="/JobSearch/photography/" className=''>Photography </Link></li>
+                  <li><Link to="/JobSearch/theatre/" className=''>Theatre </Link></li>
+                  <li><Link to="/JobSearch/fine-applied-arts-other-specialities/" className=''>Other Fine and Applied Arts Specialities </Link></li>
                 </ul>
               </ul>
             </div>
             <div className="column">
               <ul className="h-[100px]">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/faculty-executive/" className='text-[#f4a10c] font-bold'>
-       Executive Jobs </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/faculty-executive/" className='text-[#f4a10c] font-bold'>
+                  Executive Jobs </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/executive-president-chancellor/" className=''>President & Chancellor </Link></li>
-                  <li><Link to="/jobSearch1/faculty-executive/" className=''>Executive In Faculty</Link></li>
+                  <li><Link to="/JobSearch/executive-president-chancellor/" className=''>President & Chancellor </Link></li>
+                  <li><Link to="/JobSearch/faculty-executive/" className=''>Executive In Faculty</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Communications </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Communications </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/broadcast-journalism/" className=''>Broadcast Journalism </Link></li>
-                  <li><Link to="/jobSearch1/journalism/" className=''>Journalism </Link></li>
-                  <li><Link to="/jobSearch1/media-communication-studies/" className=''>Media and Communication Studies </Link></li>
-                  <li><Link to="/jobSearch1/public-relations-advertising/" className=''>Public Relations and Advertising </Link></li>
-                  <li><Link to="/jobSearch1/faculty-communications-radio-tv-film/" className=''>Radio, Television, and Film </Link></li>
-                  <li><Link to="/jobSearch1/speech-public-speaking/" className=''>Speech and Public Speaking </Link></li>
-                  <li><Link to="/jobSearch1/communications-other-specialty/" className=''>Other Communications Specialities </Link></li>
+                  <li><Link to="/JobSearch/broadcast-journalism/" className=''>Broadcast Journalism </Link></li>
+                  <li><Link to="/JobSearch/journalism/" className=''>Journalism </Link></li>
+                  <li><Link to="/JobSearch/media-communication-studies/" className=''>Media and Communication Studies </Link></li>
+                  <li><Link to="/JobSearch/public-relations-advertising/" className=''>Public Relations and Advertising </Link></li>
+                  <li><Link to="/JobSearch/faculty-communications-radio-tv-film/" className=''>Radio, Television, and Film </Link></li>
+                  <li><Link to="/JobSearch/speech-public-speaking/" className=''>Speech and Public Speaking </Link></li>
+                  <li><Link to="/JobSearch/communications-other-specialty/" className=''>Other Communications Specialities </Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Engineering </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Engineering </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/aerospace/" className=''>Aerospace Engineering </Link></li>
-                  <li><Link to="/jobSearch1/engineering-agricultural/" className=''>Agricultural Engineering </Link></li>
-                  <li><Link to="/jobSearch1/biological-engineering/" className=''>Biological Engineering </Link></li>
-                  <li><Link to="/jobSearch1/chemical-engineering/" className=''>Chemical Engineering </Link></li>
-                  <li><Link to="/jobSearch1/civil-environmental-engineering/" className=''>Civil and Environmental Engineering </Link></li>
-                  <li><Link to="/jobSearch1/computer-engineering/" className=''>Computer Engineering </Link></li>
-                  <li><Link to="/jobSearch1/electrical-engineering/" className=''>Electrical Engineering </Link></li>
-                  <li><Link to="/jobSearch1/industrial-manufacturing-engineering/" className=''>Industrial and Manufacturing Engineering </Link></li>
-                  <li><Link to="/jobSearch1/mechanical-engineering/" className=''>Mechanical Engineering </Link></li>
-                  <li><Link to="/jobSearch1/engineering-other-specialty/" className=''>Other Engineering Specialities</Link></li>
+                  <li><Link to="/JobSearch/aerospace/" className=''>Aerospace Engineering </Link></li>
+                  <li><Link to="/JobSearch/engineering-agricultural/" className=''>Agricultural Engineering </Link></li>
+                  <li><Link to="/JobSearch/biological-engineering/" className=''>Biological Engineering </Link></li>
+                  <li><Link to="/JobSearch/chemical-engineering/" className=''>Chemical Engineering </Link></li>
+                  <li><Link to="/JobSearch/civil-environmental-engineering/" className=''>Civil and Environmental Engineering </Link></li>
+                  <li><Link to="/JobSearch/computer-engineering/" className=''>Computer Engineering </Link></li>
+                  <li><Link to="/JobSearch/electrical-engineering/" className=''>Electrical Engineering </Link></li>
+                  <li><Link to="/JobSearch/industrial-manufacturing-engineering/" className=''>Industrial and Manufacturing Engineering </Link></li>
+                  <li><Link to="/JobSearch/mechanical-engineering/" className=''>Mechanical Engineering </Link></li>
+                  <li><Link to="/JobSearch/engineering-other-specialty/" className=''>Other Engineering Specialities</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Education </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Education </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/adult-distance-education/" className=''>Adult and Distance Education </Link></li>
-                  <li><Link to="/jobSearch1/counselor-education/" className=''>Counselor Education </Link></li>
-                  <li><Link to="/jobSearch1/curriculum-instruction/" className=''>Curriculum and Instruction </Link></li>
-                  <li><Link to="/jobSearch1/admin-leadership-education/" className=''>Educational Administration and Leadership </Link></li>
-                  <li><Link to="/jobSearch1/educational-psychology/" className=''>Educational Psychology </Link></li>
-                  <li><Link to="/jobSearch1/higher-education/" className=''>Higher Education </Link></li>
-                  <li><Link to="/jobSearch1/education-instructional-technology-design/" className=''>Instructional Technology and Design </Link></li>
-                  <li><Link to="/jobSearch1/reading-literacy/" className=''>Reading and Literacy </Link></li>
-                  <li><Link to="/jobSearch1/school-psychology/" className=''>School Psychology </Link></li>
-                  <li><Link to="/jobSearch1/special-education/" className=''>Special Education </Link></li>
-                  <li><Link to="/jobSearch1/teacher-education/" className=''>Teacher Education </Link></li>
-                  <li><Link to="/jobSearch1/teacher-education-early-childhood/" className=''>Teacher Education - Early Childhood </Link></li>
-                  <li><Link to="/jobSearch1/teacher-education-elementary/" className=''>Teacher Education - Elementary </Link></li>
-                  <li><Link to="/jobSearch1/teacher-education-middle/" className=''>Teacher Education - Middle School </Link></li>
-                  <li><Link to="/jobSearch1/teacher-education-secondary/" className=''>Teacher Education - Secondary Education </Link></li>
-                  <li><Link to="/jobSearch1/education-other-specialty/" className=''>Other Education Specialities</Link></li>
+                  <li><Link to="/JobSearch/adult-distance-education/" className=''>Adult and Distance Education </Link></li>
+                  <li><Link to="/JobSearch/counselor-education/" className=''>Counselor Education </Link></li>
+                  <li><Link to="/JobSearch/curriculum-instruction/" className=''>Curriculum and Instruction </Link></li>
+                  <li><Link to="/JobSearch/admin-leadership-education/" className=''>Educational Administration and Leadership </Link></li>
+                  <li><Link to="/JobSearch/educational-psychology/" className=''>Educational Psychology </Link></li>
+                  <li><Link to="/JobSearch/higher-education/" className=''>Higher Education </Link></li>
+                  <li><Link to="/JobSearch/education-instructional-technology-design/" className=''>Instructional Technology and Design </Link></li>
+                  <li><Link to="/JobSearch/reading-literacy/" className=''>Reading and Literacy </Link></li>
+                  <li><Link to="/JobSearch/school-psychology/" className=''>School Psychology </Link></li>
+                  <li><Link to="/JobSearch/special-education/" className=''>Special Education </Link></li>
+                  <li><Link to="/JobSearch/teacher-education/" className=''>Teacher Education </Link></li>
+                  <li><Link to="/JobSearch/teacher-education-early-childhood/" className=''>Teacher Education - Early Childhood </Link></li>
+                  <li><Link to="/JobSearch/teacher-education-elementary/" className=''>Teacher Education - Elementary </Link></li>
+                  <li><Link to="/JobSearch/teacher-education-middle/" className=''>Teacher Education - Middle School </Link></li>
+                  <li><Link to="/JobSearch/teacher-education-secondary/" className=''>Teacher Education - Secondary Education </Link></li>
+                  <li><Link to="/JobSearch/education-other-specialty/" className=''>Other Education Specialities</Link></li>
                 </ul>
               </ul>
             </div>
             <div className="column">
               <ul className="h-[100px]">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/industry/" className='text-[#f4a10c] font-bold'>Industry Jobs </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/industry/" className='text-[#f4a10c] font-bold'>Industry Jobs </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/industry/" className=''>Industry</Link></li>
+                  <li><Link to="/JobSearch/industry/" className=''>Industry</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Health Sciences </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Health Sciences </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/athletic-training/" className=''>Athletic Training </Link></li>
-                  <li><Link to="/jobSearch1/communication-sciences-disorders/" className=''>Communication Sciences and Disorders </Link></li>
-                  <li><Link to="/jobSearch1/health-education-promotion/" className=''>Health Education and Promotion </Link></li>
-                  <li><Link to="/jobSearch1/health-information-technology/" className=''>Health Information Technology </Link></li>
-                  <li><Link to="/jobSearch1/healthcare-administration/" className=''>Healthcare Administration </Link></li>
-                  <li><Link to="/jobSearch1/kinesiology-exercise-science-phys-ed/" className=''>Kinesiology, Exercise Science, and Phys Ed </Link></li>
-                  <li><Link to="/jobSearch1/nursing/" className=''>Nursing </Link></li>
-                  <li><Link to="/jobSearch1/nutrition-dietetics/" className=''>Nutrition and Dietetics </Link></li>
-                  <li><Link to="/jobSearch1/occupational-therapy/" className=''>Occupational Therapy </Link></li>
-                  <li><Link to="/jobSearch1/physical-therapy/" className=''>Physical Therapy </Link></li>
-                  <li><Link to="/jobSearch1/public-environmental-health/" className=''>Public and Environmental Health </Link></li>
-                  <li><Link to="/jobSearch1/recreation-leisure-studies/" className=''>Recreation and Leisure Studies </Link></li>
-                  <li><Link to="/jobSearch1/sport-management/" className=''>Sport Management </Link></li>
-                  <li><Link to="/jobSearch1/health-sciences-other-specialities/" className=''>Other Health Sciences Specialities</Link></li>
+                  <li><Link to="/JobSearch/athletic-training/" className=''>Athletic Training </Link></li>
+                  <li><Link to="/JobSearch/communication-sciences-disorders/" className=''>Communication Sciences and Disorders </Link></li>
+                  <li><Link to="/JobSearch/health-education-promotion/" className=''>Health Education and Promotion </Link></li>
+                  <li><Link to="/JobSearch/health-information-technology/" className=''>Health Information Technology </Link></li>
+                  <li><Link to="/JobSearch/healthcare-administration/" className=''>Healthcare Administration </Link></li>
+                  <li><Link to="/JobSearch/kinesiology-exercise-science-phys-ed/" className=''>Kinesiology, Exercise Science, and Phys Ed </Link></li>
+                  <li><Link to="/JobSearch/nursing/" className=''>Nursing </Link></li>
+                  <li><Link to="/JobSearch/nutrition-dietetics/" className=''>Nutrition and Dietetics </Link></li>
+                  <li><Link to="/JobSearch/occupational-therapy/" className=''>Occupational Therapy </Link></li>
+                  <li><Link to="/JobSearch/physical-therapy/" className=''>Physical Therapy </Link></li>
+                  <li><Link to="/JobSearch/public-environmental-health/" className=''>Public and Environmental Health </Link></li>
+                  <li><Link to="/JobSearch/recreation-leisure-studies/" className=''>Recreation and Leisure Studies </Link></li>
+                  <li><Link to="/JobSearch/sport-management/" className=''>Sport Management </Link></li>
+                  <li><Link to="/JobSearch/health-sciences-other-specialities/" className=''>Other Health Sciences Specialities</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Law and Legal Studies </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Law and Legal Studies </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/law-legal-studies/" className=''>Law and Legal Studies </Link></li>
+                  <li><Link to="/JobSearch/law-legal-studies/" className=''>Law and Legal Studies </Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Liberal Arts </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Liberal Arts </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/american-studies/" className=''>American Studies </Link></li>
-                  <li><Link to="/jobSearch1/anthropology/" className=''>Anthropology </Link></li>
-                  <li><Link to="/jobSearch1/criminal-justice/" className=''>Criminal Justice </Link></li>
-                  <li><Link to="/jobSearch1/economics" className=''>Economics </Link></li>
-                  <li><Link to="/jobSearch1/english-literature/" className=''>English and Literature </Link></li>
-                  <li><Link to="/jobSearch1/english-as-second-language/" className=''>English as a Second Language </Link></li>
-                  <li><Link to="/jobSearch1/ethnic-multicultural-studies/" className=''>Ethnic and Multicultural Studies </Link></li>
-                  <li><Link to="/jobSearch1/foreign-languages-literatures/" className=''>Foreign Languages and Literatures </Link></li>
-                  <li><Link to="/jobSearch1/history/" className=''>History </Link></li>
-                  <li><Link to="/jobSearch1/human-development-family-studies/" className=''>Human Development and Family Studies </Link></li>
-                  <li><Link to="/jobSearch1/humanities/" className=''>Humanities </Link></li>
-                  <li><Link to="/jobSearch1/linguistics/" className=''>Linguistics </Link></li>
-                  <li><Link to="/jobSearch1/philosophy/" className=''>Philosophy </Link></li>
-                  <li><Link to="/jobSearch1/political-science/" className=''>Political Science </Link></li>
-                  <li><Link to="/jobSearch1/psychology/" className=''>Psychology </Link></li>
-                  <li><Link to="/jobSearch1/public-administration-policy/" className=''>Public Administration and Policy </Link></li>
-                  <li><Link to="/jobSearch1/religious-studies-theology/" className=''>Religious Studies and Theology </Link></li>
-                  <li><Link to="/jobSearch1/security-studies/" className=''>Security Studies </Link></li>
-                  <li><Link to="/jobSearch1/sign-language/" className=''>Sign Language </Link></li>
-                  <li><Link to="/jobSearch1/social-work/" className=''>Social Work </Link></li>
-                  <li><Link to="/jobSearch1/sociology/" className=''>Sociology </Link></li>
-                  <li><Link to="/jobSearch1/urban-studies-planning/" className=''>Urban Studies and Planning </Link></li>
-                  <li><Link to="/jobSearch1/women-s-gender-studies/" className=''>Women's and Gender Studies </Link></li>
-                  <li><Link to="/jobSearch1/liberal-arts-other-specialities/" className=''>Other Liberal Arts Specialities</Link></li>
+                  <li><Link to="/JobSearch/american-studies/" className=''>American Studies </Link></li>
+                  <li><Link to="/JobSearch/anthropology/" className=''>Anthropology </Link></li>
+                  <li><Link to="/JobSearch/criminal-justice/" className=''>Criminal Justice </Link></li>
+                  <li><Link to="/JobSearch/economics" className=''>Economics </Link></li>
+                  <li><Link to="/JobSearch/english-literature/" className=''>English and Literature </Link></li>
+                  <li><Link to="/JobSearch/english-as-second-language/" className=''>English as a Second Language </Link></li>
+                  <li><Link to="/JobSearch/ethnic-multicultural-studies/" className=''>Ethnic and Multicultural Studies </Link></li>
+                  <li><Link to="/JobSearch/foreign-languages-literatures/" className=''>Foreign Languages and Literatures </Link></li>
+                  <li><Link to="/JobSearch/history/" className=''>History </Link></li>
+                  <li><Link to="/JobSearch/human-development-family-studies/" className=''>Human Development and Family Studies </Link></li>
+                  <li><Link to="/JobSearch/humanities/" className=''>Humanities </Link></li>
+                  <li><Link to="/JobSearch/linguistics/" className=''>Linguistics </Link></li>
+                  <li><Link to="/JobSearch/philosophy/" className=''>Philosophy </Link></li>
+                  <li><Link to="/JobSearch/political-science/" className=''>Political Science </Link></li>
+                  <li><Link to="/JobSearch/psychology/" className=''>Psychology </Link></li>
+                  <li><Link to="/JobSearch/public-administration-policy/" className=''>Public Administration and Policy </Link></li>
+                  <li><Link to="/JobSearch/religious-studies-theology/" className=''>Religious Studies and Theology </Link></li>
+                  <li><Link to="/JobSearch/security-studies/" className=''>Security Studies </Link></li>
+                  <li><Link to="/JobSearch/sign-language/" className=''>Sign Language </Link></li>
+                  <li><Link to="/JobSearch/social-work/" className=''>Social Work </Link></li>
+                  <li><Link to="/JobSearch/sociology/" className=''>Sociology </Link></li>
+                  <li><Link to="/JobSearch/urban-studies-planning/" className=''>Urban Studies and Planning </Link></li>
+                  <li><Link to="/JobSearch/women-s-gender-studies/" className=''>Women's and Gender Studies </Link></li>
+                  <li><Link to="/JobSearch/liberal-arts-other-specialities/" className=''>Other Liberal Arts Specialities</Link></li>
                 </ul>
               </ul>
             </div>
             <div className="column">
               <ul className="h-[100px]">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/industry/" className='text-[#f4a10c] font-bold'></Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/industry/" className='text-[#f4a10c] font-bold'></Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/industry/" className=''></Link></li>
+                  <li><Link to="/JobSearch/industry/" className=''></Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Medicine </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Medicine </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/chiropractic/" className=''>Chiropractic </Link></li>
-                  <li><Link to="/jobSearch1/dentistry/" className=''>Dentistry </Link></li>
-                  <li><Link to="/jobSearch1/medical-research/" className=''>Medical Research </Link></li>
-                  <li><Link to="/jobSearch1/pharmacy-pharmacology/" className=''>Pharmacy and Pharmacology </Link></li>
-                  <li><Link to="/jobSearch1/physician-assistant/" className=''>Physician Assistants </Link></li>
-                  <li><Link to="/jobSearch1/physicians/" className=''>Physicians </Link></li>
-                  <li><Link to="/jobSearch1/medicine-other-specialities/" className=''>Other Medicine Specialities</Link></li>
+                  <li><Link to="/JobSearch/chiropractic/" className=''>Chiropractic </Link></li>
+                  <li><Link to="/JobSearch/dentistry/" className=''>Dentistry </Link></li>
+                  <li><Link to="/JobSearch/medical-research/" className=''>Medical Research </Link></li>
+                  <li><Link to="/JobSearch/pharmacy-pharmacology/" className=''>Pharmacy and Pharmacology </Link></li>
+                  <li><Link to="/JobSearch/physician-assistant/" className=''>Physician Assistants </Link></li>
+                  <li><Link to="/JobSearch/physicians/" className=''>Physicians </Link></li>
+                  <li><Link to="/JobSearch/medicine-other-specialities/" className=''>Other Medicine Specialities</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Science </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Science </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/astronomy-astrophysics/" className=''>Astronomy and Astrophysics </Link></li>
-                  <li><Link to="/jobSearch1/biochemistry-molecular-biology/" className=''>Biochemistry and Molecular Biology </Link></li>
-                  <li><Link to="/jobSearch1/biology/" className=''>Biology </Link></li>
-                  <li><Link to="/jobSearch1/chemistry/" className=''>Chemistry </Link></li>
-                  <li><Link to="/jobSearch1/computer-science/" className=''>Computer Science </Link></li>
-                  <li><Link to="/jobSearch1/geography/" className=''>Geography </Link></li>
-                  <li><Link to="/jobSearch1/geology-earth-sciences-oceanography/" className=''>Geology, Earth Sciences, and Oceanography </Link></li>
-                  <li><Link to="/jobSearch1/library-information-science/" className=''>Library and Information Science </Link></li>
-                  <li><Link to="/jobSearch1/mathematics/" className=''>Mathematics </Link></li>
-                  <li><Link to="/jobSearch1/physics/" className=''>Physics </Link></li>
-                  <li><Link to="/jobSearch1/statistics/" className=''>Statistics </Link></li>
-                  <li><Link to="/jobSearch1/science-other-speciality/" className=''>Other Science Specialities </Link></li>
+                  <li><Link to="/JobSearch/astronomy-astrophysics/" className=''>Astronomy and Astrophysics </Link></li>
+                  <li><Link to="/JobSearch/biochemistry-molecular-biology/" className=''>Biochemistry and Molecular Biology </Link></li>
+                  <li><Link to="/JobSearch/biology/" className=''>Biology </Link></li>
+                  <li><Link to="/JobSearch/chemistry/" className=''>Chemistry </Link></li>
+                  <li><Link to="/JobSearch/computer-science/" className=''>Computer Science </Link></li>
+                  <li><Link to="/JobSearch/geography/" className=''>Geography </Link></li>
+                  <li><Link to="/JobSearch/geology-earth-sciences-oceanography/" className=''>Geology, Earth Sciences, and Oceanography </Link></li>
+                  <li><Link to="/JobSearch/library-information-science/" className=''>Library and Information Science </Link></li>
+                  <li><Link to="/JobSearch/mathematics/" className=''>Mathematics </Link></li>
+                  <li><Link to="/JobSearch/physics/" className=''>Physics </Link></li>
+                  <li><Link to="/JobSearch/statistics/" className=''>Statistics </Link></li>
+                  <li><Link to="/JobSearch/science-other-speciality/" className=''>Other Science Specialities </Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Technical and Career </Link></li>
+                <li className='mb-1 mt-4'><Link to="/JobSearch/" className='text-[#f4a10c] font-bold'>Technical and Career </Link></li>
                 <ul className="innerUL">
-                  <li><Link to="/jobSearch1/automotive-technology/" className=''>Automotive Technology </Link></li>
-                  <li><Link to="/jobSearch1/aviation/" className=''>Aviation </Link></li>
-                  <li><Link to="/jobSearch1/construction-building-trades/" className=''>Construction and Building Trades </Link></li>
-                  <li><Link to="/jobSearch1/cosmetology/" className=''>Cosmetology </Link></li>
-                  <li><Link to="/jobSearch1/culinary-arts/" className=''>Culinary Arts </Link></li>
-                  <li><Link to="/jobSearch1/dental-hygienists-assistants/" className=''>Dental Hygienists and Assistants </Link></li>
-                  <li><Link to="/jobSearch1/diagnostic-imaging-radiography/" className=''>Diagnostic Imaging and Radiography </Link></li>
-                  <li><Link to="/jobSearch1/electronics/" className=''>Electronics </Link></li>
-                  <li><Link to="/jobSearch1/fire-science/" className=''>Fire Science </Link></li>
-                  <li><Link to="/jobSearch1/massage-therapy/" className=''>Massage Therapy </Link></li>
-                  <li><Link to="/jobSearch1/medical-assistants/" className=''>Medical Assistants </Link></li>
-                  <li><Link to="/jobSearch1/medical-billing-coding/" className=''>Medical Billing and Coding </Link></li>
-                  <li><Link to="/jobSearch1/paramedics-emts/" className=''>Paramedics and EMTs </Link></li>
-                  <li><Link to="/jobSearch1/respiratory-care/" className=''>Respiratory Care </Link></li>
-                  <li><Link to="/jobSearch1/surgical-technology/" className=''>Surgical Technology </Link></li>
-                  <li><Link to="/jobSearch1/telecommunications/" className=''>Telecommunications </Link></li>
-                  <li><Link to="/jobSearch1/tourism/" className=''>Tourism </Link></li>
-                  <li><Link to="/jobSearch1/" className=''>Other Technical and Career Faculty </Link></li>
+                  <li><Link to="/JobSearch/automotive-technology/" className=''>Automotive Technology </Link></li>
+                  <li><Link to="/JobSearch/aviation/" className=''>Aviation </Link></li>
+                  <li><Link to="/JobSearch/construction-building-trades/" className=''>Construction and Building Trades </Link></li>
+                  <li><Link to="/JobSearch/cosmetology/" className=''>Cosmetology </Link></li>
+                  <li><Link to="/JobSearch/culinary-arts/" className=''>Culinary Arts </Link></li>
+                  <li><Link to="/JobSearch/dental-hygienists-assistants/" className=''>Dental Hygienists and Assistants </Link></li>
+                  <li><Link to="/JobSearch/diagnostic-imaging-radiography/" className=''>Diagnostic Imaging and Radiography </Link></li>
+                  <li><Link to="/JobSearch/electronics/" className=''>Electronics </Link></li>
+                  <li><Link to="/JobSearch/fire-science/" className=''>Fire Science </Link></li>
+                  <li><Link to="/JobSearch/massage-therapy/" className=''>Massage Therapy </Link></li>
+                  <li><Link to="/JobSearch/medical-assistants/" className=''>Medical Assistants </Link></li>
+                  <li><Link to="/JobSearch/medical-billing-coding/" className=''>Medical Billing and Coding </Link></li>
+                  <li><Link to="/JobSearch/paramedics-emts/" className=''>Paramedics and EMTs </Link></li>
+                  <li><Link to="/JobSearch/respiratory-care/" className=''>Respiratory Care </Link></li>
+                  <li><Link to="/JobSearch/surgical-technology/" className=''>Surgical Technology </Link></li>
+                  <li><Link to="/JobSearch/telecommunications/" className=''>Telecommunications </Link></li>
+                  <li><Link to="/JobSearch/tourism/" className=''>Tourism </Link></li>
+                  <li><Link to="/JobSearch/" className=''>Other Technical and Career Faculty </Link></li>
                 </ul>
               </ul>
             </div>

@@ -2,7 +2,7 @@ import { createSlice, nanoid, createAsyncThunk } from '@reduxjs/toolkit'
 
 const initialState = {
   employer: {},
-  job: { description:''},
+  job: { description: '', employer_id: 0 },
   status: 'dangerTest',
   id: 13498,
   darkMode: 'light',

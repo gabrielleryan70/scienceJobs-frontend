@@ -8,13 +8,12 @@ import {
 import Home from "./views/Home"
 import TermsConditions from "./views/TermsConditions"
 import JobSearch from "./views/JobSearch"
-import JobSearch1 from "./views/JobSearch1"
 import AboutAJ from "./views/AboutAJ"
 import FAQ from "./views/FAQ"
 import ContactForm from "./views/ContactForm"
 import DiversayStatement from "./views/DiversayStatement"
 import FindEmployers from "./views/FindEmployers"
- 
+
 import Australia from "./views/Australia"
 import Layout from './components/Layout'
 const AppRouter = () => {
@@ -31,10 +30,10 @@ const AppRouter = () => {
           <Route exact path='/home' element={<Home />} />
           <Route path='/termsConditions' element={<TermsConditions />} />
           <Route path='/jobSearch' element={<JobSearch />} />
-          <Route path='/jobSearch1/:name?' element={<JobSearch1 />} />
+          <Route path='/JobSearch/:name?' element={<JobSearch />} />
           <Route path='/aboutAJ' element={<AboutAJ />} />
           <Route path='/faq' element={<FAQ />} />
-          <Route path='/jobSearch1' element={<JobSearch1 />} />
+          <Route path='/JobSearch' element={<JobSearch />} />
           <Route path='/diversayStatement' element={<DiversayStatement />} />
           <Route path='/contactForm' element={<ContactForm />} />
           <Route path='/findEmployers' element={<FindEmployers />} />

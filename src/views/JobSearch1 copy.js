@@ -16,7 +16,7 @@ import { useParams } from 'react-router-dom';
 import { setJob, setSearchJobCriteria } from '../store/postsSlice';
 import { Helmet } from "react-helmet";
 
-const JobSearch1 = () => {
+const JobSearch = () => {
   let { name } = useParams();
   const dispatch = useDispatch()
   const keyWordRef = useRef("")
@@ -169,4 +169,4 @@ const JobSearch1 = () => {
     {content}
   </div>
 }
-export default JobSearch1
+export default JobSearch
