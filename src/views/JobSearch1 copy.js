@@ -6,8 +6,6 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import JobList from './JobList'
 import JobDetail from './JobDetail'
-import { useNavigate } from "react-router-dom"
-import { useLocation } from "react-router-dom";
 import {
   useGetJobsQuery,
 } from '../store/apiSlice'
@@ -19,37 +17,15 @@ import { setJob, setSearchJobCriteria } from '../store/postsSlice';
 import { Helmet } from "react-helmet";
 
 const JobSearch1 = () => {
-  const navigate = useNavigate()
-  let q="",l=""
-  const { name } = useParams();
-  const location = useLocation();
-  console.log(location.state.l)
-  
-  const keyWordRef = useRef('')
-  const locationRef = useRef('')
-  let searchTerm = '';
-  if (name) {
-    q = name.replace(/-/g, ' ');
-  } else if (location.state.q || location.state.l) {
-    // alert(location.state.l)
-    q = location.state.q || ''
-    l = location.state.l || ''
-
-  }
-  useEffect(() => {
-    keyWordRef.current.value = q
- 
-    locationRef.current.value = l
-
-  }, []);
-
+  let { name } = useParams();
   const dispatch = useDispatch()
-
+  const keyWordRef = useRef("")
+  const locationRef = useRef("")
   const {
     data,
     isLoading,
     isSuccess,
-  } = useGetJobsQuery({ q: q ||'job',l })
+  } = useGetJobsQuery({ q: name ||'job' })
   useEffect(() => {
     if (data) dispatch(setJob(data[0]));
   }, [data, dispatch]);
@@ -155,10 +131,7 @@ const JobSearch1 = () => {
     if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
     if (locationRef.current.value.trim()) a.l = locationRef.current.value.trim()
     console.log(a)
-    //dispatch(setSearchJobCriteria(a))
-    //alert()
-    navigate("/JobSearch1", { state: { q: keyWordRef.current.value.trim(), l: locationRef.current.value.trim() } });
-    window.location.reload();
+    dispatch(setSearchJobCriteria(a))
   }
   return <div className='overflow-y w-full'>
     <Helmet>

@@ -18,9 +18,8 @@ const Home = () => {
     if (sessionStorage.getItem("location")) {
       a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
       console.log(a)
-      //dispatch(setSearchJobCriteria(a))
-      //navigate(`/JobSearch`)
-      navigate("/JobSearch1", { state: { q: keyWordRef.current.value.trim() , l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
+      dispatch(setSearchJobCriteria(a))
+      navigate(`/JobSearch`)
     } else {
       const fetchLocation1 = async () => {
         try {
@@ -38,9 +37,8 @@ const Home = () => {
           dispatch(setRegion(countryMappings[country.toLowerCase()]))
           a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
           console.log(a)
-          //dispatch(setSearchJobCriteria(a)) 
-          //alert(countryMappings1[sessionStorage.getItem("location")].searchLocation)
-          navigate("/JobSearch1", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
+          dispatch(setSearchJobCriteria(a))
+          navigate(`/JobSearch`)
         })
         .catch(error => {
           console.log('Error:', error);

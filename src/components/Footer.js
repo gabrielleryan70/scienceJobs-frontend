@@ -10,7 +10,8 @@ const Footer = () => {
                         <li className='text-[#f4a10c]'>Navigation</li>
                         <li><a className="footer-nav__link" href="$site_url/">Home</a></li>
                         <li><Link to="/contactForm">Contact Us</Link></li>
-                        <li><a className="footer-nav__link" href="https://academicjobs.com/about-academic-jobs/">About AJ</a></li>
+                        <li><Link to="/aboutAJ">About AJ</Link></li>
+                        
                         <li><a href="https://academicjobs.com/sitemap">Site Map</a></li>
                     </ul>
                 </div>

@@ -9,6 +9,7 @@ import Home from "./views/Home"
 import TermsConditions from "./views/TermsConditions"
 import JobSearch from "./views/JobSearch"
 import JobSearch1 from "./views/JobSearch1"
+import AboutAJ from "./views/AboutAJ"
 import ContactForm from "./views/ContactForm"
 import DiversayStatement from "./views/DiversayStatement"
 import FindEmployers from "./views/FindEmployers"
@@ -30,6 +31,8 @@ const AppRouter = () => {
           <Route path='/termsConditions' element={<TermsConditions />} />
           <Route path='/jobSearch' element={<JobSearch />} />
           <Route path='/jobSearch1/:name?' element={<JobSearch1 />} />
+          <Route path='/aboutAJ' element={<AboutAJ />} />
+          <Route path='/jobSearch1' element={<JobSearch1 />} />
           <Route path='/diversayStatement' element={<DiversayStatement />} />
           <Route path='/contactForm' element={<ContactForm />} />
           <Route path='/findEmployers' element={<FindEmployers />} />
