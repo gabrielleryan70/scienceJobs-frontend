@@ -2,86 +2,49 @@ import React from 'react';
 
 const TermsConditions = () => {
     return (
-        <div className="bg-gray-900">
-            <div className="relative">
-                <picture>
-                    <source
-                        srcSet="https://academicjobs.s3.amazonaws.com/img/banner/Academic-Jobs-priority-addon-mobile.png"
-                        media="(max-width: 480px)"
-                    />
-                    <img
-                        src="https://academicjobs.s3.amazonaws.com/img/banner/TermsAndConditions.jpg"
-                        alt=""
-                        className="w-full h-auto"
-                    />
-                </picture>
-                <div
-                    className="bg-cover bg-center bg-repeat"
-                    style={{
-                        backgroundImage: 'url("https://academicjobs.s3.amazonaws.com/img/_misc/Sign-in-upBackground.png")',
-                    }}
-                >
-                    <div className="max-w-screen-xl mx-auto py-12 px-6 text-white">
-                        <h4 className="text-orange-500 text-2xl font-semibold">Introduction</h4>
-                        <p>
-                            Please read these Terms & Conditions carefully before using AcademicJobs.
-                            AcademicJobs reserves the right to modify these Terms & Conditions at any time.
-                        </p>
+        <div className="bg-white bg-opacity-70 p-4 text-start text-black text-base">
+            <strong className="block text-xl font-bold mb-2 mt-4">Terms and Conditions</strong>
+            <p>Welcome to AcademicJobs, the leading online platform for academic job seekers and employers. By using our website, you agree to comply with these terms and conditions, which we may update from time to time without notice. Please read them carefully before you proceed.</p>
 
-                        <h4 className="mt-6 text-2xl font-semibold">Services Provided</h4>
-                        <p>
-                            AcademicJobs provides a service to bring Job Seekers and Employers together. Job Seekers
-                            and Employers can register, create profiles/job posts and search for jobs and resumes.
-                        </p>
+            <strong className="block text-xl font-bold mb-2 mt-4">About AcademicJobs</strong>
+            <p>AcademicJobs is a website that connects academic job seekers and employers in the field of higher education. Whether you are looking for a faculty position, a research fellowship, or an administrative role, you can find the best opportunities here. And if you are an employer looking for qualified candidates, you can post your job openings and browse through our resume database.</p>
 
-                        <h4 className="mt-6 text-2xl font-semibold">Privacy Policy</h4>
-                        <p>
-                            Job Seeker personal data will be available to Employers visiting AcademicJobs. Personal
-                            data includes a Name which is mandatory, an email Address which is mandatory and a Telephone Number
-                            which is optional.
-                        </p>
-                        <p>
-                            Personal data provided by the user may be used by AcademicJobs to notify the user of
-                            any news, and or promotional offers relating only to the AcademicJobs website. The user can
-                            unsubscribe from these notifications at any time.
-                        </p>
-                        <p>AcademicJobs will not disclose user personal data to any third party.</p>
+            <strong className="block text-xl font-bold mb-2 mt-4">How to Use AcademicJobs</strong>
+            <p>To use AcademicJobs, you need to register as a user and create a profile. You can then upload your resume, cover letter, and other relevant documents to showcase your skills and qualifications. You can also search for jobs by keywords, location, discipline, or other criteria. You can apply for jobs directly on the website or contact the employer via email or phone.</p>
+            <p>If you are an employer, you need to register as a user and create a profile. You can then post your job openings, edit or delete them as needed, and manage your applications. You can also search for resumes by keywords, location, discipline, or other criteria. You can contact the candidates directly on the website or via email or phone.</p>
 
-                        <h4 className="mt-6 text-2xl font-semibold">Website Use</h4>
-                        <p>AcademicJobs may not be used for any of the following purposes:</p>
-                        <ol className="list-decimal list-inside ml-4">
-                            <li>To contact AcademicJobs users regarding any issue apart from the purpose of recruitment.</li>
-                            <li>To contact AcademicJobs users to offer any services from a 3rd party company.</li>
-                            <li>To post any illegal content.</li>
-                        </ol>
-                        <p>The user is required to provide truthful information in their profile or job post.</p>
-                        <p>It is prohibited to use any text or images from AcademicJobs for personal or commercial use.</p>
+            <strong className="block text-xl font-bold mb-2 mt-4">User Responsibilities</strong>
+            <ul>
+                <li>The accuracy, completeness, and legality of your profile, resume, cover letter, and any other information you submit or post on the website.</li>
+                <li>Your interactions with other users of the website, including potential employers and job seekers. We are not liable for any disputes, damages, or losses arising from such interactions.</li>
+                <li>Not using the website for any unlawful, fraudulent, harassing, abusive, or discriminatory purpose. You also agree not to post or transmit any content that violates the rights of others, such as intellectual property rights, privacy rights, or confidentiality rights.</li>
+                <li>Not using any automated means, such as bots, scripts, or spiders, to access, scrape, or manipulate the website or its data. You also agree not to interfere with the security or functionality of the website or its servers.</li>
+            </ul>
 
-                        <h4 className="mt-6 text-2xl font-semibold">User Information</h4>
-                        <p>AcademicJobs does not hold responsibility for any untruthful and/or inaccurate information included in job posts and profiles.</p>
-                        <p>AcademicJobs reserves the right to edit or delete any information submitted by the user to the website.</p>
+            <strong className="block text-xl font-bold mb-2 mt-4">Website Rights</strong>
+            <ul>
+                <li>Modify, suspend, or terminate the website or any of its features at any time without notice or liability.</li>
+                <li>Remove or edit any content that we deem inappropriate or violates these terms and conditions.</li>
+                <li>Monitor and review the website and its content for quality and compliance purposes.</li>
+            </ul>
 
-                        <h4 className="mt-6 text-2xl font-semibold">Liability</h4>
-                        <p>AcademicJobs will not be responsible for any loss or damage the user may encounter from using the website.</p>
+            <strong className="block text-xl font-bold mb-2 mt-4">Website Disclaimer</strong>
+            <p>We do not guarantee the availability, reliability, accuracy, or quality of the website or its content. We do not endorse or verify any employers, job seekers, or job opportunities posted on the website. You use the website at your own risk and discretion.</p>
+            <p>We are not responsible for any errors, omissions, delays, losses, damages, or costs that may result from your use of or inability to use the website or its content. To the fullest extent permitted by law, we disclaim all warranties and liabilities arising from or related to the website or its content.</p>
 
-                        <h4 className="mt-6 text-2xl font-semibold">Cookies Policy</h4>
-                        <p>Our website uses cookies.</p>
-                        <p>
-                            A cookie is a file containing an identifier (a string of letters and numbers) that is
-                            sent by a web server to a web browser and is stored by the browser. The identifier is then sent back
-                            to the server each time the browser requests a page from the server.
-                        </p>
-                        <p>We use Google Analytics to analyze the use of our website.</p>
-                        <p>Our analytics service provider generates statistical and other information about website use by means of cookies.</p>
-                        <p>
-                            You can delete cookies already stored on your computer. Please visit the 'Help' option in
-                            your browser menu to learn how to do this. Deleting cookies will have a negative impact on the
-                            usability of this website.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <strong className="block text-xl font-bold mb-2 mt-4">User Indemnity</strong>
+            <p>You agree to indemnify and hold us harmless from any claims, demands, damages, liabilities, costs, or expenses (including legal fees) that may arise from your breach of these terms and conditions or your use of the website or its content.</p>
+
+            <strong className="block text-xl font-bold mb-2 mt-4">Governing Law</strong>
+            <p>These terms and conditions are governed by the laws of Australia. Any disputes arising from or related to these terms and conditions or the website shall be subject to the exclusive jurisdiction of the courts of Australia.</p>
+
+            <strong className="block text-xl font-bold mb-2 mt-4">Contact Us</strong>
+            <p>If you have any questions or feedback about these terms and conditions or the website, please contact us here.</p>
+
+            <p className="mb-8">&nbsp;</p>
+            <p className="absolute bottom-10 right-10"><a href="https://wordtohtml.net" target="_blank" className="text-xs text-gray-600">Converted to HTML with WordToHTML.net</a></p>
         </div>
+
     );
 };
 

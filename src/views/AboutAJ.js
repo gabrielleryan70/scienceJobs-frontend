@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const AboutAJ = () => {
     return (
         <div className="text-left mt-9 mb-0">
@@ -32,10 +33,12 @@ const AboutAJ = () => {
                 Our mission is to help you find your dream academic job or hire the best academic talent. We are committed to providing you with the most comprehensive and up-to-date information, the most advanced and user-friendly tools, and the most professional and personalized service. We are also passionate about supporting the academic community and promoting diversity, equity, and inclusion in higher education.
             </strong>
 
-            <strong className="block text-xl font-bold font-roboto text-black mb-4">
-                We hope you enjoy using AcademicJobs and find it useful for your academic career or recruitment needs. If you have any questions, feedback, or suggestions, please feel free to contact us at info(AT)academicjobs.com. We would love to hear from you!
-            </strong>
+          
+           
 
+            <strong className="block text-xl font-bold font-roboto  mb-4">
+                We hope you enjoy using AcademicJobs and find it useful for your academic career or recruitment needs. If you have any questions, feedback, or suggestions, please feel free to contact us <Link to="/contactUs" className="underline text-blue-500 font-bold">HERE</Link>. We would love to hear from you!
+            </strong>
             <strong className="block mb-8">&nbsp;</strong>
         </div>
 
