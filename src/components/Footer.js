@@ -31,7 +31,7 @@ const Footer = () => {
                         <li><a className="footer-nav__link" href="$site_url/jobs/">Find Jobs</a></li>
                         <li><a href="https://academicjobs.com/find-employer/">Find Employer</a></li>
                         <li><Link to="/diversayStatement">Diversity Statement</Link></li>
-                        <li><a href="https://academicjobs.com/frequently-asked-questions-for-australian-university-jobs/">FAQ</a></li>
+                        <li><Link to="/faq">FAQ</Link></li>
 
                     </ul>
                 </div>
