@@ -187,7 +187,7 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Agriculture </Link></li>
+                <li className='py-2 '><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Agriculture </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/agricultural-economics-agribusiness/" className=''>Agricultural Economics and Agribusiness</Link></li>
                   <li><Link to="/jobSearch1/agriculture-extension/" className=''>Agricultural Extension </Link></li>
