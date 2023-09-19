@@ -144,13 +144,13 @@ const Home = () => {
           <Link to="/JobSearch/Lecturer" className=''>Lecturer</Link>
           <Link to="/JobSearch/Professor" className=''>Professor</Link>
           <Link to="/JobSearch/Researcher" className=''>Researcher</Link>
-          <Link to="/JobSearch/LabTechnician" className=''>Lab Technician</Link>
-          <Link to="/JobSearch/AssistantProfessor" className=''>Assistant Professor</Link>
-          <Link to="/JobSearch/AssociateProfessor" className=''>Associate Professor</Link>
-          <Link to="/JobSearch/PostdoctoralResearcher" className=''>Postdoctoral Researcher</Link>
-          <Link to="/JobSearch/PostdoctoralFellow" className=''>Postdoctoral Fellow</Link>
-          <Link to="/JobSearch/VisitingGlobalAcademic" className=''>Visiting Global Academic</Link>
-          <Link to="/JobSearch/VisitingScholarOrFellow" className=''>Visiting Scholar or Fellow</Link>
+          <Link to="/JobSearch/Lab-Technician" className=''>Lab Technician</Link>
+          <Link to="/JobSearch/Assistant-Professor" className=''>Assistant Professor</Link>
+          <Link to="/JobSearch/Associate-Professor" className=''>Associate Professor</Link>
+          <Link to="/JobSearch/Postdoctoral-Researcher" className=''>Postdoctoral Researcher</Link>
+          <Link to="/JobSearch/Postdoctoral-Fellow" className=''>Postdoctoral Fellow</Link>
+          <Link to="/JobSearch/Visiting-Global-Academic" className=''>Visiting Global Academic</Link>
+          <Link to="/JobSearch/Visiting-Scholar-Fellow" className=''>Visiting Scholar or Fellow</Link>
           <Link to="/JobSearch/Tutor" className=''>Tutor</Link>
           <Link to="/JobSearch/Other" className=''>Other</Link>
         </div>
