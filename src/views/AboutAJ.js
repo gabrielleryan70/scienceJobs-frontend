@@ -2,7 +2,7 @@ import React from 'react';
 const AboutAJ = () => {
     return (
         <div className="text-left mt-9 mb-0">
-            <strong className="block text-4xl font-bold font-roboto text-black mb-4">About Us</strong>
+            <strong className="block text-4xl font-bold font-roboto text-[#f4a10c] mb-4">About Us</strong>
 
             <strong className="block text-3xl font-bold font-open-sans bg-white mb-8 p-3">
                 ALL THE BEST UNIVERSITY JOBS
