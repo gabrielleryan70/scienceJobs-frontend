@@ -180,7 +180,7 @@ const Home = () => {
         <div className="widget__text-block">
           <div className="faculty-container grid grid-cols-4 gap-4 py-2">
             <div className="column">
-              <ul className="myUL">
+              <ul className="h-[100px]">
                 <li><Link to="/jobSearch1/administration-support/" className='text-[#f4a10c]'>Administration & Support</Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/human-resources/" >Human Resources</Link></li>
@@ -239,6 +239,14 @@ const Home = () => {
               </ul>
             </div>
             <div className="column">
+           
+              <ul className="h-[100px]">
+                <li><Link to="/jobSearch1/faculty-executive/" className='text-[#f4a10c]'>Executive Jobs </Link></li>
+                <ul className="innerUL">
+                  <li><Link to="/jobSearch1/executive-president-chancellor/" className=''>President & Chancellor </Link></li>
+                  <li><Link to="/jobSearch1/faculty-executive/" className=''>Executive In Faculty</Link></li>
+                </ul>
+              </ul>
               <ul className="myUL">
                 <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Communications </Link></li>
                 <ul className="innerUL">
@@ -249,13 +257,6 @@ const Home = () => {
                   <li><Link to="/jobSearch1/faculty-communications-radio-tv-film/" className=''>Radio, Television, and Film </Link></li>
                   <li><Link to="/jobSearch1/speech-public-speaking/" className=''>Speech and Public Speaking </Link></li>
                   <li><Link to="/jobSearch1/communications-other-specialty/" className=''>Other Communications Specialities </Link></li>
-                </ul>
-              </ul>
-              <ul className="myUL">
-                <li><Link to="/jobSearch1/faculty-executive/" className='text-[#f4a10c]'>Executive Jobs </Link></li>
-                <ul className="innerUL">
-                  <li><Link to="/jobSearch1/executive-president-chancellor/" className=''>President & Chancellor </Link></li>
-                  <li><Link to="/jobSearch1/faculty-executive/" className=''>Executive In Faculty</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
@@ -296,6 +297,12 @@ const Home = () => {
               </ul>
             </div>
             <div className="column">
+              <ul className="h-[100px]">
+                <li><Link to="/jobSearch1/industry/" className='text-[#f4a10c]'>Industry Jobs </Link></li>
+                <ul className="innerUL">
+                  <li><Link to="/jobSearch1/industry/" className=''>Industry</Link></li>
+                </ul>
+              </ul>
               <ul className="myUL">
                 <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Health Sciences </Link></li>
                 <ul className="innerUL">
@@ -352,11 +359,8 @@ const Home = () => {
               </ul>
             </div>
             <div className="column">
-              <ul className="myUL">
-                <li><Link to="/jobSearch1/industry/" className='text-[#f4a10c]'>Industry Jobs </Link></li>
-                <ul className="innerUL">
-                  <li><Link to="/jobSearch1/industry/" className=''>Industry</Link></li>
-                </ul>
+              <ul className="h-[100px]">
+               
               </ul>
               <ul className="myUL">
                 <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Medicine </Link></li>
