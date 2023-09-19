@@ -30,7 +30,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-gray-900">
+        <div className="">
             <div className="container mx-auto py-16">
                 <h1 className="text-white text-5xl font-semibold text-center">LET'S GO!</h1>
                 <h4 className="text-center text-gray-500 text-lg mt-4">Tell us what you need, we make it easy.</h4>
@@ -42,13 +42,11 @@ const ContactForm = () => {
                                     type="text"
                                     id="name-input"
                                     name="name"
-                                    className="w-full px-4 py-3 bg-gray-700 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                                    className="w-full px-4 py-3 bg-gray-300 rounded-lg text-white focus:outline-none focus:border-orange-500"
                                     placeholder="Name"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="name-input" className="absolute left-4 top-2 text-gray-600 transition-all">
-                                    Name
-                                </label>
+                               
                             </div>
                         </div>
                         <div className="col-span-1">
@@ -57,13 +55,11 @@ const ContactForm = () => {
                                     type="text"
                                     id="email-input"
                                     name="email"
-                                    className="w-full px-4 py-3 bg-gray-700 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                                    className="w-full px-4 py-3 bg-gray-300 rounded-lg text-white focus:outline-none focus:border-orange-500"
                                     placeholder="Email"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="email-input" className="absolute left-4 top-2 text-gray-600 transition-all">
-                                    Email
-                                </label>
+                               
                             </div>
                         </div>
                         <div className="col-span-1">
@@ -72,13 +68,11 @@ const ContactForm = () => {
                                     type="text"
                                     id="phone-input"
                                     name="phone"
-                                    className="w-full px-4 py-3 bg-gray-700 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                                    className="w-full px-4 py-3 bg-gray-300 rounded-lg text-white focus:outline-none focus:border-orange-500"
                                     placeholder="Phone Number"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="phone-input" className="absolute left-4 top-2 text-gray-600 transition-all">
-                                    Phone Number
-                                </label>
+                               
                             </div>
                         </div>
                         <div className="col-span-2">
@@ -86,12 +80,12 @@ const ContactForm = () => {
                                 <textarea
                                     id="description-input"
                                     name="desc"
-                                    className="w-full px-4 py-3 bg-gray-700 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                                    className="w-full px-4 py-3 bg-gray-300 rounded-lg text-white focus:outline-none focus:border-orange-500"
                                     placeholder="Message"
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="description-input" className="absolute left-4 top-2 text-gray-600 transition-all">
-                                    Message
+                                    
                                 </label>
                             </div>
                         </div>
