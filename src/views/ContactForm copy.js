@@ -32,7 +32,7 @@ const ContactForm = () => {
     return (
         <div className="">
             <div className="container mx-auto py-16">
-                <h1 className="text-5xl font-semibold text-center text-[#f4a10c] ">LET'S GO!</h1>
+                <h1 className="text-white text-5xl font-semibold text-center">LET'S GO!</h1>
                 <h4 className="text-center text-gray-500 text-lg mt-4">Tell us what you need, we make it easy.</h4>
                 <form className="mt-8" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -106,61 +106,7 @@ const ContactForm = () => {
                     )}
                 </form>
             </div>
-            <div className="mainContent">
-                <div className="container1b bg-white text-yellow-500 font-openSans">
-                    GLOBAL OFFICE PHONE NUMBERS
-                </div>
-                <div className="container1b bg-white text-yellow-500 font-openSans grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <ul>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                Asia: +852-3730021(Hong Kong)
-                            </a>
-                        </li>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                Australia: +61-452070156 (Melbourne)
-                            </a>
-                        </li>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                Canada: 778 819 1866(Vancouver)
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                Europe: +49-4158730021(Berlin)
-                            </a>
-                        </li>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                New Zealand: +61-452070156 (Wellington)
-                            </a>
-                        </li>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                India: +91-2250972736 (Mumbai)
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                United Kingdom: +44-2045876329(London)
-                            </a>
-                        </li>
-                        <li>
-                            <a className="footer-nav__link" href="tel:+1234567890">
-                                United States: 4158190021 (San Francisco )
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
-       
     );
 };
 
