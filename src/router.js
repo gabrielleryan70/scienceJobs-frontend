@@ -20,11 +20,12 @@ const AppRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route
+          <Route path='/' index element={<Home />} />
+          {/* <Route
             exact
             path='/'
             element={<Navigate to='/home' replace />}
-          />
+          /> */}
           <Route exact path='/home' element={<Home />} />
           <Route path='/termsConditions' element={<TermsConditions />} />
           <Route path='/jobSearch' element={<JobSearch />} />

@@ -6,6 +6,7 @@ import JobDetail from './JobDetail'
 import SingleQA from './SingleQA'
 import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
+import { Helmet } from "react-helmet";
 const Home = () => {
   const navigate = useNavigate()
   const keyWordRef = useRef("")
@@ -48,6 +49,12 @@ const Home = () => {
     <>
       <div className="bg-white min-h-screen flex flex-col items-center  justify-center ">
         <div className='h-[40vh] flex flex-col items-end justify-end'>
+          <Helmet>
+            <title>Academic Jobs - The Number 1 job board for Higher Ed jobs, Top University Recruitment & College Jobs.</title>
+            <meta name="description" content="Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily." />
+            <meta name="keywords" content="Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs" />
+        
+          </Helmet>
           <img
             src="https://academicjobs.s3.amazonaws.com/img/_misc/ScienceJobsLogo.png"
             alt="Google Logo"
@@ -85,7 +92,6 @@ const Home = () => {
         <div className="newLine mb-4">
           <p className="font-semibold"></p>
           <p className="font-semibold"></p>
-
         </div>
         <div className="newLine">
           <p className="font-semibold">Find the best academic positions and administrative jobs in higher ed. Search for academic jobs, college careers and faculty positions online.</p>
@@ -131,9 +137,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-
-
-
       <div className="bg-white flex flex-col  ">
         <h2 className="text-xl text-[#f4a10c] font-bold mt-10">Academic Positions / Roles</h2>
         <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4  py-2">
@@ -164,14 +167,12 @@ const Home = () => {
           </a>
           <a href="https://academicjobs.com/jobs/visiting-scholar-Fellow-jobs/" className="   ">Visiting Scholar or Fellow
           </a>
-
           <a href="https://academicjobs.com/jobs/tutor-jobs/" className="   ">
             Tutor
           </a>
           <a href="https://academicjobs.com/jobs/other-jobs/" className="   ">
             Other
           </a>
-
         </div>
       </div>
       <h2 className="text-xl text-[#f4a10c] font-bold mt-10">Higher Ed Job Specialties</h2>
@@ -219,6 +220,26 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
+                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Fine and Applied Arts </Link></li>
+                <ul className="innerUL">
+                  <li><Link to="/jobSearch1/architecture/" className=''>Architecture </Link></li>
+                  <li><Link to="/jobSearch1/art/" className=''>Art </Link></li>
+                  <li><Link to="/jobSearch1/art-history/" className=''>Art History </Link></li>
+                  <li><Link to="/jobSearch1/dance/" className=''>Dance </Link></li>
+                  <li><Link to="/jobSearch1/digital-arts/" className=''>Digital Arts </Link></li>
+                  <li><Link to="/jobSearch1/fashion-textile-design/" className=''>Fashion and Textile Design </Link></li>
+                  <li><Link to="/jobSearch1/graphic-design/" className=''>Graphic Design </Link></li>
+                  <li><Link to="/jobSearch1/industrial-design/" className=''>Industrial Design </Link></li>
+                  <li><Link to="/jobSearch1/interior-design/" className=''>Interior Design </Link></li>
+                  <li><Link to="/jobSearch1/music/" className=''>Music </Link></li>
+                  <li><Link to="/jobSearch1/photography/" className=''>Photography </Link></li>
+                  <li><Link to="/jobSearch1/theatre/" className=''>Theatre </Link></li>
+                  <li><Link to="/jobSearch1/fine-applied-arts-other-specialities/" className=''>Other Fine and Applied Arts Specialities </Link></li>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="myUL">
                 <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Communications </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/broadcast-journalism/" className=''>Broadcast Journalism </Link></li>
@@ -230,8 +251,6 @@ const Home = () => {
                   <li><Link to="/jobSearch1/communications-other-specialty/" className=''>Other Communications Specialities </Link></li>
                 </ul>
               </ul>
-            </div>
-            <div className="column">
               <ul className="myUL">
                 <li><Link to="/jobSearch1/faculty-executive/" className='text-[#f4a10c]'>Executive Jobs </Link></li>
                 <ul className="innerUL">
@@ -273,24 +292,6 @@ const Home = () => {
                   <li><Link to="/jobSearch1/teacher-education-middle/" className=''>Teacher Education - Middle School </Link></li>
                   <li><Link to="/jobSearch1/teacher-education-secondary/" className=''>Teacher Education - Secondary Education </Link></li>
                   <li><Link to="/jobSearch1/education-other-specialty/" className=''>Other Education Specialities</Link></li>
-                </ul>
-              </ul>
-              <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Fine and Applied Arts </Link></li>
-                <ul className="innerUL">
-                  <li><Link to="/jobSearch1/architecture/" className=''>Architecture </Link></li>
-                  <li><Link to="/jobSearch1/art/" className=''>Art </Link></li>
-                  <li><Link to="/jobSearch1/art-history/" className=''>Art History </Link></li>
-                  <li><Link to="/jobSearch1/dance/" className=''>Dance </Link></li>
-                  <li><Link to="/jobSearch1/digital-arts/" className=''>Digital Arts </Link></li>
-                  <li><Link to="/jobSearch1/fashion-textile-design/" className=''>Fashion and Textile Design </Link></li>
-                  <li><Link to="/jobSearch1/graphic-design/" className=''>Graphic Design </Link></li>
-                  <li><Link to="/jobSearch1/industrial-design/" className=''>Industrial Design </Link></li>
-                  <li><Link to="/jobSearch1/interior-design/" className=''>Interior Design </Link></li>
-                  <li><Link to="/jobSearch1/music/" className=''>Music </Link></li>
-                  <li><Link to="/jobSearch1/photography/" className=''>Photography </Link></li>
-                  <li><Link to="/jobSearch1/theatre/" className=''>Theatre </Link></li>
-                  <li><Link to="/jobSearch1/fine-applied-arts-other-specialities/" className=''>Other Fine and Applied Arts Specialities </Link></li>
                 </ul>
               </ul>
             </div>
@@ -350,7 +351,6 @@ const Home = () => {
                 </ul>
               </ul>
             </div>
-
             <div className="column">
               <ul className="myUL">
                 <li><Link to="/jobSearch1/industry/" className='text-[#f4a10c]'>Industry Jobs </Link></li>
@@ -411,7 +411,6 @@ const Home = () => {
                 </ul>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
