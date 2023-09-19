@@ -5,15 +5,15 @@ const AboutAJ = () => {
         <div className="text-left mt-9 mb-0">
             <p className="block text-4xl font-bold font-roboto text-[#f4a10c] mb-4">About Us</p>
 
-            <p className="block text-3xl font-bold font-open-sans bg-white mb-8 text-center">
+            <p className="block text-3xl font-bold font-open-sans bg-white mb-8 ">
                 ALL THE BEST UNIVERSITY JOBS
             </p>
 
-            <p className="block text-xl  font-open-sans bg-white text-gray-700 mb-4 text-center">
+            <p className="block text-xl  font-open-sans bg-white text-gray-700 mb-4 font-bold">
                 Find the best academic positions in your city, country and worldwide.
             </p>
 
-            <p className="block text-xl   font-open-sans bg-white text-gray-700 mb-4 text-center">
+            <p className="block text-xl   font-open-sans bg-white text-gray-700 mb-4 font-bold">
                 Also listing administrative, staff and support roles in higher ed. Search for academic jobs, college careers and faculty positions online with AcademicJobs.com.
             </p>
 
