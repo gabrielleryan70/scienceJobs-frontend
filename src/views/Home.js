@@ -361,6 +361,10 @@ const Home = () => {
             </div>
             <div className="column">
               <ul className="h-[100px]">
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/industry/" className='text-[#f4a10c] font-bold'></Link></li>
+                <ul className="innerUL">
+                  <li><Link to="/jobSearch1/industry/" className=''></Link></li>
+                </ul>
               </ul>
               <ul className="myUL">
                 <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Medicine </Link></li>
