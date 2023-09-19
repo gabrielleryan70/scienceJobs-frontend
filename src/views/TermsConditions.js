@@ -41,8 +41,6 @@ const TermsConditions = () => {
             <strong className="block text-xl font-bold mb-2 mt-4">Contact Us</strong>
             <p>If you have any questions or feedback about these terms and conditions or the website, please contact us here.</p>
 
-            <p className="mb-8">&nbsp;</p>
-            <p className="absolute bottom-10 right-10"><a href="https://wordtohtml.net" target="_blank" className="text-xs text-gray-600">Converted to HTML with WordToHTML.net</a></p>
         </div>
 
     );

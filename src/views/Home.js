@@ -182,14 +182,14 @@ const Home = () => {
           <div className="faculty-container grid grid-cols-4 gap-4 py-2">
             <div className="column">
               <ul className="h-[100px]">
-                <li><Link to="/jobSearch1/administration-support/" className='text-[#f4a10c]'>Administration & Support</Link></li>
+                  <li className='mb-1 mt-4'><Link to="/jobSearch1/administration-support/" className='text-[#f4a10c] font-bold'>Administration & Support</Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/human-resources/" >Human Resources</Link></li>
                   <li><Link to="/jobSearch1/administration-support/" >Admin Other Specialities</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li className='py-2 '><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Agriculture </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Agriculture </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/agricultural-economics-agribusiness/" className=''>Agricultural Economics and Agribusiness</Link></li>
                   <li><Link to="/jobSearch1/agriculture-extension/" className=''>Agricultural Extension </Link></li>
@@ -204,7 +204,7 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Business </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Business </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/accounting/" className=''>Business Accounting </Link></li>
                   <li><Link to="/jobSearch1/administration/" className=''>Business Administration </Link></li>
@@ -221,7 +221,7 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Fine and Applied Arts </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Fine and Applied Arts </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/architecture/" className=''>Architecture </Link></li>
                   <li><Link to="/jobSearch1/art/" className=''>Art </Link></li>
@@ -241,14 +241,15 @@ const Home = () => {
             </div>
             <div className="column">
               <ul className="h-[100px]">
-                <li><Link to="/jobSearch1/faculty-executive/" className='text-[#f4a10c]'>Executive Jobs </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/faculty-executive/" className='text-[#f4a10c] font-bold'>
+       Executive Jobs </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/executive-president-chancellor/" className=''>President & Chancellor </Link></li>
                   <li><Link to="/jobSearch1/faculty-executive/" className=''>Executive In Faculty</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Communications </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Communications </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/broadcast-journalism/" className=''>Broadcast Journalism </Link></li>
                   <li><Link to="/jobSearch1/journalism/" className=''>Journalism </Link></li>
@@ -260,7 +261,7 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Engineering </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Engineering </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/aerospace/" className=''>Aerospace Engineering </Link></li>
                   <li><Link to="/jobSearch1/engineering-agricultural/" className=''>Agricultural Engineering </Link></li>
@@ -275,7 +276,7 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Education </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Education </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/adult-distance-education/" className=''>Adult and Distance Education </Link></li>
                   <li><Link to="/jobSearch1/counselor-education/" className=''>Counselor Education </Link></li>
@@ -298,13 +299,13 @@ const Home = () => {
             </div>
             <div className="column">
               <ul className="h-[100px]">
-                <li><Link to="/jobSearch1/industry/" className='text-[#f4a10c]'>Industry Jobs </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/industry/" className='text-[#f4a10c] font-bold'>Industry Jobs </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/industry/" className=''>Industry</Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Health Sciences </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Health Sciences </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/athletic-training/" className=''>Athletic Training </Link></li>
                   <li><Link to="/jobSearch1/communication-sciences-disorders/" className=''>Communication Sciences and Disorders </Link></li>
@@ -323,13 +324,13 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/law-legal-studies/" className='text-[#f4a10c]'>Law and Legal Studies </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Law and Legal Studies </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/law-legal-studies/" className=''>Law and Legal Studies </Link></li>
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Liberal Arts </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Liberal Arts </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/american-studies/" className=''>American Studies </Link></li>
                   <li><Link to="/jobSearch1/anthropology/" className=''>Anthropology </Link></li>
@@ -362,7 +363,7 @@ const Home = () => {
               <ul className="h-[100px]">
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Medicine </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Medicine </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/chiropractic/" className=''>Chiropractic </Link></li>
                   <li><Link to="/jobSearch1/dentistry/" className=''>Dentistry </Link></li>
@@ -374,7 +375,7 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Science </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Science </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/astronomy-astrophysics/" className=''>Astronomy and Astrophysics </Link></li>
                   <li><Link to="/jobSearch1/biochemistry-molecular-biology/" className=''>Biochemistry and Molecular Biology </Link></li>
@@ -391,7 +392,7 @@ const Home = () => {
                 </ul>
               </ul>
               <ul className="myUL">
-                <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Technical and Career </Link></li>
+                <li className='mb-1 mt-4'><Link to="/jobSearch1/" className='text-[#f4a10c] font-bold'>Technical and Career </Link></li>
                 <ul className="innerUL">
                   <li><Link to="/jobSearch1/automotive-technology/" className=''>Automotive Technology </Link></li>
                   <li><Link to="/jobSearch1/aviation/" className=''>Aviation </Link></li>
