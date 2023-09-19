@@ -53,7 +53,6 @@ const Home = () => {
             <title>Academic Jobs - The Number 1 job board for Higher Ed jobs, Top University Recruitment & College Jobs.</title>
             <meta name="description" content="Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily." />
             <meta name="keywords" content="Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs" />
-        
           </Helmet>
           <img
             src="https://academicjobs.s3.amazonaws.com/img/_misc/ScienceJobsLogo.png"
@@ -239,7 +238,6 @@ const Home = () => {
               </ul>
             </div>
             <div className="column">
-           
               <ul className="h-[100px]">
                 <li><Link to="/jobSearch1/faculty-executive/" className='text-[#f4a10c]'>Executive Jobs </Link></li>
                 <ul className="innerUL">
@@ -360,7 +358,6 @@ const Home = () => {
             </div>
             <div className="column">
               <ul className="h-[100px]">
-               
               </ul>
               <ul className="myUL">
                 <li><Link to="/jobSearch1/" className='text-[#f4a10c]'>Medicine </Link></li>
