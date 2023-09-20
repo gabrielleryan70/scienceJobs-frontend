@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 const Header = () => {
     const region = useSelector((state) => state.posts.region)
+    //alert(region)
     return (
         <div className=" w-full  flex justify-between items-center py-3">
             <div className=" flex justify-between items-center gap-10">
@@ -26,47 +27,47 @@ const Header = () => {
                             <a id="a-global" className="navbar__link" href="https://academicjobs.com"><span>Global</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/africa"><span>Africa</span></a>
+                            <a className="navbar__link" href="/Africa"><span>Africa</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/asia"><span>Asia</span></a>
+                            <a className="navbar__link" href="/Asia"><span>Asia</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/australia"><span>Australia</span></a>
+                            <a className="navbar__link" href="/Australia"><span>Australia</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/canada"><span>Canada</span></a>
+                            <a className="navbar__link" href="/Canada"><span>Canada</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/europe"><span>Europe</span></a>
+                            <a className="navbar__link" href="/Europe"><span>Europe</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/india"><span>India</span></a>
+                            <a className="navbar__link" href="/India"><span>India</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/middleeast"><span>Middle East</span></a>
+                            <a className="navbar__link" href="/Middle-East"><span>Middle East</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/newzealand"><span>New Zealand</span></a>
+                            <a className="navbar__link" href="/New-Zealand"><span>New Zealand</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/southamerica"><span>South America</span></a>
+                            <a className="navbar__link" href="/South-America"><span>South America</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/uk"><span>United Kingdom</span></a>
+                            <a className="navbar__link" href="/UK"><span>United Kingdom</span></a>
                         </li>
                         <li className="navbar__item ">
-                            <a className="navbar__link" href="https://academicjobs.com/usa"><span>USA</span></a>
+                            <a className="navbar__link" href="/USA"><span>USA</span></a>
                         </li>
 
                     </ul>
                 </div>
-                {/* <a href="https://academicjobs.com/career-advice/" className="text-gray-900 hover:underline">Career Advice</a> */}
+                {/* <a href="/career-advice/" className="text-gray-900 hover:underline">Career Advice</a> */}
             </div>
             <div className=' flex justify-between gap-10'>
            
              
-                <a href="https://academicjobs.com/recruitment" className="text-[#f4a10c] hover:underline font-bold">Recruiters</a>
+                <a href="/recruitment" className="text-[#f4a10c] hover:underline font-bold">Recruiters</a>
             </div>
         </div>
     )

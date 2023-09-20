@@ -18,6 +18,7 @@ const Home = () => {
     if (sessionStorage.getItem("location")) {
       a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
       console.log(a)
+      //dispatch(setRegion(countryMappings[country.toLowerCase()]))
       //dispatch(setSearchJobCriteria(a))
       //navigate(`/JobSearch`)
       navigate("/JobSearch", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
@@ -82,6 +83,7 @@ const Home = () => {
                 const a = {}
                 if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
                 dispatch(setSearchJobCriteria(a))
+                dispatch(setRegion('Global'))
                 navigate(`/JobSearch`)
               }}
             >Or Search Globally</h2>
