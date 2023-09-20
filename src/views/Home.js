@@ -102,7 +102,7 @@ const Home = () => {
       <div className="bg-white flex flex-col  ">
         <h2 className="text-xl text-[#f4a10c] font-bold">Academic Job Regions</h2>
         <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4  py-2">
-          <a href="https://academicjobs.com/usa/" className="\    ">
+          <a href="/USA" className="">
             United States
           </a>
           <a href="https://academicjobs.com/australia/" className="">

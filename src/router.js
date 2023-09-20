@@ -13,20 +13,17 @@ import FAQ from "./views/FAQ"
 import ContactForm from "./views/ContactForm"
 import DiversayStatement from "./views/DiversayStatement"
 import FindEmployers from "./views/FindEmployers"
-
 import Australia from "./views/Australia"
+import USA from "./views/USA"
 import Layout from './components/Layout'
+//import Region from "./views/Region"
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' index element={<Home />} />
-          {/* <Route
-            exact
-            path='/'
-            element={<Navigate to='/home' replace />}
-          /> */}
+          
           <Route exact path='/home' element={<Home />} />
           <Route path='/termsConditions' element={<TermsConditions />} />
           <Route path='/jobSearch' element={<JobSearch />} />
@@ -37,7 +34,9 @@ const AppRouter = () => {
           <Route path='/diversayStatement' element={<DiversayStatement />} />
           <Route path='/contactForm' element={<ContactForm />} />
           <Route path='/findEmployers' element={<FindEmployers />} />
-          <Route exact path='/australia' element={<Australia />} />
+          <Route exact path='/Australia' element={<Australia />} />
+          <Route exact path='/USA' element={<USA />} />
+          {/* <Route path='/:name' element={<Region />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
