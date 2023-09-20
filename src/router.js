@@ -52,7 +52,7 @@ const AppRouter = () => {
           <Route exact path='/South-America' element={<SouthAmerica />} />
           <Route exact path='/Canada' element={<Canada />} />
           <Route exact path='/Europe' element={<Europe />} />
-          <Route exact path='/MiddleEast' element={<MiddleEast />} />
+          <Route exact path='/Middle-East' element={<MiddleEast />} />
       
 
           {/* <Route path='/:name' element={<Region />} /> */}

@@ -40,161 +40,57 @@ const Australia = () => {
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <ul>
-              <li><a class="footer-nav__link ddd" href="https://academicjobs.com/jobs/act-jobs/">ACT</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3739/australian-national-university-anu/">Australian
-                National University</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3821/University-of-Canberra/">University of Canberra</a>
+              <a class="footer-nav__link ddd"
+                href="https://academicjobs.com/jobs/?l=Australia&state=eNGLAND">England</a>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12635/">University of
+                Cambridge</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3099/">University of
+                Oxford</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12527/">University College
+                London</a>
               </li>
-              <li><a class="footer-nav__link ddd" href="https://academicjobs.com/NEW-SOUTH-WALES-jobs/">New South
-                Wales</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3171/the-university-of-sydney/">The University of
-                Sydney</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3738/university-of-new-south-wales-unsw/">University of
-                New South Wales</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3855/Charles-Sturt-University/">Charles Sturt
-                University</a>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3129/">Imperial College
+                London</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3153/">London School of
+                Economics and Political Science</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3833/">University of
+                Manchester</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12614/">University of
+                Birmingham</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12797/">University of
+                Leeds</a></li>
+            </ul>
+            <ul>
+              <a class="footer-nav__link ddd" href="https://academicjobs.com/NEW-SOUTH-WALES-Jobs">Scotland</a>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12681/">University of
+                Edinburgh</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12713/">University of
+                Glasgow</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12555/">University of
+                Aberdeen</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/13005/">University of St
+                Andrews</a></li>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/12669/">University of
+                Dundee</a></li>
+            </ul>
+            <ul>
+              <a class="footer-nav__link ddd" href="https://academicjobs.com/VICTORIA-ACADEMIC-Jobs">Wales</a>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/6252/">Cardiff University</a>
               </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3853/Australian-Catholic-University">Australian
-                Catholic University</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3862/Southern-Cross-University/">Southern Cross
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/10538/">Swansea
                 University</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3864/University-of-Technology-Sydney/">University of
-                Technology, Sydney</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3881/Macquarie-University/">Macquarie University</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3209/University-of-New-England/">University of New
-                England England</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3863/University-of-Newcastle/">University of
-                Newcastle</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3865/University-of-Western-Sydney/">University of Western
-                Sydney</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3866/University-of-Wollongong/">University of
-                Wollongong</a>
-              </li>
-            </ul>
-            <ul>
-              <a class="footer-nav__link ddd" href="https://academicjobs.com/VICTORIA-ACADEMIC/
-                                ">Victoria</a>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/The-University-of-Melbourne/
-                                    ">The University of Melbourne</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/Monash-University/
-                                    ">Monash University</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3871/Victoria-University/
-                                ">Victoria University</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3872/University-of-Divinity/
-                                ">University of Divinity</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3870/Swimburne-University-of-Technology/
-                                ">Swimburne University of Technology</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3869/RMIT-University/
-                                ">RMIT University</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3868/La-Trobe-University/
-                                ">La Trobe University</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/company/3856/Deakin-University/
-                                ">Deakin University</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3787/Federation-University/
-                                ">Federation University Australia</a></li>
-              <a class="footer-nav__link ddd" href="https://academicjobs.com/states/jobs-in-tasmania
-                            ">Tasmania</a>
-              <li><a class="footer-nav__link" href="hhttps://academicjobs.com/company/3867/University-of-Tasmania/
-                                ">The University of Tasmania</a>
-              </li>
-            </ul>
-            <ul>
-              <a class="footer-nav__link ddd" href="https://academicjobs.com/Queensland-jobs/
-                                ">Queensland</a>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3785/Bond-University/
-                                ">Bond University</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3172/University-of-Queensland/">The University of
-                Queensland</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3854/CQUniversity/">CQUniversity</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3787/Federation-University-Australia/">Federation
-                University Australia</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3860/Griffith-University/">Griffith University</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3857/James-Cook-University/">James Cook University</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3861/University-of-Southern-Queensland/">University of
-                Southern Queensland</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3786/Queensland-University-of-Technology/">Queensland
-                University of Technology</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3859/University-of-Sunshine-Coast/">University of
-                Sunshine Coast</a></li>
-              <a class="footer-nav__link ddd" href="https://academicjobs.com/NORTHERN-TERRITORY-jobs/">Northern
-                Territory</a>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3880/Charles-Darwin-University/">Charles Darwin
-                University</a>
-              </li>
-            </ul>
-            <ul>
-              <a class="footer-nav__link ddd" href="https://academicjobs.com/states/jobs-in-south-australia/">South
-                Australia</a>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3737/The-University-of-Adelaide/">The University of
-                Adelaide</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3146/Carnegie-Mellon-University/">Carnegie Mellon
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/13115/">Aberystwyth
                 University</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3875/Torrens-University-Australia/">Torrens University
-                Australia</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3874/University-of-South-Australia/">University of South
-                Australia</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3873/Flinders-University/">Flinders University</a>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/13116/">Bangor University</a>
               </li>
-              <a class="footer-nav__link ddd" href="https://academicjobs.com/WESTERN-AUSTRALIA-jobs/">Western
-                Australia</a>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3173/University-of-Western-Australia/">The University of
-                Western Australia</a></li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3879/University-of-Notre-Dame/">University of Notre
-                Dame</a>
+            </ul>
+            <ul>
+              <a class="footer-nav__link ddd" href="https://academicjobs.com/states/jobs-in-tasmania">Northern
+                Ireland</a>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/10799/">Queen's University
+                Belfast</a>
               </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3878/Murdoch-University/">Murdoch
-                University</a>
-              </li>
-              <li><a class="footer-nav__link"
-                href="https://academicjobs.com/company/3877/Edith-Cowan-University/">Edith Cowan University</a>
-              </li>
-              <li><a class="footer-nav__link" href="https://academicjobs.com/company/3876/Curtin-University/">Curtin
-                University</a>
+              <li><a class="footer-nav__link" href="https://academicjobs.com/company/13098/">Ulster University</a>
               </li>
             </ul>
           </div>
