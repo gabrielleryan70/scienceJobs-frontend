@@ -7,7 +7,11 @@ import SingleQA from './SingleQA'
 import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
 import { Helmet } from "react-helmet";
+
+
 const SearchBox = () => {
+  const region = useSelector((state) => state.posts.region)
+  //alert(region)
   const navigate = useNavigate()
   const keyWordRef = useRef("")
   const dispatch = useDispatch()
@@ -15,12 +19,14 @@ const SearchBox = () => {
     event.preventDefault();
     const a = {}
     if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
-    if (sessionStorage.getItem("location")) {
-      a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
+    
+    if (region) {
+      a.l = countryMappings1[region].searchLocation
       console.log(a)
       //dispatch(setSearchJobCriteria(a))
       //navigate(`/JobSearch`)
-      navigate("/JobSearch", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
+      //alert(region)
+      navigate("/JobSearch", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[region].searchLocation } });
     } else {
       const fetchLocation1 = async () => {
         try {

@@ -7,7 +7,7 @@ import SingleQA from './SingleQA'
 import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
 import { Helmet } from "react-helmet";
-const Australia = () => {
+const Europe = () => {
   const navigate = useNavigate()
   const keyWordRef = useRef("")
   const dispatch = useDispatch()
@@ -203,4 +203,4 @@ const Australia = () => {
     </div>
   )
 }
-export default Australia
+export default Europe

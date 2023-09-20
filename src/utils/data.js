@@ -23,6 +23,6 @@ export const countryMappings1 = {
     'Middle-East': { menu: 'Middle East', searchLocation: 'Middle East' },
     'New-Zealand': { menu: 'New Zealand', searchLocation: 'New Zealand' },
     'UK': { menu: 'United Kingdom', searchLocation: 'United Kingdom' },
-    'USA': { menu: 'USA', searchLocation: 'USA' },
+    'USA': { menu: 'USA', searchLocation: 'Boston', searchLocation1: 'USA'},
     
 };

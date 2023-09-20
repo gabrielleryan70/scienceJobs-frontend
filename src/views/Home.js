@@ -7,6 +7,8 @@ import SingleQA from './SingleQA'
 import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
 import { Helmet } from "react-helmet";
+import DispatchLink from '../components/DispatchLink'
+
 const Home = () => {
   const navigate = useNavigate()
   const keyWordRef = useRef("")
@@ -104,42 +106,23 @@ const Home = () => {
       </div>
       <div className="bg-white flex flex-col  ">
         <h2 className="text-xl text-[#f4a10c] font-bold">Academic Job Regions</h2>
-        <div className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4  py-2">
-          <a href="/USA" className="">
-            United States
-          </a>
-          <a href="https://academicjobs.com/australia/" className="">
-            Australia
-          </a>
-          <a href="https://academicjobs.com/uk/" className="">
-            United Kingdom
-          </a>
-          <a href="https://academicjobs.com/canada/" className="">
-            Canada
-          </a>
-          <a href="https://academicjobs.com/newzealand/" className="">New Zealand
-          </a>
-          <a href="https://academicjobs.com/europe/" className="">
-            Europe
-          </a>
-          <a href="https://academicjobs.com/india/" className="">
-            India
-          </a>
-          <a href="https://academicjobs.com/asia/" className="">
-            Asia
-          </a>
-          <a href="https://academicjobs.com/africa/" className="">Africa
-          </a>
-          <a href="https://academicjobs.com/middleeast/" className="">
-            Middle East
-          </a>
-          <a href="https://academicjobs.com/southamerica/" className="">
-            South America
-          </a>
-          <a href="https://academicjobs.com/jobs/other-jobs/" className="">
-            Other
-          </a>
-        </div>
+        <ul className=" text-left  grid grid-cols-1 md:grid-cols-4 gap-4  py-2">
+        
+
+            {Object.keys(countryMappings1).map((key) => (
+              <li className="navbar__item" key={key}>
+                <DispatchLink
+                  to={`/${key}`}
+                  region={key}
+                  className="navbar__link"
+                >
+                  {countryMappings1[key].menu}
+                </DispatchLink>
+              </li>
+            ))}
+
+         
+        </ul>
       </div>
       <div className="bg-white flex flex-col  ">
         <h2 className="text-xl text-[#f4a10c] font-bold mt-10">Academic Positions / Roles</h2>

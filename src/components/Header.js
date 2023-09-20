@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div className=" w-full  flex justify-between items-center py-3">
             <div className=" flex justify-between items-center gap-10">
-                <a href="https://sciencejobs.com.au/" className="">
+                <a href="/" className="">
                     <img
                         className='w-20'
                         src="https://academicjobs.s3.amazonaws.com/icon/ACjobsIcon-min.png" alt="" />

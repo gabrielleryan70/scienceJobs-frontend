@@ -11,42 +11,9 @@ const USA = () => {
   const navigate = useNavigate()
   const keyWordRef = useRef("")
   const dispatch = useDispatch()
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    const a = {}
-    if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
-    if (sessionStorage.getItem("location")) {
-      a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
-      console.log(a)
-      //dispatch(setSearchJobCriteria(a))
-      //navigate(`/JobSearch`)
-      navigate("/JobSearch", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
-    } else {
-      const fetchLocation1 = async () => {
-        try {
-          const response = await fetch("https://api.geoapify.com/v1/ipinfo?apiKey=ea0e191c22a94bf39e0e58ffbe2d6b66");
-          const result = await response.json();
-          return result.country.name
-        } catch (error) {
-          return ""
-        }
-      }
-      fetchLocation1()
-        .then(country => {
-          sessionStorage.setItem("location", countryMappings[country.toLowerCase()]);
-          //alert(countryMappings[country.toLowerCase()])
-          dispatch(setRegion(countryMappings[country.toLowerCase()]))
-          a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
-          console.log(a)
-          //dispatch(setSearchJobCriteria(a)) 
-          //alert(countryMappings1[sessionStorage.getItem("location")].searchLocation)
-          navigate("/JobSearch", { state: { q: keyWordRef.current.value.trim(), l: countryMappings1[sessionStorage.getItem("location")].searchLocation } });
-        })
-        .catch(error => {
-          console.log('Error:', error);
-        });
-    }
-  };
+  useEffect(() => {
+      window.scrollTo(0, 0)
+  }, []);
   return (
     <div>
       
