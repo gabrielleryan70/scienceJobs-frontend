@@ -15,9 +15,10 @@ const Home = () => {
     event.preventDefault();
     const a = {}
     if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
+    console.log(sessionStorage.getItem("location"))
     if (sessionStorage.getItem("location")) {
-      a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
-      console.log(a)
+      //a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
+      
       //dispatch(setRegion(countryMappings[country.toLowerCase()]))
       //dispatch(setSearchJobCriteria(a))
       //navigate(`/JobSearch`)
