@@ -18,7 +18,7 @@ const Header = () => {
                 <Link to="/jobSearch" className="text-gray-900 hover:underline">Job Search</Link>
                 <Link to="/findEmployers" className="text-gray-900 hover:underline">Find Employers</Link>
                 <div className="dropdown dropdown-hover">
-                    <a className="text-[#f4a10c] hover:underline font-bold" href="https://academicjobs.com">
+                    <div className="text-[#f4a10c] hover:underline font-bold" >
                         <img
                             src={`https://academicjobs.s3.amazonaws.com/icon/countryFlag/${region}.svg`}
                             alt={region}
@@ -27,7 +27,8 @@ const Header = () => {
                                 e.target.style.display = 'none'; // 隐藏图片
                                 e.target.insertAdjacentHTML('afterend', `<p>${region}</p>`); // 插入文本
                             }}
-                        />                    </a>
+                        />
+                    </div>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
 
                         {Object.keys(countryMappings1).map((key) => (
