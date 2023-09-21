@@ -7,13 +7,11 @@ const Header = () => {
     const [dropdown, setDropdown] = useState(false)
     const region = useSelector((state) => state.posts.region)
     const ref = useRef(null)
- 
     const onMouseEnter = (e) => {
-       
-       setDropdown(true)
+        setDropdown(true)
     }
     const onMouseLeave = () => {
-         setDropdown(false)
+        setDropdown(false)
     }
     const closeDropdown = () => {
         dropdown && setDropdown(false)
@@ -29,7 +27,6 @@ const Header = () => {
                 <Link to="/jobSearch" className="text-gray-900 hover:underline">Job Search</Link>
                 <Link to="/findEmployers" className="text-gray-900 hover:underline">Find Employers</Link>
                 <div className={` p-2  w-52   } `}
-                   
                 >
                     <div className="text-[#f4a10c]  font-bold relative"
                         onMouseEnter={onMouseEnter}
@@ -40,7 +37,7 @@ const Header = () => {
                                 alt={region}
                                 style={{ height: '20px' }}
                             />
-                            : <span className= "" style={{ height: '20px' }}> {region} </span>
+                            : <span className="" style={{ height: '20px' }}> {region} </span>
                         }
                         <ul
                             onMouseLeave={onMouseLeave}

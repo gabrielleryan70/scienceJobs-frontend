@@ -31,6 +31,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
+          <Route exact  path='/Global'     element={<Navigate to='/' replace />}          />
           <Route path='/' index element={<Home />} />
           <Route exact path='/home' element={<Home />} />
           <Route path='/term-of-use' element={<TermsConditions />} />
