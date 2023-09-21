@@ -9,8 +9,9 @@ import Home from "./views/Home"
 import TermsConditions from "./views/TermsConditions"
 import JobSearch from "./views/JobSearch"
 import AboutAJ from "./views/AboutAJ"
+import Employer from "./views/Employer"
 import FAQ from "./views/FAQ"
-import ContactForm from "./views/ContactForm"
+import ContactUs from "./views/ContactUs"
 import DiversayStatement from "./views/DiversayStatement"
 import FindEmployers from "./views/FindEmployers"
 import Australia from "./views/Australia"
@@ -31,17 +32,17 @@ const AppRouter = () => {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' index element={<Home />} />
-          
           <Route exact path='/home' element={<Home />} />
-          <Route path='/termsConditions' element={<TermsConditions />} />
+          <Route path='/term-of-use' element={<TermsConditions />} />
           <Route path='/jobSearch' element={<JobSearch />} />
           <Route path='/JobSearch/:name?' element={<JobSearch />} />
-          <Route path='/aboutAJ' element={<AboutAJ />} />
+          <Route path='/Employer/:id?' element={<Employer />} />
+          <Route path='/about-academic-jobs' element={<AboutAJ />} />
           <Route path='/faq' element={<FAQ />} />
           <Route path='/JobSearch' element={<JobSearch />} />
           <Route path='/diversayStatement' element={<DiversayStatement />} />
-          <Route path='/contactForm' element={<ContactForm />} />
-          <Route path='/findEmployers' element={<FindEmployers />} />
+          <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='/find-employers' element={<FindEmployers />} />
           <Route exact path='/Australia' element={<Australia />} />
           <Route exact path='/USA' element={<USA />} />
           <Route exact path='/Asia' element={<Asia />} />
@@ -53,8 +54,6 @@ const AppRouter = () => {
           <Route exact path='/Canada' element={<Canada />} />
           <Route exact path='/Europe' element={<Europe />} />
           <Route exact path='/Middle-East' element={<MiddleEast />} />
-      
-
           {/* <Route path='/:name' element={<Region />} /> */}
         </Route>
       </Routes>

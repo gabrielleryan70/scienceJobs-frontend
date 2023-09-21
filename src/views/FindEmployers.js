@@ -14,7 +14,7 @@ const FindEmployers = () => {
         <div className=" grid grid-cols-4 gap-10 p-7">
           <ul>
             <Link to="https://academicjobs.com/jobs/california-jobs/">California</Link>
-            <li><Link to="/JobSearch/stanford-University/">Stanford University</Link></li>
+            <li><Link to="/Employer/3101">Stanford University</Link></li>
             <li><Link to="/JobSearch/california-institute/">California Institute
               of Technology</Link></li>
             <li><Link to="/JobSearch/university-of-california-san-francisco/">University

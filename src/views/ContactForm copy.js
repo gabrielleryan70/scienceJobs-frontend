@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const ContactForm = () => {
+const Contact-us = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -46,7 +46,7 @@ const ContactForm = () => {
                                     placeholder="Name"
                                     onChange={handleChange}
                                 />
-                               
+
                             </div>
                         </div>
                         <div className="col-span-1">
@@ -59,7 +59,7 @@ const ContactForm = () => {
                                     placeholder="Email"
                                     onChange={handleChange}
                                 />
-                               
+
                             </div>
                         </div>
                         <div className="col-span-1">
@@ -72,7 +72,7 @@ const ContactForm = () => {
                                     placeholder="Phone Number"
                                     onChange={handleChange}
                                 />
-                               
+
                             </div>
                         </div>
                         <div className="col-span-2">
@@ -85,7 +85,7 @@ const ContactForm = () => {
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="description-input" className="absolute left-4 top-2 text-gray-600 transition-all">
-                                    
+
                                 </label>
                             </div>
                         </div>
@@ -110,4 +110,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default Contact - us;

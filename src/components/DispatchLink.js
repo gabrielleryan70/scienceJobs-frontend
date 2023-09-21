@@ -9,7 +9,6 @@ const DispatchLink = ({ to, region, children }) => {
 
     const handleClick = (e) => {
         e.preventDefault();
-
         dispatch(setRegion(region))
         navigate(to)
     };

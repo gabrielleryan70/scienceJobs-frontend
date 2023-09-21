@@ -8,11 +8,11 @@ const Footer = () => {
                 <div className="bg-white text-black font-open-sans">
                     <ul>
                         <li className='text-[#f4a10c]'>Navigation</li>
-                        <li><a className="footer-nav__link" href="$site_url/">Home</a></li>
-                        <li><Link to="/contactForm">Contact Us</Link></li>
-                        <li><Link to="/aboutAJ">About AJ</Link></li>
-
-                        <li><a href="https://academicjobs.com/sitemap">Site Map</a></li>
+                        {/* <li><a className="footer-nav__link" href="/">Home</a></li> */}
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/contact-us">Contact Us</Link></li>
+                        <li><Link to="/about-academic-jobs">About AJ</Link></li>
+                        <li><Link to="/site-map">Site Map</Link></li>
                     </ul>
                 </div>
                 <div>
@@ -20,19 +20,17 @@ const Footer = () => {
                         <li className='text-[#f4a10c]'>Recruiters</li>
                         <li><a href="https://academicjobs.com/login/">Sign in</a></li>
                         <li><a className="footer-nav__link" href="https://academicjobs.com/post-a-job/">Post a Job</a></li>
-                        <li><Link to="/termsConditions">Terms & Conditions</Link></li>
-                        <li><a href="https://academicjobs.com/university-partners">Our Partners</a></li>
-
+                        <li><Link to="/term-of-use">Terms & Conditions</Link></li>
+                        <li><Link to="/university-partners">Our Partners</Link></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
                         <li className='text-[#f4a10c]'>Job Seekers</li>
-                        <li><a className="footer-nav__link" href="$site_url/jobs/">Find Jobs</a></li>
-                        <li><a href="https://academicjobs.com/find-employer/">Find Employer</a></li>
+                        <li><Link to="/find-jobs">Find Jobs</Link></li>
+                        <li><Link to="/find-employers">Find Employers</Link></li>
                         <li><Link to="/diversayStatement">Diversity Statement</Link></li>
                         <li><Link to="/faq">FAQ</Link></li>
-
                     </ul>
                 </div>
                 <div>
