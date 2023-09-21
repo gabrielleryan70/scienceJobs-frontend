@@ -34,13 +34,13 @@ const AppRouter = () => {
           <Route path='/' index element={<Home />} />
           <Route exact path='/home' element={<Home />} />
           <Route path='/term-of-use' element={<TermsConditions />} />
-          <Route path='/jobSearch' element={<JobSearch />} />
-          <Route path='/JobSearch/:name?' element={<JobSearch />} />
+          <Route path='/find-jobs' element={<JobSearch />} />
+          <Route path='/find-jobs/:name?' element={<JobSearch />} />
           <Route path='/Employer/:id?' element={<Employer />} />
           <Route path='/about-academic-jobs' element={<AboutAJ />} />
           <Route path='/faq' element={<FAQ />} />
-          <Route path='/JobSearch' element={<JobSearch />} />
-          <Route path='/diversayStatement' element={<DiversayStatement />} />
+          <Route path='/find-jobs' element={<JobSearch />} />
+          <Route path='/diversity-statement' element={<DiversayStatement />} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/find-employers' element={<FindEmployers />} />
           <Route exact path='/Australia' element={<Australia />} />

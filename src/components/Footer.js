@@ -29,7 +29,7 @@ const Footer = () => {
                         <li className='text-[#f4a10c]'>Job Seekers</li>
                         <li><Link to="/find-jobs">Find Jobs</Link></li>
                         <li><Link to="/find-employers">Find Employers</Link></li>
-                        <li><Link to="/diversayStatement">Diversity Statement</Link></li>
+                        <li><Link to="/diversity-statement">Diversity Statement</Link></li>
                         <li><Link to="/faq">FAQ</Link></li>
                     </ul>
                 </div>
