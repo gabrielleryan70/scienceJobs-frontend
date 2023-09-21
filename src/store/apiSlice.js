@@ -4,6 +4,7 @@ export const apiSlice = createApi({
  
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://api.academicjobs.com/',
+    //'https://api.sciencejobs.com.au/',
       //'http://localhost:3500/',
     //'https://api.academicjobs.com/',
       // process.env.NODE_ENV === 'development'

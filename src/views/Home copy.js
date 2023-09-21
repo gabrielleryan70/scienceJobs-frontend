@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import JobDetail from './JobDetail'
-import SingleQA from './SingleQA'
+
 import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
 import { Helmet } from "react-helmet";

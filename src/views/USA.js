@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import SearchBox from './SearchBox'
-import SingleQA from './SingleQA'
 import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
 import { Helmet } from "react-helmet";
@@ -12,11 +11,10 @@ const USA = () => {
   const keyWordRef = useRef("")
   const dispatch = useDispatch()
   useEffect(() => {
-      window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
   }, []);
   return (
     <div>
-      
       <Helmet>
         <title>Academic Jobs - The Number 1 job board for Higher Ed jobs, Top University Recruitment & College Jobs.</title>
         <meta name="description" content="Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily." />

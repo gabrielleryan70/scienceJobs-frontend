@@ -7,6 +7,7 @@ import { setJob, setId, setEmployer } from '../store/postsSlice'
 import {
   useGetEmployerQuery,
 } from '../store/apiSlice'
+import SearchResults from './SearchResults'
 const Employer = () => {
   const dispatch = useDispatch()
   const { id } = useParams();
@@ -57,11 +58,12 @@ const Employer = () => {
     console.log(data)
     const { logo, company_name, website, custom_fields } = data
     content = (
+      <div>
       <article className="media bg-white border border-gray-300 p-4 mb-4 rounded-lg shadow-lg" data-id="59972"
       >
         <div className="flex items-center mb-4">
           <div className="w-20 h-20 mr-4">
-            <img src={logo} alt="Catholic Education Services – Diocese of Cairns" className="w-full h-full object-contain" />
+            <img src={logo} alt="company image" className="w-full h-full object-contain" />
           </div>
           <div className="flex-1">
             <a href="#" className="block text-blue-500 text-lg font-bold leading-tight hover:underline">hahaaaaaaaaa</a>
@@ -77,7 +79,9 @@ const Employer = () => {
           </div>
           <div className="text-gray-700 text-sm">hahaaaaaaaaa</div>
         </div>
-      </article>
+        </article>
+        <SearchResults q={{ employer_id: id }} />
+      </div>
     )
   }
   return <div className='overflow-y w-full'>{content}</div>

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import JobDetail from './JobDetail'
-import SingleQA from './SingleQA'
+
 import { setSearchJobCriteria, setRegion } from '../store/postsSlice';
 import { countryMappings, countryMappings1 } from "../utils/data";
 import { Helmet } from "react-helmet";
@@ -19,7 +19,7 @@ const SearchBox = () => {
     event.preventDefault();
     const a = {}
     if (keyWordRef.current.value.trim()) a.q = keyWordRef.current.value.trim()
-    
+
     if (region) {
       a.l = countryMappings1[region].searchLocation
       console.log(a)
@@ -57,7 +57,7 @@ const SearchBox = () => {
     <div>
       <div className="bg-white min-h-screen flex flex-col items-center  justify-center ">
         <div className='h-[40vh] flex flex-col items-end justify-end'>
-                  <img
+          <img
             src="https://academicjobs.s3.amazonaws.com/img/_misc/ScienceJobsLogo.png"
             alt="Google Logo"
             className="w-[20rem] mb-[1rem] "

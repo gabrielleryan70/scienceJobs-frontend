@@ -24,8 +24,8 @@ const Header = () => {
                         className='w-20'
                         src="https://academicjobs.s3.amazonaws.com/icon/ACjobsIcon-min.png" alt="" />
                 </a>
-                <Link to="/jobSearch" className="text-gray-900 hover:underline">Job Search</Link>
-                <Link to="/findEmployers" className="text-gray-900 hover:underline">Find Employers</Link>
+                <Link to="/find-jobs" className="text-gray-900 hover:underline">Job Search</Link>
+                <Link to="/find-employers" className="text-gray-900 hover:underline">Find Employers</Link>
                 <div className={` p-2  w-52   } `}
                 >
                     <div className="text-[#f4a10c]  font-bold relative"
